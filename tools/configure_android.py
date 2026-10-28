@@ -12,7 +12,27 @@ source, count = re.subn(r'minSdk\s*=\s*[^\n]+', 'minSdk = 24', source)
 if count != 1:
     raise SystemExit('Não foi possível localizar minSdk no scaffold.')
 source = re.sub(r'compileSdk\s*=\s*[^\n]+', 'compileSdk = 36', source)
+if '"proguard-rules.pro"' not in source:
+    source, count = re.subn(
+        r'(\brelease\s*\{)',
+        r'\1\n            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")',
+        source, count=1,
+    )
+    if count != 1:
+        raise SystemExit('Não foi possível configurar as regras R8 no release.')
 gradle.write_text(source, encoding='utf-8')
+# O plugin referencia esses alfabetos como compileOnly. O Digitalizer usa Latin.
+# Cobertura limitada aos tipos ausentes: não suprimir outros erros do R8.
+optional = [
+    'com.google.mlkit.vision.text.chinese.ChineseTextRecognizerOptions',
+    'com.google.mlkit.vision.text.devanagari.DevanagariTextRecognizerOptions',
+    'com.google.mlkit.vision.text.japanese.JapaneseTextRecognizerOptions',
+    'com.google.mlkit.vision.text.korean.KoreanTextRecognizerOptions',
+]
+rules = '# Optional non-Latin types referenced by google_mlkit_text_recognition.\n'
+for name in optional:
+    rules += f'-dontwarn {name}\n-dontwarn {name}$Builder\n'
+(root / 'android/app/proguard-rules.pro').write_text(rules, encoding='utf-8')
 manifest = root / 'android/app/src/main/AndroidManifest.xml'
 android = 'http://schemas.android.com/apk/res/android'
 tools = 'http://schemas.android.com/tools'
@@ -34,4 +54,4 @@ for name, remove in [('android.permission.CAMERA', False),
         attrs[f'{{{tools}}}node'] = 'remove'
     element.insert(0, ET.Element('uses-permission', attrs))
 tree.write(manifest, encoding='utf-8', xml_declaration=True)
-print('Digitalizer configurado: Android 7+, modelo OCR incorporado e rede removida do manifesto.')
+print('Digitalizer configurado: Android 7+, OCR Latin offline, regras R8 e rede removida do manifesto.')

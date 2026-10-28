@@ -14,6 +14,7 @@ workflows:
             cp -R /tmp/digitalizer-scaffold/android .
           fi
           python3 tools/configure_android.py
+          python3 tools/verify_android.py
           chmod +x android/gradlew
           python3 tools/verify_assets.py
       - name: Instalar dependências

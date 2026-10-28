@@ -1,5 +1,11 @@
 # Validação do Digitalizer 0.1.0+1
 
+## Revisão do build Android — R8
+
+O build do usuário passou pelas verificações Dart e chegou ao `assembleRelease`, mas o R8 interrompeu ao encontrar oito classes opcionais de alfabetos não latinos referenciadas pelo plugin de OCR. A revisão adiciona regras `-dontwarn` limitadas às quatro classes de opções e seus Builders (chinês, devanágari, japonês e coreano), além de ligar o arquivo de regras ao release. O reconhecedor continua usando exclusivamente Latin. A mesma configuração é gerada pelo script quando a pasta Android é recriada no Codemagic.
+
+`tools/verify_android.py` reproduziu a falta da configuração antes da revisão e passou depois dela. A repetição de `configure_android.py` conserva o mesmo resultado. Não houve compilação Android local nesta revisão; a confirmação do R8 e do APK continua no próximo build do Codemagic. Os dez testes Flutter aprovados descritos abaixo são os da preparação original; o código Dart, o modelo e o catálogo não foram alterados nesta revisão.
+
 Preparado em 27/10/2026. Projeto Flutter independente, com Android `com.ondexa.digitalizer`.
 
 ## Verificações executadas no computador

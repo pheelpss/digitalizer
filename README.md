@@ -1,5 +1,7 @@
 # Digitalizer
 
+Revisão de compilação: inclui as regras R8 dos tipos opcionais de alfabetos não latinos do plugin de OCR. Substitua também `tools/configure_android.py`, `tools/verify_android.py`, `codemagic.yaml` e os arquivos de `android/app` ao atualizar o repositório.
+
 Aplicativo Android experimental e independente para fotografar relatórios 5S atuais da Ondexa e conferir a leitura de notas manuscritas de 0 a 5. Versão 0.1.0+1.
 
 ## GitHub e Codemagic
