@@ -43,14 +43,19 @@ class Scanner {
           .join(' ');
       final anchors = <Map<String, dynamic>>[];
       final observations = <String>[];
+      final detectedAreas = catalog.detectAreas(header);
       double? headerX;
       for (final line in lines) {
-        final number = questionNumber(line.text);
+        final original = questionNumber(line.text);
+        final number = detectedAreas.length == 1
+            ? catalog.resolveNumber(detectedAreas.single, line.text)
+            : original;
         if (line.boundingBox.left < 1600 * .22 &&
             RegExp(r'^\s*[1-5]').hasMatch(line.text)) {
           observations.add(
             'y=${line.boundingBox.center.dy.toStringAsFixed(1)}: '
-            '${line.text} -> ${number ?? "não interpretado"}',
+            '${line.text} -> ${number ?? "não interpretado"}'
+            '${number != original ? " (recuperado pelo texto)" : ""}',
           );
         }
         if (number != null && line.boundingBox.left < 1600 * .22) {
@@ -61,10 +66,10 @@ class Scanner {
           headerX ??= line.boundingBox.center.dx;
         }
       }
-      return ScanLayout(catalog.detectAreas(header), anchors, headerX, observations);
+      return ScanLayout(detectedAreas, anchors, headerX, observations);
     } on PlatformException catch (error, stack) {
       throw OfflineOcrException(
-        'Digitalizer 0.1.2+3\n'
+        'Digitalizer 0.1.3+4\n'
         'Etapa: OCR de texto impresso / ML Kit Latin\n'
         'Imagem normalizada: PNG 1600x2263, ${bytes.length} bytes\n'
         'Build: minificação e redução de recursos nativos desativadas\n'

@@ -1,0 +1,11 @@
+{
+  "pubspec.yaml": "97d8e5fd0fa62964d63fcf50d60659b7a241eee7f43974fe3c41bf47074fead3",
+  "codemagic.yaml": "3217911af9f6515bfefa03d848760d1ca9ced38f1d2313421a58ad0c7ce2d5cb",
+  "lib/digit_model.dart": "6d081e47aaa9b1c88471e19f9c33f7d1942053929a93975d8cadf39ff84ffa06",
+  "lib/domain.dart": "d52f37f7c352dd74e92a3445fd8c546793ef8884f376d3c3d87f692cc52bb5ca",
+  "lib/main.dart": "1b3fa69284fb515dab540fa4a4b6f3ed516918e8838630370d8159f8e016a4ef",
+  "lib/scanner.dart": "ff38f73c6a34df5f26ae4624f1b084b9cdce4b18a605c5a456175062369566c2",
+  "lib/vision.dart": "b16bae341ed1094eff7fd67cab9a0dcebecb8ee371c78258418888164331cd08",
+  "test/app_test.dart": "61b2605209fe9df768f1346432000527a5381f8d5ca1f04c31fdbb749307c330",
+  "test/recognition_test.dart": "fe04804fc5b6102e4ee878812b8d81a74c9d139e280d87456f0c38fbb9fad1c1"
+}

@@ -24,6 +24,7 @@ workflows:
       - name: Conferir código e testes
         script: |
           set -euo pipefail
+          python3 tools/verify_source.py
           flutter analyze --no-fatal-infos
           flutter test
       - name: Compilar APK experimental

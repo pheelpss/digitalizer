@@ -14,6 +14,33 @@ void main() {
     catalog = Catalog.parse(File('assets/catalog.json').readAsStringSync());
     bytes = File('assets/digits.bin').readAsBytesSync();
   });
+  test('recupera os quatro erros reais do OCR de Dobra pelo texto', () {
+    final samples = {
+      '14 EXISTE LOCAL APROPRIADO PARA DESCARTE DE LIXO. MATERIAL OBSOLETO OU PARA RECICLAR?': '1.4',
+      '44 AILUMINAÇÃO DO AMBIENTE É APROPRIADA E SUFICIENTE?': '4.4',
+      '4.60 EXTINTOR E OUTRAS FERRAMENTAS SÃO LOCALIZÁVEISs?': '4.6',
+      '54 OS PROCEDIMENTOS DE SEGURANÇA SẮO SEGUIDOS?': '5.4',
+    };
+    for (final sample in samples.entries) {
+      expect(catalog.resolveNumber('Dobra', sample.key), sample.value);
+    }
+    final numbers = catalog.areas['Dobra']!.map((q) {
+      final sample = samples.entries.where((e) => e.value == q.number);
+      return catalog.resolveNumber('Dobra', sample.isEmpty
+          ? '${q.number} ${q.text}' : sample.single.key)!;
+    });
+    expect(catalog.matches('Dobra', numbers), isTrue);
+  });
+  test('não recupera numeração pelo número isolado ou texto incompatível', () {
+    expect(catalog.resolveNumber('Dobra', '14'), isNull);
+    expect(catalog.resolveNumber('Dobra', '14 OS PROCEDIMENTOS DE SEGURANÇA SÃO SEGUIDOS?'), isNull);
+    expect(catalog.resolveNumber('Dobra', '55- DISCIPLINA (Shitsuke)'), isNull);
+    final ambiguous = Catalog({'Área': const [
+      Question('1S', '1.4', 'EXISTE LOCAL APROPRIADO PARA DESCARTE DE LIXO?'),
+      Question('1S', '1.5', 'EXISTE LOCAL APROPRIADO PARA DESCARTE DE LIXO?'),
+    ]});
+    expect(ambiguous.resolveNumber('Área', '14 EXISTE LOCAL APROPRIADO PARA DESCARTE DE LIXO?'), isNull);
+  });
   test('catálogo é o das 32 áreas e 749 perguntas, com Showroom', () {
     expect(catalog.areas.length, 32);
     expect(catalog.areas.values.fold<int>(0, (n, q) => n + q.length), 749);

@@ -236,7 +236,7 @@ class _CapturePageState extends State<CapturePage> {
               '$comparison\n\n'
               'Confira a folha e os quatro cantos. Se o questionário estiver correto, '
               'use Copiar diagnóstico para investigar a leitura.';
-          _diagnostic = 'Digitalizer 0.1.2+3\nConferência das perguntas\n'
+          _diagnostic = 'Digitalizer 0.1.3+4\nConferência das perguntas\n'
               '$comparison\n\nLinhas OCR da margem esquerda:\n'
               '${layout.observations.join("\n")}';
         });
