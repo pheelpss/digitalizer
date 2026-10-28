@@ -1,0 +1,3875 @@
+{
+  "TI": {
+    "items": [
+      {
+        "categoryCode": "1S",
+        "number": "1.1",
+        "question": "EXISTEM ITENS A SEREM DESCARTADOS (OBSOLETOS OU INSERV\u00cdVEIS: PASTAS, PAP\u00c9IS, QUADROS, ETC.)?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.2",
+        "question": "EXISTE MATERIAL N\u00c3O PERTINENTE (QUE N\u00c3O PERTENCE) NO AMBIENTE?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.3",
+        "question": "EXISTE LOCAL APROPRIADO PARA DESCARTE DE LIXO, MATERIAL OBSOLETO OU PARA RECICLAR?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.4",
+        "question": "EXISTEM OBJETOS PESSOAIS NO SETOR, SOBRE ARM\u00c1RIOS OU SOBRE EQUIPAMENTOS?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.1",
+        "question": "LOCALIZA\u00c7\u00c3O DA \u00c1REA EST\u00c1 IDENTIFICADA CLARAMENTE (NOME COM PLACAS E/OU SETAS INDICATIVAS)?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.2",
+        "question": "A DISPOSI\u00c7\u00c3O ATUAL DO MOBILI\u00c1RIO PROPICIA ACIDENTES?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.3",
+        "question": "ARM\u00c1RIOS, PRATELEIRAS, ARQUIVOS, PORTAS E GAVETAS EST\u00c3O IDENTIFICADOS?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.4",
+        "question": "OS DOCUMENTOS DIGITAIS EST\u00c3O ORGANIZADOS EM PASTAS E SUBPASTAS, DE MODO L\u00d3GICO E CLARO?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.5",
+        "question": "EXISTE C\u00d3PIA DIGITAL (BACKUP) DOS ARQUIVOS (VER A EVID\u00caNCIA)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.1",
+        "question": "O PISO, AS PAREDES, AS JANELAS E O TETO EST\u00c3O LIMPOS E BEM APRESENT\u00c1VEIS (SEM PAP\u00c9IS COLADOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.2",
+        "question": "AS L\u00c2MPADAS E TOMADAS EST\u00c3O CONSERVADAS (FIOS EXPOSTOS, PENDURADOS OU SOLTOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.3",
+        "question": "\u00c9 REALIZADA A MANUTEN\u00c7\u00c3O PERI\u00d3DICA DO AR-CONDICIONADO E SEUS FILTROS?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.4",
+        "question": "OS SANIT\u00c1RIOS EST\u00c3O LIMPOS, CONSERVADOS (COM PAP\u00c9IS E ACESS\u00d3RIOS APROPRIADOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.5",
+        "question": "AS PESSOAS EST\u00c3O CONSCIENTIZADAS DAS BOAS PR\u00c1TICAS DE LIMPEZA DO AMBIENTE?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.1",
+        "question": "O AMBIENTE (SALA/\u00c1REA) EST\u00c1 PADRONIZADO COM ETIQUETAS E PLACAS-PADR\u00c3O?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.2",
+        "question": "O AMBIENTE F\u00cdSICO DE TRABALHO \u00c9 FAVOR\u00c1VEL \u00c0 HIGIENE/SA\u00daDE, SEM CONTAMINA\u00c7\u00c3O DE P\u00d3?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.3",
+        "question": "OS PROCEDIMENTOS E FORMUL\u00c1RIOS/REGISTROS EST\u00c3O PADRONIZADOS?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.4",
+        "question": "AS PESSOAS DAS \u00c1REAS EST\u00c3O CONSCIENTIZADAS (CONHECEM) DOS PADR\u00d5ES EXISTENTES?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.1",
+        "question": "OS FUNCION\u00c1RIOS DEMONSTRAM INTERESSE NAS ATIVIDADES 5S?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.2",
+        "question": "CARTAZES E LEMBRETES EST\u00c3O EXIBIDOS NO AMBIENTE DE TRABALHO?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.3",
+        "question": "OS TREINAMENTOS E OUTRAS PROGRAMA\u00c7\u00d5ES S\u00c3O IMPLEMENTADOS PARA SUSTENTAR A ORGANIZA\u00c7\u00c3O DO TRABALHO?"
+      }
+    ]
+  },
+  "ADM Vendas": {
+    "items": [
+      {
+        "categoryCode": "1S",
+        "number": "1.1",
+        "question": "EXISTEM ITENS A SEREM DESCARTADOS (OBSOLETOS OU INSERV\u00cdVEIS: PASTAS, PAP\u00c9IS, QUADROS, ETC.)?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.2",
+        "question": "EXISTE MATERIAL N\u00c3O PERTINENTE (QUE N\u00c3O PERTENCE) NO AMBIENTE?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.3",
+        "question": "EXISTE LOCAL APROPRIADO PARA DESCARTE DE LIXO, MATERIAL OBSOLETO OU PARA RECICLAR?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.4",
+        "question": "EXISTEM OBJETOS PESSOAIS NO SETOR, SOBRE ARM\u00c1RIOS OU SOBRE EQUIPAMENTOS?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.1",
+        "question": "LOCALIZA\u00c7\u00c3O DA \u00c1REA EST\u00c1 IDENTIFICADA CLARAMENTE (NOME COM PLACAS E/OU SETAS INDICATIVAS)?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.2",
+        "question": "A DISPOSI\u00c7\u00c3O ATUAL DO MOBILI\u00c1RIO PROPICIA ACIDENTES?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.3",
+        "question": "ARM\u00c1RIOS, PRATELEIRAS, ARQUIVOS, PORTAS E GAVETAS EST\u00c3O IDENTIFICADOS (E DENTRO DOS MESMOS)?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.4",
+        "question": "OS DOCUMENTOS DIGITAIS EST\u00c3O ORGANIZADOS EM PASTAS E SUBPASTAS, DE MODO L\u00d3GICO E CLARO?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.5",
+        "question": "EXISTE C\u00d3PIA DIGITAL (BACKUP) DOS ARQUIVOS (VER A EVID\u00caNCIA)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.1",
+        "question": "O PISO, AS PAREDES, AS JANELAS E O TETO EST\u00c3O LIMPOS E BEM APRESENT\u00c1VEIS (SEM PAP\u00c9IS COLADOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.2",
+        "question": "AS L\u00c2MPADAS E TOMADAS EST\u00c3O CONSERVADAS (FIOS EXPOSTOS, PENDURADOS OU SOLTOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.3",
+        "question": "\u00c9 REALIZADA A MANUTEN\u00c7\u00c3O PERI\u00d3DICA DO AR-CONDICIONADO E SEUS FILTROS?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.4",
+        "question": "OS SANIT\u00c1RIOS EST\u00c3O LIMPOS, CONSERVADOS (COM PAP\u00c9IS E ACESS\u00d3RIOS APROPRIADOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.5",
+        "question": "AS PESSOAS EST\u00c3O CONSCIENTIZADAS DAS BOAS PR\u00c1TICAS DE LIMPEZA DO AMBIENTE?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.1",
+        "question": "O AMBIENTE (SALA/\u00c1REA) EST\u00c1 PADRONIZADO COM ETIQUETAS E PLACAS-PADR\u00c3O?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.2",
+        "question": "O AMBIENTE F\u00cdSICO DE TRABALHO \u00c9 FAVOR\u00c1VEL \u00c0 HIGIENE/SA\u00daDE, SEM CONTAMINA\u00c7\u00c3O DE P\u00d3?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.3",
+        "question": "OS PROCEDIMENTOS E FORMUL\u00c1RIOS/REGISTROS EST\u00c3O PADRONIZADOS?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.4",
+        "question": "AS PESSOAS DAS \u00c1REAS EST\u00c3O CONSCIENTIZADAS (CONHECEM) DOS PADR\u00d5ES EXISTENTES?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.1",
+        "question": "OS FUNCION\u00c1RIOS DEMONSTRAM INTERESSE NAS ATIVIDADES 5S?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.2",
+        "question": "CARTAZES E LEMBRETES EST\u00c3O EXIBIDOS NO AMBIENTE DE TRABALHO?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.3",
+        "question": "OS TREINAMENTOS E OUTRAS PROGRAMA\u00c7\u00d5ES S\u00c3O IMPLEMENTADOS PARA SUSTENTAR A ORGANIZA\u00c7\u00c3O DO TRABALHO?"
+      }
+    ]
+  },
+  "Almoxarifado": {
+    "items": [
+      {
+        "categoryCode": "1S",
+        "number": "1.1",
+        "question": "EXISTEM MATERIAIS A SEREM DESCARTADOS (OBSOLETOS OU INUTILIZ\u00c1VEIS)?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.2",
+        "question": "EXISTEM OBJETOS PESSOAIS NO SETOR, SOBRE ARM\u00c1RIOS OU SOBRE EQUIPAMENTOS?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.3",
+        "question": "EXISTE MATERIAL QUE N\u00c3O PERTENCE AO AMBIENTE?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.4",
+        "question": "EXISTE LOCAL APROPRIADO PARA DESCARTE DE LIXO, MATERIAL OBSOLETO OU PARA RECICLAR?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.5",
+        "question": "M\u00c1QUINAS, FERRAMENTAS E INSTALA\u00c7\u00d5ES EST\u00c3O SENDO UTILIZADAS CORRETAMENTE?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.6",
+        "question": "H\u00c1 SEPARA\u00c7\u00c3O CORRETA DE RES\u00cdDUOS?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.1",
+        "question": "LOCALIZA\u00c7\u00c3O DA \u00c1REA EST\u00c1 IDENTIFICADA CLARAMENTE (NOME COM PLACAS E/OU SETAS INDICATIVAS)?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.2",
+        "question": "A DISPOSI\u00c7\u00c3O ATUAL DO PR\u00c9DIO, M\u00c1QUINA OU EQUIPAMENTO PROPICIA ACIDENTES?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.3",
+        "question": "ARM\u00c1RIOS, PRATELEIRAS, ARQUIVOS, PORTAS E GAVETAS EST\u00c3O IDENTIFICADOS?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.4",
+        "question": "OS DOCUMENTOS DIGITAIS EST\u00c3O ORGANIZADOS EM PASTAS E SUBPASTAS, DE MODO L\u00d3GICO E CLARO?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.5",
+        "question": "EXISTE C\u00d3PIA DIGITAL (BACKUP) DOS ARQUIVOS (VER A EVID\u00caNCIA)?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.6",
+        "question": "H\u00c1 LOCAL PR\u00d3PRIO PARA FERRAMENTAS E EQUIPAMENTOS?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.1",
+        "question": "O PISO, AS PAREDES, AS JANELAS E O TETO EST\u00c3O LIMPOS E BEM APRESENT\u00c1VEIS?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.2",
+        "question": "AS L\u00c2MPADAS E TOMADAS EST\u00c3O CONSERVADAS (EXISTEM FIOS EXPOSTOS, PENDURADOS OU SOLTOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.3",
+        "question": "O SISTEMA DE VENTILA\u00c7\u00c3O EST\u00c1 LIMPO E FUNCIONANDO?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.4",
+        "question": "OS SANIT\u00c1RIOS EST\u00c3O LIMPOS, CONSERVADOS (COM PAP\u00c9IS E ACESS\u00d3RIOS APROPRIADOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.5",
+        "question": "AS PESSOAS EST\u00c3O CONSCIENTIZADAS DAS BOAS PR\u00c1TICAS DE LIMPEZA DO AMBIENTE?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.1",
+        "question": "A \u00c1REA EST\u00c1 PADRONIZADA COM ETIQUETAS DE IDENTIFICA\u00c7\u00c3O OU PLACAS PADR\u00c3O?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.2",
+        "question": "O AMBIENTE F\u00cdSICO DE TRABALHO \u00c9 FAVOR\u00c1VEL \u00c0 HIGIENE/SA\u00daDE, SEM CONTAMINA\u00c7\u00c3O DE P\u00d3?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.3",
+        "question": "OS PROCEDIMENTOS, FORMUL\u00c1RIOS E REGISTROS EST\u00c3O PADRONIZADOS?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.4",
+        "question": "A ILUMINA\u00c7\u00c3O DO AMBIENTE \u00c9 APROPRIADA E SUFICIENTE?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.5",
+        "question": "AS PESSOAS DAS \u00c1REAS EST\u00c3O CONSCIENTIZADAS (CONHECEM) DOS PADR\u00d5ES EXISTENTES?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.6",
+        "question": "O EXTINTOR E OUTRAS FERRAMENTAS S\u00c3O LOCALIZ\u00c1VEIS?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.1",
+        "question": "OS FUNCION\u00c1RIOS DEMONSTRAM INTERESSE NAS ATIVIDADES 5S?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.2",
+        "question": "CARTAZES E LEMBRETES EST\u00c3O EXIBIDOS NO AMBIENTE DE TRABALHO?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.3",
+        "question": "OS TREINAMENTOS E OUTRAS PROGRAMA\u00c7\u00d5ES S\u00c3O IMPLEMENTADOS PARA SUSTENTAR A ORGANIZA\u00c7\u00c3O DO TRABALHO?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.4",
+        "question": "OS PROCEDIMENTOS DE SEGURAN\u00c7A S\u00c3O SEGUIDOS?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.5",
+        "question": "EXISTEM INDICADORES? EST\u00c3O ATUALIZADOS?"
+      }
+    ]
+  },
+  "\u00c1rea Externa": {
+    "items": [
+      {
+        "categoryCode": "1S",
+        "number": "1.1",
+        "question": "EXISTEM MATERIAIS A SEREM DESCARTADOS (OBSOLETOS OU INUTILIZ\u00c1VEIS)?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.2",
+        "question": "EXISTE MATERIAL QUE N\u00c3O PERTENCE AO AMBIENTE?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.3",
+        "question": "EXISTE LOCAL APROPRIADO PARA DESCARTE DE LIXO, MATERIAL OBSOLETO OU PARA RECICLAR?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.4",
+        "question": "M\u00c1QUINAS, FERRAMENTAS E INSTALA\u00c7\u00d5ES EST\u00c3O SENDO UTILIZADAS CORRETAMENTE?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.5",
+        "question": "H\u00c1 SEPARA\u00c7\u00c3O CORRETA DE RES\u00cdDUOS?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.1",
+        "question": "NA \u00c1REA EXTERNA EXISTEM OBJETOS OU ALGO QUE POSSA GERAR ACIDENTES?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.2",
+        "question": "H\u00c1 LOCAL PR\u00d3PRIO PARA FERRAMENTAS E EQUIPAMENTOS?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.1",
+        "question": "EXISTEM SUJEIRAS OU LIXOS ESPALHADOS PELO AMBIENTE?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.2",
+        "question": "OS SANIT\u00c1RIOS EST\u00c3O LIMPOS, CONSERVADOS (COM PAP\u00c9IS E ACESS\u00d3RIOS APROPRIADOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.3",
+        "question": "AS PESSOAS EST\u00c3O CONSCIENTIZADAS DAS BOAS PR\u00c1TICAS DE LIMPEZA DO AMBIENTE?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.1",
+        "question": "O AMBIENTE F\u00cdSICO DE TRABALHO \u00c9 FAVOR\u00c1VEL \u00c0 HIGIENE/SA\u00daDE, SEM CONTAMINA\u00c7\u00c3O DE P\u00d3?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.2",
+        "question": "AS PESSOAS DAS \u00c1REAS EST\u00c3O CONSCIENTIZADAS (CONHECEM) DOS PADR\u00d5ES EXISTENTES?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.1",
+        "question": "OS FUNCION\u00c1RIOS DEMONSTRAM INTERESSE NAS ATIVIDADES 5S?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.2",
+        "question": "CARTAZES E LEMBRETES EST\u00c3O EXIBIDOS NO AMBIENTE DE TRABALHO?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.3",
+        "question": "OS TREINAMENTOS E OUTRAS PROGRAMA\u00c7\u00d5ES S\u00c3O IMPLEMENTADOS PARA SUSTENTAR A ORGANIZA\u00c7\u00c3O DO TRABALHO?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.4",
+        "question": "OS PROCEDIMENTOS DE SEGURAN\u00c7A S\u00c3O SEGUIDOS?"
+      }
+    ]
+  },
+  "Balanceamento": {
+    "items": [
+      {
+        "categoryCode": "1S",
+        "number": "1.1",
+        "question": "EXISTEM MATERIAIS A SEREM DESCARTADOS (OBSOLETOS OU INUTILIZ\u00c1VEIS)?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.2",
+        "question": "EXISTEM OBJETOS PESSOAIS NO SETOR, SOBRE ARM\u00c1RIOS OU SOBRE EQUIPAMENTOS?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.3",
+        "question": "EXISTE MATERIAL QUE N\u00c3O PERTENCE AO AMBIENTE?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.4",
+        "question": "EXISTE LOCAL APROPRIADO PARA DESCARTE DE LIXO, MATERIAL OBSOLETO OU PARA RECICLAR?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.5",
+        "question": "M\u00c1QUINAS, FERRAMENTAS E INSTALA\u00c7\u00d5ES EST\u00c3O SENDO UTILIZADAS CORRETAMENTE?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.6",
+        "question": "H\u00c1 SEPARA\u00c7\u00c3O CORRETA DE RES\u00cdDUOS?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.1",
+        "question": "LOCALIZA\u00c7\u00c3O DA \u00c1REA EST\u00c1 IDENTIFICADA CLARAMENTE (NOME COM PLACAS E/OU SETAS INDICATIVAS)?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.2",
+        "question": "A DISPOSI\u00c7\u00c3O ATUAL DO PR\u00c9DIO, M\u00c1QUINA OU EQUIPAMENTO PROPICIA ACIDENTES?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.3",
+        "question": "ARM\u00c1RIOS, PRATELEIRAS, ARQUIVOS, PORTAS E GAVETAS EST\u00c3O IDENTIFICADOS?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.4",
+        "question": "H\u00c1 LOCAL PR\u00d3PRIO PARA FERRAMENTAS E EQUIPAMENTOS?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.1",
+        "question": "O PISO, AS PAREDES, AS JANELAS E O TETO EST\u00c3O LIMPOS E BEM APRESENT\u00c1VEIS?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.2",
+        "question": "AS L\u00c2MPADAS E TOMADAS EST\u00c3O CONSERVADAS (EXISTEM FIOS EXPOSTOS, PENDURADOS OU SOLTOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.3",
+        "question": "O SISTEMA DE VENTILA\u00c7\u00c3O EST\u00c1 LIMPO E FUNCIONANDO?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.4",
+        "question": "OS SANIT\u00c1RIOS EST\u00c3O LIMPOS, CONSERVADOS (COM PAP\u00c9IS E ACESS\u00d3RIOS APROPRIADOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.5",
+        "question": "AS PESSOAS EST\u00c3O CONSCIENTIZADAS DAS BOAS PR\u00c1TICAS DE LIMPEZA DO AMBIENTE?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.1",
+        "question": "A \u00c1REA EST\u00c1 PADRONIZADA COM ETIQUETAS DE IDENTIFICA\u00c7\u00c3O OU PLACAS PADR\u00c3O?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.2",
+        "question": "O AMBIENTE F\u00cdSICO DE TRABALHO \u00c9 FAVOR\u00c1VEL \u00c0 HIGIENE/SA\u00daDE, SEM CONTAMINA\u00c7\u00c3O DE P\u00d3?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.3",
+        "question": "OS PROCEDIMENTOS, FORMUL\u00c1RIOS E REGISTROS EST\u00c3O PADRONIZADOS?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.4",
+        "question": "A ILUMINA\u00c7\u00c3O DO AMBIENTE \u00c9 APROPRIADA E SUFICIENTE?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.5",
+        "question": "AS PESSOAS DAS \u00c1REAS EST\u00c3O CONSCIENTIZADAS (CONHECEM) DOS PADR\u00d5ES EXISTENTES?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.6",
+        "question": "O EXTINTOR E OUTRAS FERRAMENTAS S\u00c3O LOCALIZ\u00c1VEIS?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.1",
+        "question": "OS FUNCION\u00c1RIOS DEMONSTRAM INTERESSE NAS ATIVIDADES 5S?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.2",
+        "question": "CARTAZES E LEMBRETES EST\u00c3O EXIBIDOS NO AMBIENTE DE TRABALHO?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.3",
+        "question": "OS TREINAMENTOS E OUTRAS PROGRAMA\u00c7\u00d5ES S\u00c3O IMPLEMENTADOS PARA SUSTENTAR A ORGANIZA\u00c7\u00c3O DO TRABALHO?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.4",
+        "question": "OS PROCEDIMENTOS DE SEGURAN\u00c7A S\u00c3O SEGUIDOS?"
+      }
+    ]
+  },
+  "CL": {
+    "items": [
+      {
+        "categoryCode": "1S",
+        "number": "1.1",
+        "question": "EXISTEM MATERIAIS A SEREM DESCARTADOS (OBSOLETOS OU INUTILIZ\u00c1VEIS)?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.2",
+        "question": "EXISTEM OBJETOS PESSOAIS NO SETOR, SOBRE ARM\u00c1RIOS OU SOBRE EQUIPAMENTOS?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.3",
+        "question": "EXISTE MATERIAL QUE N\u00c3O PERTENCE AO AMBIENTE?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.4",
+        "question": "EXISTE LOCAL APROPRIADO PARA DESCARTE DE LIXO, MATERIAL OBSOLETO OU PARA RECICLAR?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.5",
+        "question": "M\u00c1QUINAS, FERRAMENTAS E INSTALA\u00c7\u00d5ES EST\u00c3O SENDO UTILIZADAS CORRETAMENTE?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.6",
+        "question": "H\u00c1 SEPARA\u00c7\u00c3O CORRETA DE RES\u00cdDUOS?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.1",
+        "question": "LOCALIZA\u00c7\u00c3O DA \u00c1REA EST\u00c1 IDENTIFICADA CLARAMENTE (NOME COM PLACAS E/OU SETAS INDICATIVAS)?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.2",
+        "question": "A DISPOSI\u00c7\u00c3O ATUAL DO PR\u00c9DIO, M\u00c1QUINA OU EQUIPAMENTO PROPICIA ACIDENTES?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.3",
+        "question": "ARM\u00c1RIOS, PRATELEIRAS, ARQUIVOS, PORTAS E GAVETAS EST\u00c3O IDENTIFICADOS?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.4",
+        "question": "OS DOCUMENTOS DIGITAIS EST\u00c3O ORGANIZADOS EM PASTAS E SUBPASTAS, DE MODO L\u00d3GICO E CLARO?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.5",
+        "question": "EXISTE C\u00d3PIA DIGITAL (BACKUP) DOS ARQUIVOS (VER A EVID\u00caNCIA)?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.6",
+        "question": "H\u00c1 LOCAL PR\u00d3PRIO PARA FERRAMENTAS E EQUIPAMENTOS?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.1",
+        "question": "O PISO, AS PAREDES, AS JANELAS E O TETO EST\u00c3O LIMPOS E BEM APRESENT\u00c1VEIS?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.2",
+        "question": "AS L\u00c2MPADAS E TOMADAS EST\u00c3O CONSERVADAS (EXISTEM FIOS EXPOSTOS, PENDURADOS OU SOLTOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.3",
+        "question": "O SISTEMA DE VENTILA\u00c7\u00c3O EST\u00c1 LIMPO E FUNCIONANDO?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.4",
+        "question": "OS SANIT\u00c1RIOS EST\u00c3O LIMPOS, CONSERVADOS (COM PAP\u00c9IS E ACESS\u00d3RIOS APROPRIADOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.5",
+        "question": "AS PESSOAS EST\u00c3O CONSCIENTIZADAS DAS BOAS PR\u00c1TICAS DE LIMPEZA DO AMBIENTE?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.1",
+        "question": "A \u00c1REA EST\u00c1 PADRONIZADA COM ETIQUETAS DE IDENTIFICA\u00c7\u00c3O OU PLACAS PADR\u00c3O?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.2",
+        "question": "O AMBIENTE F\u00cdSICO DE TRABALHO \u00c9 FAVOR\u00c1VEL \u00c0 HIGIENE/SA\u00daDE, SEM CONTAMINA\u00c7\u00c3O DE P\u00d3?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.3",
+        "question": "OS PROCEDIMENTOS, FORMUL\u00c1RIOS E REGISTROS EST\u00c3O PADRONIZADOS?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.4",
+        "question": "A ILUMINA\u00c7\u00c3O DO AMBIENTE \u00c9 APROPRIADA E SUFICIENTE?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.5",
+        "question": "AS PESSOAS DAS \u00c1REAS EST\u00c3O CONSCIENTIZADAS (CONHECEM) DOS PADR\u00d5ES EXISTENTES?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.6",
+        "question": "O EXTINTOR E OUTRAS FERRAMENTAS S\u00c3O LOCALIZ\u00c1VEIS?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.1",
+        "question": "OS FUNCION\u00c1RIOS DEMONSTRAM INTERESSE NAS ATIVIDADES 5S?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.2",
+        "question": "CARTAZES E LEMBRETES EST\u00c3O EXIBIDOS NO AMBIENTE DE TRABALHO?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.3",
+        "question": "OS TREINAMENTOS E OUTRAS PROGRAMA\u00c7\u00d5ES S\u00c3O IMPLEMENTADOS PARA SUSTENTAR A ORGANIZA\u00c7\u00c3O DO TRABALHO?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.4",
+        "question": "OS PROCEDIMENTOS DE SEGURAN\u00c7A S\u00c3O SEGUIDOS?"
+      }
+    ]
+  },
+  "Dobra": {
+    "items": [
+      {
+        "categoryCode": "1S",
+        "number": "1.1",
+        "question": "EXISTEM MATERIAIS A SEREM DESCARTADOS (OBSOLETOS OU INUTILIZ\u00c1VEIS)?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.2",
+        "question": "EXISTEM OBJETOS PESSOAIS NO SETOR, SOBRE ARM\u00c1RIOS OU SOBRE EQUIPAMENTOS?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.3",
+        "question": "EXISTE MATERIAL QUE N\u00c3O PERTENCE AO AMBIENTE?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.4",
+        "question": "EXISTE LOCAL APROPRIADO PARA DESCARTE DE LIXO, MATERIAL OBSOLETO OU PARA RECICLAR?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.5",
+        "question": "M\u00c1QUINAS, FERRAMENTAS E INSTALA\u00c7\u00d5ES EST\u00c3O SENDO UTILIZADAS CORRETAMENTE?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.6",
+        "question": "H\u00c1 SEPARA\u00c7\u00c3O CORRETA DE RES\u00cdDUOS?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.1",
+        "question": "LOCALIZA\u00c7\u00c3O DA \u00c1REA EST\u00c1 IDENTIFICADA CLARAMENTE (NOME COM PLACAS E/OU SETAS INDICATIVAS)?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.2",
+        "question": "A DISPOSI\u00c7\u00c3O ATUAL DO PR\u00c9DIO, M\u00c1QUINA OU EQUIPAMENTO PROPICIA ACIDENTES?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.3",
+        "question": "ARM\u00c1RIOS, PRATELEIRAS, ARQUIVOS, PORTAS E GAVETAS EST\u00c3O IDENTIFICADOS?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.4",
+        "question": "H\u00c1 LOCAL PR\u00d3PRIO PARA FERRAMENTAS E EQUIPAMENTOS?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.1",
+        "question": "O PISO, AS PAREDES, AS JANELAS E O TETO EST\u00c3O LIMPOS E BEM APRESENT\u00c1VEIS?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.2",
+        "question": "AS L\u00c2MPADAS E TOMADAS EST\u00c3O CONSERVADAS (EXISTEM FIOS EXPOSTOS, PENDURADOS OU SOLTOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.3",
+        "question": "O SISTEMA DE VENTILA\u00c7\u00c3O EST\u00c1 LIMPO E FUNCIONANDO?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.4",
+        "question": "OS SANIT\u00c1RIOS EST\u00c3O LIMPOS, CONSERVADOS (COM PAP\u00c9IS E ACESS\u00d3RIOS APROPRIADOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.5",
+        "question": "AS PESSOAS EST\u00c3O CONSCIENTIZADAS DAS BOAS PR\u00c1TICAS DE LIMPEZA DO AMBIENTE?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.1",
+        "question": "A \u00c1REA EST\u00c1 PADRONIZADA COM ETIQUETAS DE IDENTIFICA\u00c7\u00c3O OU PLACAS PADR\u00c3O?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.2",
+        "question": "O AMBIENTE F\u00cdSICO DE TRABALHO \u00c9 FAVOR\u00c1VEL \u00c0 HIGIENE/SA\u00daDE, SEM CONTAMINA\u00c7\u00c3O DE P\u00d3?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.3",
+        "question": "OS PROCEDIMENTOS, FORMUL\u00c1RIOS E REGISTROS EST\u00c3O PADRONIZADOS?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.4",
+        "question": "A ILUMINA\u00c7\u00c3O DO AMBIENTE \u00c9 APROPRIADA E SUFICIENTE?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.5",
+        "question": "AS PESSOAS DAS \u00c1REAS EST\u00c3O CONSCIENTIZADAS (CONHECEM) DOS PADR\u00d5ES EXISTENTES?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.6",
+        "question": "O EXTINTOR E OUTRAS FERRAMENTAS S\u00c3O LOCALIZ\u00c1VEIS?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.1",
+        "question": "OS FUNCION\u00c1RIOS DEMONSTRAM INTERESSE NAS ATIVIDADES 5S?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.2",
+        "question": "CARTAZES E LEMBRETES EST\u00c3O EXIBIDOS NO AMBIENTE DE TRABALHO?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.3",
+        "question": "OS TREINAMENTOS E OUTRAS PROGRAMA\u00c7\u00d5ES S\u00c3O IMPLEMENTADOS PARA SUSTENTAR A ORGANIZA\u00c7\u00c3O DO TRABALHO?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.4",
+        "question": "OS PROCEDIMENTOS DE SEGURAN\u00c7A S\u00c3O SEGUIDOS?"
+      }
+    ]
+  },
+  "Processos": {
+    "items": [
+      {
+        "categoryCode": "1S",
+        "number": "1.1",
+        "question": "EXISTEM ITENS A SEREM DESCARTADOS (OBSOLETOS OU INSERV\u00cdVEIS: PASTAS, PAP\u00c9IS, QUADROS, ETC.)?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.2",
+        "question": "EXISTE MATERIAL N\u00c3O PERTINENTE (QUE N\u00c3O PERTENCE) NO AMBIENTE?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.3",
+        "question": "EXISTE LOCAL APROPRIADO PARA DESCARTE DE LIXO, MATERIAL OBSOLETO OU PARA RECICLAR?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.4",
+        "question": "EXISTEM OBJETOS PESSOAIS NO SETOR, SOBRE ARM\u00c1RIOS OU SOBRE EQUIPAMENTOS?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.1",
+        "question": "LOCALIZA\u00c7\u00c3O DA \u00c1REA EST\u00c1 IDENTIFICADA CLARAMENTE (NOME COM PLACAS E/OU SETAS INDICATIVAS)?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.2",
+        "question": "A DISPOSI\u00c7\u00c3O ATUAL DO MOBILI\u00c1RIO PROPICIA ACIDENTES?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.3",
+        "question": "ARM\u00c1RIOS, PRATELEIRAS, ARQUIVOS, PORTAS E GAVETAS EST\u00c3O IDENTIFICADOS (E DENTRO DOS MESMOS)?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.4",
+        "question": "OS DOCUMENTOS DIGITAIS EST\u00c3O ORGANIZADOS EM PASTAS E SUBPASTAS, DE MODO L\u00d3GICO E CLARO?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.5",
+        "question": "EXISTE C\u00d3PIA DIGITAL (BACKUP) DOS ARQUIVOS (VER A EVID\u00caNCIA)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.1",
+        "question": "O PISO, AS PAREDES, AS JANELAS E O TETO EST\u00c3O LIMPOS E BEM APRESENT\u00c1VEIS (SEM PAP\u00c9IS COLADOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.2",
+        "question": "AS L\u00c2MPADAS E TOMADAS EST\u00c3O CONSERVADAS (FIOS EXPOSTOS, PENDURADOS OU SOLTOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.3",
+        "question": "\u00c9 REALIZADA A MANUTEN\u00c7\u00c3O PERI\u00d3DICA DO AR-CONDICIONADO E SEUS FILTROS?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.4",
+        "question": "OS SANIT\u00c1RIOS EST\u00c3O LIMPOS, CONSERVADOS (COM PAP\u00c9IS E ACESS\u00d3RIOS APROPRIADOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.5",
+        "question": "AS PESSOAS EST\u00c3O CONSCIENTIZADAS DAS BOAS PR\u00c1TICAS DE LIMPEZA DO AMBIENTE?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.1",
+        "question": "O AMBIENTE (SALA/\u00c1REA) EST\u00c1 PADRONIZADO COM ETIQUETAS E PLACAS-PADR\u00c3O?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.2",
+        "question": "O AMBIENTE F\u00cdSICO DE TRABALHO \u00c9 FAVOR\u00c1VEL \u00c0 HIGIENE/SA\u00daDE, SEM CONTAMINA\u00c7\u00c3O DE P\u00d3?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.3",
+        "question": "OS PROCEDIMENTOS E FORMUL\u00c1RIOS/REGISTROS EST\u00c3O PADRONIZADOS?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.4",
+        "question": "AS PESSOAS DAS \u00c1REAS EST\u00c3O CONSCIENTIZADAS (CONHECEM) DOS PADR\u00d5ES EXISTENTES?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.1",
+        "question": "OS FUNCION\u00c1RIOS DEMONSTRAM INTERESSE NAS ATIVIDADES 5S?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.2",
+        "question": "CARTAZES E LEMBRETES EST\u00c3O EXIBIDOS NO AMBIENTE DE TRABALHO?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.3",
+        "question": "OS TREINAMENTOS E OUTRAS PROGRAMA\u00c7\u00d5ES S\u00c3O IMPLEMENTADOS PARA SUSTENTAR A ORGANIZA\u00c7\u00c3O DO TRABALHO?"
+      }
+    ]
+  },
+  "P&D": {
+    "items": [
+      {
+        "categoryCode": "1S",
+        "number": "1.1",
+        "question": "EXISTEM ITENS A SEREM DESCARTADOS (OBSOLETOS OU INSERV\u00cdVEIS: PASTAS, PAP\u00c9IS, QUADROS, ETC.)?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.2",
+        "question": "EXISTE MATERIAL N\u00c3O PERTINENTE (QUE N\u00c3O PERTENCE) NO AMBIENTE?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.3",
+        "question": "EXISTE LOCAL APROPRIADO PARA DESCARTE DE LIXO, MATERIAL OBSOLETO OU PARA RECICLAR?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.4",
+        "question": "EXISTEM OBJETOS PESSOAIS NO SETOR, SOBRE ARM\u00c1RIOS OU SOBRE EQUIPAMENTOS?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.1",
+        "question": "LOCALIZA\u00c7\u00c3O DA \u00c1REA EST\u00c1 IDENTIFICADA CLARAMENTE (NOME COM PLACAS E/OU SETAS INDICATIVAS)?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.2",
+        "question": "A DISPOSI\u00c7\u00c3O ATUAL DO MOBILI\u00c1RIO PROPICIA ACIDENTES?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.3",
+        "question": "ARM\u00c1RIOS, PRATELEIRAS, ARQUIVOS, PORTAS E GAVETAS EST\u00c3O IDENTIFICADOS (E DENTRO DOS MESMOS)?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.4",
+        "question": "OS DOCUMENTOS DIGITAIS EST\u00c3O ORGANIZADOS EM PASTAS E SUBPASTAS, DE MODO L\u00d3GICO E CLARO?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.5",
+        "question": "EXISTE C\u00d3PIA DIGITAL (BACKUP) DOS ARQUIVOS (VER A EVID\u00caNCIA)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.1",
+        "question": "O PISO, AS PAREDES, AS JANELAS E O TETO EST\u00c3O LIMPOS E BEM APRESENT\u00c1VEIS (SEM PAP\u00c9IS COLADOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.2",
+        "question": "AS L\u00c2MPADAS E TOMADAS EST\u00c3O CONSERVADAS (FIOS EXPOSTOS, PENDURADOS OU SOLTOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.3",
+        "question": "\u00c9 REALIZADA A MANUTEN\u00c7\u00c3O PERI\u00d3DICA DO AR-CONDICIONADO E SEUS FILTROS?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.4",
+        "question": "OS SANIT\u00c1RIOS EST\u00c3O LIMPOS, CONSERVADOS (COM PAP\u00c9IS E ACESS\u00d3RIOS APROPRIADOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.5",
+        "question": "AS PESSOAS EST\u00c3O CONSCIENTIZADAS DAS BOAS PR\u00c1TICAS DE LIMPEZA DO AMBIENTE?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.1",
+        "question": "O AMBIENTE (SALA/\u00c1REA) EST\u00c1 PADRONIZADO COM ETIQUETAS E PLACAS-PADR\u00c3O?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.2",
+        "question": "O AMBIENTE F\u00cdSICO DE TRABALHO \u00c9 FAVOR\u00c1VEL \u00c0 HIGIENE/SA\u00daDE, SEM CONTAMINA\u00c7\u00c3O DE P\u00d3?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.3",
+        "question": "OS PROCEDIMENTOS E FORMUL\u00c1RIOS/REGISTROS EST\u00c3O PADRONIZADOS?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.4",
+        "question": "AS PESSOAS DAS \u00c1REAS EST\u00c3O CONSCIENTIZADAS (CONHECEM) DOS PADR\u00d5ES EXISTENTES?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.1",
+        "question": "OS FUNCION\u00c1RIOS DEMONSTRAM INTERESSE NAS ATIVIDADES 5S?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.2",
+        "question": "CARTAZES E LEMBRETES EST\u00c3O EXIBIDOS NO AMBIENTE DE TRABALHO?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.3",
+        "question": "OS TREINAMENTOS E OUTRAS PROGRAMA\u00c7\u00d5ES IMPLEMENTADOS CONTRIBUEM PARA SUSTENTAR A ORGANIZA\u00c7\u00c3O DO TRABALHO?"
+      }
+    ]
+  },
+  "Eng. Produto": {
+    "items": [
+      {
+        "categoryCode": "1S",
+        "number": "1.1",
+        "question": "EXISTEM ITENS A SEREM DESCARTADOS (OBSOLETOS OU INSERV\u00cdVEIS: PASTAS, PAP\u00c9IS, QUADROS, ETC.)?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.2",
+        "question": "EXISTE MATERIAL N\u00c3O PERTINENTE (QUE N\u00c3O PERTENCE) NO AMBIENTE?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.3",
+        "question": "EXISTE LOCAL APROPRIADO PARA DESCARTE DE LIXO, MATERIAL OBSOLETO OU PARA RECICLAR?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.4",
+        "question": "EXISTEM OBJETOS PESSOAIS NO SETOR, SOBRE ARM\u00c1RIOS OU SOBRE EQUIPAMENTOS?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.1",
+        "question": "LOCALIZA\u00c7\u00c3O DA \u00c1REA EST\u00c1 IDENTIFICADA CLARAMENTE (NOME COM PLACAS E/OU SETAS INDICATIVAS)?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.2",
+        "question": "A DISPOSI\u00c7\u00c3O ATUAL DO MOBILI\u00c1RIO PROPICIA ACIDENTES?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.3",
+        "question": "ARM\u00c1RIOS, PRATELEIRAS, ARQUIVOS, PORTAS E GAVETAS EST\u00c3O IDENTIFICADOS (E DENTRO DOS MESMOS)?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.4",
+        "question": "OS DOCUMENTOS DIGITAIS EST\u00c3O ORGANIZADOS EM PASTAS E SUBPASTAS, DE MODO L\u00d3GICO E CLARO?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.5",
+        "question": "EXISTE C\u00d3PIA DIGITAL (BACKUP) DOS ARQUIVOS (VER A EVID\u00caNCIA)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.1",
+        "question": "O PISO, AS PAREDES, AS JANELAS E O TETO EST\u00c3O LIMPOS E BEM APRESENT\u00c1VEIS (SEM PAP\u00c9IS COLADOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.2",
+        "question": "AS L\u00c2MPADAS E TOMADAS EST\u00c3O CONSERVADAS (FIOS EXPOSTOS, PENDURADOS OU SOLTOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.3",
+        "question": "\u00c9 REALIZADA A MANUTEN\u00c7\u00c3O PERI\u00d3DICA DO AR-CONDICIONADO E SEUS FILTROS?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.4",
+        "question": "OS SANIT\u00c1RIOS EST\u00c3O LIMPOS, CONSERVADOS (COM PAP\u00c9IS E ACESS\u00d3RIOS APROPRIADOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.5",
+        "question": "AS PESSOAS EST\u00c3O CONSCIENTIZADAS DAS BOAS PR\u00c1TICAS DE LIMPEZA DO AMBIENTE?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.1",
+        "question": "O AMBIENTE (SALA/\u00c1REA) EST\u00c1 PADRONIZADO COM ETIQUETAS E PLACAS-PADR\u00c3O?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.2",
+        "question": "O AMBIENTE F\u00cdSICO DE TRABALHO \u00c9 FAVOR\u00c1VEL \u00c0 HIGIENE/SA\u00daDE, SEM CONTAMINA\u00c7\u00c3O DE P\u00d3?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.3",
+        "question": "OS PROCEDIMENTOS E FORMUL\u00c1RIOS/REGISTROS EST\u00c3O PADRONIZADOS?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.4",
+        "question": "AS PESSOAS DAS \u00c1REAS EST\u00c3O CONSCIENTIZADAS (CONHECEM) DOS PADR\u00d5ES EXISTENTES?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.1",
+        "question": "OS FUNCION\u00c1RIOS DEMONSTRAM INTERESSE NAS ATIVIDADES 5S?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.2",
+        "question": "CARTAZES E LEMBRETES EST\u00c3O EXIBIDOS NO AMBIENTE DE TRABALHO?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.3",
+        "question": "OS TREINAMENTOS E OUTRAS PROGRAMA\u00c7\u00d5ES S\u00c3O IMPLEMENTADOS PARA SUSTENTAR A ORGANIZA\u00c7\u00c3O DO TRABALHO?"
+      }
+    ]
+  },
+  "Financeiro": {
+    "items": [
+      {
+        "categoryCode": "1S",
+        "number": "1.1",
+        "question": "EXISTEM ITENS A SEREM DESCARTADOS (OBSOLETOS OU INSERV\u00cdVEIS: PASTAS, PAP\u00c9IS, QUADROS, ETC.)?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.2",
+        "question": "EXISTE MATERIAL N\u00c3O PERTINENTE (QUE N\u00c3O PERTENCE) NO AMBIENTE?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.3",
+        "question": "EXISTE LOCAL APROPRIADO PARA DESCARTE DE LIXO, MATERIAL OBSOLETO OU PARA RECICLAR?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.4",
+        "question": "EXISTEM OBJETOS PESSOAIS NO SETOR, SOBRE ARM\u00c1RIOS OU SOBRE EQUIPAMENTOS?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.1",
+        "question": "LOCALIZA\u00c7\u00c3O DA \u00c1REA EST\u00c1 IDENTIFICADA CLARAMENTE (NOME COM PLACAS E/OU SETAS INDICATIVAS)?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.2",
+        "question": "A DISPOSI\u00c7\u00c3O ATUAL DO MOBILI\u00c1RIO PROPICIA ACIDENTES?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.3",
+        "question": "ARM\u00c1RIOS, PRATELEIRAS, ARQUIVOS, PORTAS E GAVETAS EST\u00c3O IDENTIFICADOS (E DENTRO DOS MESMOS)?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.4",
+        "question": "OS DOCUMENTOS DIGITAIS EST\u00c3O ORGANIZADOS EM PASTAS E SUBPASTAS, DE MODO L\u00d3GICO E CLARO?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.5",
+        "question": "EXISTE C\u00d3PIA DIGITAL (BACKUP) DOS ARQUIVOS (VER A EVID\u00caNCIA)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.1",
+        "question": "O PISO, AS PAREDES, AS JANELAS E O TETO EST\u00c3O LIMPOS E BEM APRESENT\u00c1VEIS (SEM PAP\u00c9IS COLADOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.2",
+        "question": "AS L\u00c2MPADAS E TOMADAS EST\u00c3O CONSERVADAS (FIOS EXPOSTOS, PENDURADOS OU SOLTOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.3",
+        "question": "\u00c9 REALIZADA A MANUTEN\u00c7\u00c3O PERI\u00d3DICA DO AR-CONDICIONADO E SEUS FILTROS?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.4",
+        "question": "OS SANIT\u00c1RIOS EST\u00c3O LIMPOS, CONSERVADOS (COM PAP\u00c9IS E ACESS\u00d3RIOS APROPRIADOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.5",
+        "question": "AS PESSOAS EST\u00c3O CONSCIENTIZADAS DAS BOAS PR\u00c1TICAS DE LIMPEZA DO AMBIENTE?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.1",
+        "question": "O AMBIENTE (SALA/\u00c1REA) EST\u00c1 PADRONIZADO COM ETIQUETAS E PLACAS-PADR\u00c3O?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.2",
+        "question": "O AMBIENTE F\u00cdSICO DE TRABALHO \u00c9 FAVOR\u00c1VEL \u00c0 HIGIENE/SA\u00daDE, SEM CONTAMINA\u00c7\u00c3O DE P\u00d3?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.3",
+        "question": "OS PROCEDIMENTOS E FORMUL\u00c1RIOS/REGISTROS EST\u00c3O PADRONIZADOS?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.4",
+        "question": "AS PESSOAS DAS \u00c1REAS EST\u00c3O CONSCIENTIZADAS (CONHECEM) DOS PADR\u00d5ES EXISTENTES?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.1",
+        "question": "OS FUNCION\u00c1RIOS DEMONSTRAM INTERESSE NAS ATIVIDADES 5S?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.2",
+        "question": "CARTAZES E LEMBRETES EST\u00c3O EXIBIDOS NO AMBIENTE DE TRABALHO?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.3",
+        "question": "OS TREINAMENTOS E OUTRAS PROGRAMA\u00c7\u00d5ES S\u00c3O IMPLEMENTADOS PARA SUSTENTAR A ORGANIZA\u00c7\u00c3O DO TRABALHO?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.4",
+        "question": "EXISTE INDICADOR? EST\u00c1 ATUALIZADO?"
+      }
+    ]
+  },
+  "Laser": {
+    "items": [
+      {
+        "categoryCode": "1S",
+        "number": "1.1",
+        "question": "EXISTEM MATERIAIS A SEREM DESCARTADOS (OBSOLETOS OU INUTILIZ\u00c1VEIS)?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.2",
+        "question": "EXISTEM OBJETOS PESSOAIS NO SETOR, SOBRE ARM\u00c1RIOS OU SOBRE EQUIPAMENTOS?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.3",
+        "question": "EXISTE MATERIAL QUE N\u00c3O PERTENCE AO AMBIENTE?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.4",
+        "question": "EXISTE LOCAL APROPRIADO PARA DESCARTE DE LIXO, MATERIAL OBSOLETO OU PARA RECICLAR?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.5",
+        "question": "M\u00c1QUINAS, FERRAMENTAS E INSTALA\u00c7\u00d5ES EST\u00c3O SENDO UTILIZADAS CORRETAMENTE?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.6",
+        "question": "H\u00c1 SEPARA\u00c7\u00c3O CORRETA DE RES\u00cdDUOS?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.1",
+        "question": "LOCALIZA\u00c7\u00c3O DA \u00c1REA EST\u00c1 IDENTIFICADA CLARAMENTE (NOME COM PLACAS E/OU SETAS INDICATIVAS)?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.2",
+        "question": "A DISPOSI\u00c7\u00c3O ATUAL DO PR\u00c9DIO, M\u00c1QUINA OU EQUIPAMENTO PROPICIA ACIDENTES?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.3",
+        "question": "ARM\u00c1RIOS, PRATELEIRAS, ARQUIVOS, PORTAS E GAVETAS EST\u00c3O IDENTIFICADOS?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.4",
+        "question": "H\u00c1 LOCAL PR\u00d3PRIO PARA FERRAMENTAS E EQUIPAMENTOS?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.1",
+        "question": "O PISO, AS PAREDES, AS JANELAS E O TETO EST\u00c3O LIMPOS E BEM APRESENT\u00c1VEIS?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.2",
+        "question": "AS L\u00c2MPADAS E TOMADAS EST\u00c3O CONSERVADAS (EXISTEM FIOS EXPOSTOS, PENDURADOS OU SOLTOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.3",
+        "question": "O SISTEMA DE VENTILA\u00c7\u00c3O EST\u00c1 LIMPO E FUNCIONANDO?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.4",
+        "question": "OS SANIT\u00c1RIOS EST\u00c3O LIMPOS, CONSERVADOS (COM PAP\u00c9IS E ACESS\u00d3RIOS APROPRIADOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.5",
+        "question": "AS PESSOAS EST\u00c3O CONSCIENTIZADAS DAS BOAS PR\u00c1TICAS DE LIMPEZA DO AMBIENTE?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.1",
+        "question": "A \u00c1REA EST\u00c1 PADRONIZADA COM ETIQUETAS DE IDENTIFICA\u00c7\u00c3O OU PLACAS PADR\u00c3O?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.2",
+        "question": "O AMBIENTE F\u00cdSICO DE TRABALHO \u00c9 FAVOR\u00c1VEL \u00c0 HIGIENE/SA\u00daDE, SEM CONTAMINA\u00c7\u00c3O DE P\u00d3?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.3",
+        "question": "OS PROCEDIMENTOS, FORMUL\u00c1RIOS E REGISTROS EST\u00c3O PADRONIZADOS?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.4",
+        "question": "A ILUMINA\u00c7\u00c3O DO AMBIENTE \u00c9 APROPRIADA E SUFICIENTE?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.5",
+        "question": "AS PESSOAS DAS \u00c1REAS EST\u00c3O CONSCIENTIZADAS (CONHECEM) DOS PADR\u00d5ES EXISTENTES?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.6",
+        "question": "O EXTINTOR E OUTRAS FERRAMENTAS S\u00c3O LOCALIZ\u00c1VEIS?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.1",
+        "question": "OS FUNCION\u00c1RIOS DEMONSTRAM INTERESSE NAS ATIVIDADES 5S?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.2",
+        "question": "CARTAZES E LEMBRETES EST\u00c3O EXIBIDOS NO AMBIENTE DE TRABALHO?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.3",
+        "question": "OS TREINAMENTOS E OUTRAS PROGRAMA\u00c7\u00d5ES S\u00c3O IMPLEMENTADOS PARA SUSTENTAR A ORGANIZA\u00c7\u00c3O DO TRABALHO?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.4",
+        "question": "OS PROCEDIMENTOS DE SEGURAN\u00c7A S\u00c3O SEGUIDOS?"
+      }
+    ]
+  },
+  "Leves": {
+    "items": [
+      {
+        "categoryCode": "1S",
+        "number": "1.1",
+        "question": "EXISTEM MATERIAIS A SEREM DESCARTADOS (OBSOLETOS OU INUTILIZ\u00c1VEIS)?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.2",
+        "question": "EXISTEM OBJETOS PESSOAIS NO SETOR, SOBRE ARM\u00c1RIOS OU SOBRE EQUIPAMENTOS?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.3",
+        "question": "EXISTE MATERIAL QUE N\u00c3O PERTENCE AO AMBIENTE?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.4",
+        "question": "EXISTE LOCAL APROPRIADO PARA DESCARTE DE LIXO, MATERIAL OBSOLETO OU PARA RECICLAR?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.5",
+        "question": "M\u00c1QUINAS, FERRAMENTAS E INSTALA\u00c7\u00d5ES EST\u00c3O SENDO UTILIZADAS CORRETAMENTE?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.6",
+        "question": "H\u00c1 SEPARA\u00c7\u00c3O CORRETA DE RES\u00cdDUOS?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.1",
+        "question": "LOCALIZA\u00c7\u00c3O DA \u00c1REA EST\u00c1 IDENTIFICADA CLARAMENTE (NOME COM PLACAS E/OU SETAS INDICATIVAS)?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.2",
+        "question": "A DISPOSI\u00c7\u00c3O ATUAL DO PR\u00c9DIO, M\u00c1QUINA OU EQUIPAMENTO PROPICIA ACIDENTES?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.3",
+        "question": "ARM\u00c1RIOS, PRATELEIRAS, ARQUIVOS, PORTAS E GAVETAS EST\u00c3O IDENTIFICADOS?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.4",
+        "question": "OS DOCUMENTOS DIGITAIS EST\u00c3O ORGANIZADOS EM PASTAS E SUBPASTAS, DE MODO L\u00d3GICO E CLARO?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.5",
+        "question": "EXISTE C\u00d3PIA DIGITAL (BACKUP) DOS ARQUIVOS (VER A EVID\u00caNCIA)?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.6",
+        "question": "H\u00c1 LOCAL PR\u00d3PRIO PARA FERRAMENTAS E EQUIPAMENTOS?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.1",
+        "question": "O PISO, AS PAREDES, AS JANELAS E O TETO EST\u00c3O LIMPOS E BEM APRESENT\u00c1VEIS?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.2",
+        "question": "AS L\u00c2MPADAS E TOMADAS EST\u00c3O CONSERVADAS (EXISTEM FIOS EXPOSTOS, PENDURADOS OU SOLTOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.3",
+        "question": "O SISTEMA DE VENTILA\u00c7\u00c3O EST\u00c1 LIMPO E FUNCIONANDO?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.4",
+        "question": "OS SANIT\u00c1RIOS EST\u00c3O LIMPOS, CONSERVADOS (COM PAP\u00c9IS E ACESS\u00d3RIOS APROPRIADOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.5",
+        "question": "AS PESSOAS EST\u00c3O CONSCIENTIZADAS DAS BOAS PR\u00c1TICAS DE LIMPEZA DO AMBIENTE?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.1",
+        "question": "A \u00c1REA EST\u00c1 PADRONIZADA COM ETIQUETAS DE IDENTIFICA\u00c7\u00c3O OU PLACAS PADR\u00c3O?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.2",
+        "question": "O AMBIENTE F\u00cdSICO DE TRABALHO \u00c9 FAVOR\u00c1VEL \u00c0 HIGIENE/SA\u00daDE, SEM CONTAMINA\u00c7\u00c3O DE P\u00d3?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.3",
+        "question": "OS PROCEDIMENTOS, FORMUL\u00c1RIOS E REGISTROS EST\u00c3O PADRONIZADOS?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.4",
+        "question": "A ILUMINA\u00c7\u00c3O DO AMBIENTE \u00c9 APROPRIADA E SUFICIENTE?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.5",
+        "question": "AS PESSOAS DAS \u00c1REAS EST\u00c3O CONSCIENTIZADAS (CONHECEM) DOS PADR\u00d5ES EXISTENTES?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.6",
+        "question": "O EXTINTOR E OUTRAS FERRAMENTAS S\u00c3O LOCALIZ\u00c1VEIS?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.1",
+        "question": "OS FUNCION\u00c1RIOS DEMONSTRAM INTERESSE NAS ATIVIDADES 5S?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.2",
+        "question": "CARTAZES E LEMBRETES EST\u00c3O EXIBIDOS NO AMBIENTE DE TRABALHO?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.3",
+        "question": "OS TREINAMENTOS E OUTRAS PROGRAMA\u00c7\u00d5ES S\u00c3O IMPLEMENTADOS PARA SUSTENTAR A ORGANIZA\u00c7\u00c3O DO TRABALHO?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.4",
+        "question": "OS PROCEDIMENTOS DE SEGURAN\u00c7A S\u00c3O SEGUIDOS?"
+      }
+    ]
+  },
+  "MTG Hera": {
+    "items": [
+      {
+        "categoryCode": "1S",
+        "number": "1.1",
+        "question": "EXISTEM MATERIAIS A SEREM DESCARTADOS (OBSOLETOS OU INUTILIZ\u00c1VEIS)?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.2",
+        "question": "EXISTEM OBJETOS PESSOAIS NO SETOR, SOBRE ARM\u00c1RIOS OU SOBRE EQUIPAMENTOS?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.3",
+        "question": "EXISTE MATERIAL QUE N\u00c3O PERTENCE AO AMBIENTE?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.4",
+        "question": "EXISTE LOCAL APROPRIADO PARA DESCARTE DE LIXO, MATERIAL OBSOLETO OU PARA RECICLAR?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.5",
+        "question": "M\u00c1QUINAS, FERRAMENTAS E INSTALA\u00c7\u00d5ES EST\u00c3O SENDO UTILIZADAS CORRETAMENTE?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.6",
+        "question": "H\u00c1 SEPARA\u00c7\u00c3O CORRETA DE RES\u00cdDUOS?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.1",
+        "question": "LOCALIZA\u00c7\u00c3O DA \u00c1REA EST\u00c1 IDENTIFICADA CLARAMENTE (NOME COM PLACAS E/OU SETAS INDICATIVAS)?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.2",
+        "question": "A DISPOSI\u00c7\u00c3O ATUAL DO PR\u00c9DIO, M\u00c1QUINA OU EQUIPAMENTO PROPICIA ACIDENTES?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.3",
+        "question": "ARM\u00c1RIOS, PRATELEIRAS, ARQUIVOS, PORTAS E GAVETAS EST\u00c3O IDENTIFICADOS?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.4",
+        "question": "H\u00c1 LOCAL PR\u00d3PRIO PARA FERRAMENTAS E EQUIPAMENTOS?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.1",
+        "question": "O PISO, AS PAREDES, AS JANELAS E O TETO EST\u00c3O LIMPOS E BEM APRESENT\u00c1VEIS?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.2",
+        "question": "AS L\u00c2MPADAS E TOMADAS EST\u00c3O CONSERVADAS (EXISTEM FIOS EXPOSTOS, PENDURADOS OU SOLTOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.3",
+        "question": "O SISTEMA DE VENTILA\u00c7\u00c3O EST\u00c1 LIMPO E FUNCIONANDO?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.4",
+        "question": "OS SANIT\u00c1RIOS EST\u00c3O LIMPOS, CONSERVADOS (COM PAP\u00c9IS E ACESS\u00d3RIOS APROPRIADOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.5",
+        "question": "AS PESSOAS EST\u00c3O CONSCIENTIZADAS DAS BOAS PR\u00c1TICAS DE LIMPEZA DO AMBIENTE?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.1",
+        "question": "A \u00c1REA EST\u00c1 PADRONIZADA COM ETIQUETAS DE IDENTIFICA\u00c7\u00c3O OU PLACAS PADR\u00c3O?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.2",
+        "question": "O AMBIENTE F\u00cdSICO DE TRABALHO \u00c9 FAVOR\u00c1VEL \u00c0 HIGIENE/SA\u00daDE, SEM CONTAMINA\u00c7\u00c3O DE P\u00d3?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.3",
+        "question": "OS PROCEDIMENTOS, FORMUL\u00c1RIOS E REGISTROS EST\u00c3O PADRONIZADOS?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.4",
+        "question": "A ILUMINA\u00c7\u00c3O DO AMBIENTE \u00c9 APROPRIADA E SUFICIENTE?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.5",
+        "question": "AS PESSOAS DAS \u00c1REAS EST\u00c3O CONSCIENTIZADAS (CONHECEM) DOS PADR\u00d5ES EXISTENTES?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.6",
+        "question": "O EXTINTOR E OUTRAS FERRAMENTAS S\u00c3O LOCALIZ\u00c1VEIS?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.1",
+        "question": "OS FUNCION\u00c1RIOS DEMONSTRAM INTERESSE NAS ATIVIDADES 5S?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.2",
+        "question": "CARTAZES E LEMBRETES EST\u00c3O EXIBIDOS NO AMBIENTE DE TRABALHO?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.3",
+        "question": "OS TREINAMENTOS E OUTRAS PROGRAMA\u00c7\u00d5ES S\u00c3O IMPLEMENTADOS PARA SUSTENTAR A ORGANIZA\u00c7\u00c3O DO TRABALHO?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.4",
+        "question": "OS PROCEDIMENTOS DE SEGURAN\u00c7A S\u00c3O SEGUIDOS?"
+      }
+    ]
+  },
+  "MTG Voluta": {
+    "items": [
+      {
+        "categoryCode": "1S",
+        "number": "1.1",
+        "question": "EXISTEM MATERIAIS A SEREM DESCARTADOS (OBSOLETOS OU INUTILIZ\u00c1VEIS)?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.2",
+        "question": "EXISTEM OBJETOS PESSOAIS NO SETOR, SOBRE ARM\u00c1RIOS OU SOBRE EQUIPAMENTOS?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.3",
+        "question": "EXISTE MATERIAL QUE N\u00c3O PERTENCE AO AMBIENTE?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.4",
+        "question": "EXISTE LOCAL APROPRIADO PARA DESCARTE DE LIXO, MATERIAL OBSOLETO OU PARA RECICLAR?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.5",
+        "question": "M\u00c1QUINAS, FERRAMENTAS E INSTALA\u00c7\u00d5ES EST\u00c3O SENDO UTILIZADAS CORRETAMENTE?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.6",
+        "question": "H\u00c1 SEPARA\u00c7\u00c3O CORRETA DE RES\u00cdDUOS?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.1",
+        "question": "LOCALIZA\u00c7\u00c3O DA \u00c1REA EST\u00c1 IDENTIFICADA CLARAMENTE (NOME COM PLACAS E/OU SETAS INDICATIVAS)?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.2",
+        "question": "A DISPOSI\u00c7\u00c3O ATUAL DO PR\u00c9DIO, M\u00c1QUINA OU EQUIPAMENTO PROPICIA ACIDENTES?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.3",
+        "question": "ARM\u00c1RIOS, PRATELEIRAS, ARQUIVOS, PORTAS E GAVETAS EST\u00c3O IDENTIFICADOS?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.4",
+        "question": "H\u00c1 LOCAL PR\u00d3PRIO PARA FERRAMENTAS E EQUIPAMENTOS?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.1",
+        "question": "O PISO, AS PAREDES, AS JANELAS E O TETO EST\u00c3O LIMPOS E BEM APRESENT\u00c1VEIS?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.2",
+        "question": "AS L\u00c2MPADAS E TOMADAS EST\u00c3O CONSERVADAS (EXISTEM FIOS EXPOSTOS, PENDURADOS OU SOLTOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.3",
+        "question": "O SISTEMA DE VENTILA\u00c7\u00c3O EST\u00c1 LIMPO E FUNCIONANDO?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.4",
+        "question": "OS SANIT\u00c1RIOS EST\u00c3O LIMPOS, CONSERVADOS (COM PAP\u00c9IS E ACESS\u00d3RIOS APROPRIADOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.5",
+        "question": "AS PESSOAS EST\u00c3O CONSCIENTIZADAS DAS BOAS PR\u00c1TICAS DE LIMPEZA DO AMBIENTE?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.1",
+        "question": "A \u00c1REA EST\u00c1 PADRONIZADA COM ETIQUETAS DE IDENTIFICA\u00c7\u00c3O OU PLACAS PADR\u00c3O?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.2",
+        "question": "O AMBIENTE F\u00cdSICO DE TRABALHO \u00c9 FAVOR\u00c1VEL \u00c0 HIGIENE/SA\u00daDE, SEM CONTAMINA\u00c7\u00c3O DE P\u00d3?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.3",
+        "question": "OS PROCEDIMENTOS, FORMUL\u00c1RIOS E REGISTROS EST\u00c3O PADRONIZADOS?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.4",
+        "question": "A ILUMINA\u00c7\u00c3O DO AMBIENTE \u00c9 APROPRIADA E SUFICIENTE?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.5",
+        "question": "AS PESSOAS DAS \u00c1REAS EST\u00c3O CONSCIENTIZADAS (CONHECEM) DOS PADR\u00d5ES EXISTENTES?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.6",
+        "question": "O EXTINTOR E OUTRAS FERRAMENTAS S\u00c3O LOCALIZ\u00c1VEIS?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.1",
+        "question": "OS FUNCION\u00c1RIOS DEMONSTRAM INTERESSE NAS ATIVIDADES 5S?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.2",
+        "question": "CARTAZES E LEMBRETES EST\u00c3O EXIBIDOS NO AMBIENTE DE TRABALHO?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.3",
+        "question": "OS TREINAMENTOS E OUTRAS PROGRAMA\u00c7\u00d5ES S\u00c3O IMPLEMENTADOS PARA SUSTENTAR A ORGANIZA\u00c7\u00c3O DO TRABALHO?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.4",
+        "question": "OS PROCEDIMENTOS DE SEGURAN\u00c7A S\u00c3O SEGUIDOS?"
+      }
+    ]
+  },
+  "Manuten\u00e7\u00e3o ADM": {
+    "items": [
+      {
+        "categoryCode": "1S",
+        "number": "1.1",
+        "question": "EXISTEM ITENS A SEREM DESCARTADOS (OBSOLETOS OU INSERV\u00cdVEIS: PASTAS, PAP\u00c9IS, QUADROS, ETC.)?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.2",
+        "question": "EXISTE MATERIAL N\u00c3O PERTINENTE (QUE N\u00c3O PERTENCE) NO AMBIENTE?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.3",
+        "question": "EXISTE LOCAL APROPRIADO PARA DESCARTE DE LIXO, MATERIAL OBSOLETO OU PARA RECICLAR?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.4",
+        "question": "EXISTEM OBJETOS PESSOAIS NO SETOR, SOBRE ARM\u00c1RIOS OU SOBRE EQUIPAMENTOS?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.1",
+        "question": "LOCALIZA\u00c7\u00c3O DA \u00c1REA EST\u00c1 IDENTIFICADA CLARAMENTE (NOME COM PLACAS E/OU SETAS INDICATIVAS)?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.2",
+        "question": "A DISPOSI\u00c7\u00c3O ATUAL DO MOBILI\u00c1RIO PROPICIA ACIDENTES?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.3",
+        "question": "ARM\u00c1RIOS, PRATELEIRAS, ARQUIVOS, PORTAS E GAVETAS EST\u00c3O IDENTIFICADOS (E DENTRO DOS MESMOS)?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.4",
+        "question": "OS DOCUMENTOS DIGITAIS EST\u00c3O ORGANIZADOS EM PASTAS E SUBPASTAS, DE MODO L\u00d3GICO E CLARO?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.5",
+        "question": "EXISTE C\u00d3PIA DIGITAL (BACKUP) DOS ARQUIVOS (VER A EVID\u00caNCIA)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.1",
+        "question": "O PISO, AS PAREDES, AS JANELAS E O TETO EST\u00c3O LIMPOS E BEM APRESENT\u00c1VEIS (SEM PAP\u00c9IS COLADOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.2",
+        "question": "AS L\u00c2MPADAS E TOMADAS EST\u00c3O CONSERVADAS (FIOS EXPOSTOS, PENDURADOS OU SOLTOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.3",
+        "question": "\u00c9 REALIZADA A MANUTEN\u00c7\u00c3O PERI\u00d3DICA DO AR-CONDICIONADO E SEUS FILTROS?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.4",
+        "question": "OS SANIT\u00c1RIOS EST\u00c3O LIMPOS, CONSERVADOS (COM PAP\u00c9IS E ACESS\u00d3RIOS APROPRIADOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.5",
+        "question": "AS PESSOAS EST\u00c3O CONSCIENTIZADAS DAS BOAS PR\u00c1TICAS DE LIMPEZA DO AMBIENTE?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.1",
+        "question": "O AMBIENTE (SALA/\u00c1REA) EST\u00c1 PADRONIZADO COM ETIQUETAS E PLACAS-PADR\u00c3O?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.2",
+        "question": "O AMBIENTE F\u00cdSICO DE TRABALHO \u00c9 FAVOR\u00c1VEL \u00c0 HIGIENE/SA\u00daDE, SEM CONTAMINA\u00c7\u00c3O DE P\u00d3?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.3",
+        "question": "OS PROCEDIMENTOS E FORMUL\u00c1RIOS/REGISTROS EST\u00c3O PADRONIZADOS?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.4",
+        "question": "AS PESSOAS DAS \u00c1REAS EST\u00c3O CONSCIENTIZADAS (CONHECEM) DOS PADR\u00d5ES EXISTENTES?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.1",
+        "question": "OS FUNCION\u00c1RIOS DEMONSTRAM INTERESSE NAS ATIVIDADES 5S?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.2",
+        "question": "CARTAZES E LEMBRETES EST\u00c3O EXIBIDOS NO AMBIENTE DE TRABALHO?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.3",
+        "question": "OS TREINAMENTOS E OUTRAS PROGRAMA\u00c7\u00d5ES S\u00c3O IMPLEMENTADOS PARA SUSTENTAR A ORGANIZA\u00c7\u00c3O DO TRABALHO?"
+      }
+    ]
+  },
+  "Manuten\u00e7\u00e3o Fab": {
+    "items": [
+      {
+        "categoryCode": "1S",
+        "number": "1.1",
+        "question": "EXISTEM MATERIAIS A SEREM DESCARTADOS (OBSOLETOS OU INUTILIZ\u00c1VEIS)?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.2",
+        "question": "EXISTEM OBJETOS PESSOAIS NO SETOR, SOBRE ARM\u00c1RIOS OU SOBRE EQUIPAMENTOS?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.3",
+        "question": "EXISTE MATERIAL QUE N\u00c3O PERTENCE AO AMBIENTE?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.4",
+        "question": "EXISTE LOCAL APROPRIADO PARA DESCARTE DE LIXO, MATERIAL OBSOLETO OU PARA RECICLAR?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.5",
+        "question": "M\u00c1QUINAS, FERRAMENTAS E INSTALA\u00c7\u00d5ES EST\u00c3O SENDO UTILIZADAS CORRETAMENTE?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.6",
+        "question": "H\u00c1 SEPARA\u00c7\u00c3O CORRETA DE RES\u00cdDUOS?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.1",
+        "question": "LOCALIZA\u00c7\u00c3O DA \u00c1REA EST\u00c1 IDENTIFICADA CLARAMENTE (NOME COM PLACAS E/OU SETAS INDICATIVAS)?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.2",
+        "question": "A DISPOSI\u00c7\u00c3O ATUAL DO PR\u00c9DIO, M\u00c1QUINA OU EQUIPAMENTO PROPICIA ACIDENTES?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.3",
+        "question": "ARM\u00c1RIOS, PRATELEIRAS, ARQUIVOS, PORTAS E GAVETAS EST\u00c3O IDENTIFICADOS?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.4",
+        "question": "H\u00c1 LOCAL PR\u00d3PRIO PARA FERRAMENTAS E EQUIPAMENTOS?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.1",
+        "question": "O PISO, AS PAREDES, AS JANELAS E O TETO EST\u00c3O LIMPOS E BEM APRESENT\u00c1VEIS?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.2",
+        "question": "AS L\u00c2MPADAS E TOMADAS EST\u00c3O CONSERVADAS (EXISTEM FIOS EXPOSTOS, PENDURADOS OU SOLTOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.3",
+        "question": "O SISTEMA DE VENTILA\u00c7\u00c3O EST\u00c1 LIMPO E FUNCIONANDO?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.4",
+        "question": "OS SANIT\u00c1RIOS EST\u00c3O LIMPOS, CONSERVADOS (COM PAP\u00c9IS E ACESS\u00d3RIOS APROPRIADOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.5",
+        "question": "AS PESSOAS EST\u00c3O CONSCIENTIZADAS DAS BOAS PR\u00c1TICAS DE LIMPEZA DO AMBIENTE?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.1",
+        "question": "A \u00c1REA EST\u00c1 PADRONIZADA COM ETIQUETAS DE IDENTIFICA\u00c7\u00c3O OU PLACAS PADR\u00c3O?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.2",
+        "question": "O AMBIENTE F\u00cdSICO DE TRABALHO \u00c9 FAVOR\u00c1VEL \u00c0 HIGIENE/SA\u00daDE, SEM CONTAMINA\u00c7\u00c3O DE P\u00d3?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.3",
+        "question": "OS PROCEDIMENTOS, FORMUL\u00c1RIOS E REGISTROS EST\u00c3O PADRONIZADOS?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.4",
+        "question": "A ILUMINA\u00c7\u00c3O DO AMBIENTE \u00c9 APROPRIADA E SUFICIENTE?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.5",
+        "question": "AS PESSOAS DAS \u00c1REAS EST\u00c3O CONSCIENTIZADAS (CONHECEM) DOS PADR\u00d5ES EXISTENTES?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.6",
+        "question": "O EXTINTOR E OUTRAS FERRAMENTAS S\u00c3O LOCALIZ\u00c1VEIS?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.1",
+        "question": "OS FUNCION\u00c1RIOS DEMONSTRAM INTERESSE NAS ATIVIDADES 5S?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.2",
+        "question": "OS TREINAMENTOS E OUTRAS PROGRAMA\u00c7\u00d5ES S\u00c3O IMPLEMENTADOS PARA SUSTENTAR A ORGANIZA\u00c7\u00c3O DO TRABALHO?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.3",
+        "question": "OS TREINAMENTOS E OUTRAS PROGRAMA\u00c7\u00d5ES S\u00c3O IMPLEMENTADOS PARA SUSTENTAR A ORGANIZA\u00c7\u00c3O DO TRABALHO?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.4",
+        "question": "OS PROCEDIMENTOS DE SEGURAN\u00c7A S\u00c3O SEGUIDOS?"
+      }
+    ]
+  },
+  "MKT": {
+    "items": [
+      {
+        "categoryCode": "1S",
+        "number": "1.1",
+        "question": "EXISTEM ITENS A SEREM DESCARTADOS (OBSOLETOS OU INSERV\u00cdVEIS: PASTAS, PAP\u00c9IS, QUADROS, ETC.)?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.2",
+        "question": "EXISTE MATERIAL N\u00c3O PERTINENTE (QUE N\u00c3O PERTENCE) NO AMBIENTE?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.3",
+        "question": "EXISTE LOCAL APROPRIADO PARA DESCARTE DE LIXO, MATERIAL OBSOLETO OU PARA RECICLAR?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.4",
+        "question": "EXISTEM OBJETOS PESSOAIS NO SETOR, SOBRE ARM\u00c1RIOS OU SOBRE EQUIPAMENTOS?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.1",
+        "question": "LOCALIZA\u00c7\u00c3O DA \u00c1REA EST\u00c1 IDENTIFICADA CLARAMENTE (NOME COM PLACAS E/OU SETAS INDICATIVAS)?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.2",
+        "question": "A DISPOSI\u00c7\u00c3O ATUAL DO MOBILI\u00c1RIO PROPICIA ACIDENTES?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.3",
+        "question": "ARM\u00c1RIOS, PRATELEIRAS, ARQUIVOS, PORTAS E GAVETAS EST\u00c3O IDENTIFICADOS (E DENTRO DOS MESMOS)?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.4",
+        "question": "OS DOCUMENTOS DIGITAIS EST\u00c3O ORGANIZADOS EM PASTAS E SUBPASTAS, DE MODO L\u00d3GICO E CLARO?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.5",
+        "question": "EXISTE C\u00d3PIA DIGITAL (BACKUP) DOS ARQUIVOS (VER A EVID\u00caNCIA)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.1",
+        "question": "O PISO, AS PAREDES, AS JANELAS E O TETO EST\u00c3O LIMPOS E BEM APRESENT\u00c1VEIS (SEM PAP\u00c9IS COLADOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.2",
+        "question": "AS L\u00c2MPADAS E TOMADAS EST\u00c3O CONSERVADAS (FIOS EXPOSTOS, PENDURADOS OU SOLTOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.3",
+        "question": "\u00c9 REALIZADA A MANUTEN\u00c7\u00c3O PERI\u00d3DICA DO AR-CONDICIONADO E SEUS FILTROS?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.4",
+        "question": "OS SANIT\u00c1RIOS EST\u00c3O LIMPOS, CONSERVADOS (COM PAP\u00c9IS E ACESS\u00d3RIOS APROPRIADOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.5",
+        "question": "AS PESSOAS EST\u00c3O CONSCIENTIZADAS DAS BOAS PR\u00c1TICAS DE LIMPEZA DO AMBIENTE?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.1",
+        "question": "O AMBIENTE (SALA/\u00c1REA) EST\u00c1 PADRONIZADO COM ETIQUETAS E PLACAS-PADR\u00c3O?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.2",
+        "question": "O AMBIENTE F\u00cdSICO DE TRABALHO \u00c9 FAVOR\u00c1VEL \u00c0 HIGIENE/SA\u00daDE, SEM CONTAMINA\u00c7\u00c3O DE P\u00d3?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.3",
+        "question": "OS PROCEDIMENTOS E FORMUL\u00c1RIOS/REGISTROS EST\u00c3O PADRONIZADOS?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.4",
+        "question": "AS PESSOAS DAS \u00c1REAS EST\u00c3O CONSCIENTIZADAS (CONHECEM) DOS PADR\u00d5ES EXISTENTES?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.1",
+        "question": "OS FUNCION\u00c1RIOS DEMONSTRAM INTERESSE NAS ATIVIDADES 5S?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.2",
+        "question": "CARTAZES E LEMBRETES EST\u00c3O EXIBIDOS NO AMBIENTE DE TRABALHO?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.3",
+        "question": "OS TREINAMENTOS E OUTRAS PROGRAMA\u00c7\u00d5ES S\u00c3O IMPLEMENTADOS PARA SUSTENTAR A ORGANIZA\u00c7\u00c3O DO TRABALHO?"
+      }
+    ]
+  },
+  "Met\u00e1licos": {
+    "items": [
+      {
+        "categoryCode": "1S",
+        "number": "1.1",
+        "question": "EXISTEM MATERIAIS A SEREM DESCARTADOS (OBSOLETOS OU INUTILIZ\u00c1VEIS)?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.2",
+        "question": "EXISTEM OBJETOS PESSOAIS NO SETOR, SOBRE ARM\u00c1RIOS OU SOBRE EQUIPAMENTOS?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.3",
+        "question": "EXISTE MATERIAL QUE N\u00c3O PERTENCE AO AMBIENTE?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.4",
+        "question": "EXISTE LOCAL APROPRIADO PARA DESCARTE DE LIXO, MATERIAL OBSOLETO OU PARA RECICLAR?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.5",
+        "question": "M\u00c1QUINAS, FERRAMENTAS E INSTALA\u00c7\u00d5ES EST\u00c3O SENDO UTILIZADAS CORRETAMENTE?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.6",
+        "question": "H\u00c1 SEPARA\u00c7\u00c3O CORRETA DE RES\u00cdDUOS?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.1",
+        "question": "LOCALIZA\u00c7\u00c3O DA \u00c1REA EST\u00c1 IDENTIFICADA CLARAMENTE (NOME COM PLACAS E/OU SETAS INDICATIVAS)?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.2",
+        "question": "A DISPOSI\u00c7\u00c3O ATUAL DO PR\u00c9DIO, M\u00c1QUINA OU EQUIPAMENTO PROPICIA ACIDENTES?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.3",
+        "question": "ARM\u00c1RIOS, PRATELEIRAS, ARQUIVOS, PORTAS E GAVETAS EST\u00c3O IDENTIFICADOS?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.4",
+        "question": "OS DOCUMENTOS DIGITAIS EST\u00c3O ORGANIZADOS EM PASTAS E SUBPASTAS, DE MODO L\u00d3GICO E CLARO?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.5",
+        "question": "EXISTE C\u00d3PIA DIGITAL (BACKUP) DOS ARQUIVOS (VER A EVID\u00caNCIA)?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.6",
+        "question": "H\u00c1 LOCAL PR\u00d3PRIO PARA FERRAMENTAS E EQUIPAMENTOS?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.1",
+        "question": "O PISO, AS PAREDES, AS JANELAS E O TETO EST\u00c3O LIMPOS E BEM APRESENT\u00c1VEIS?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.2",
+        "question": "AS L\u00c2MPADAS E TOMADAS EST\u00c3O CONSERVADAS (EXISTEM FIOS EXPOSTOS, PENDURADOS OU SOLTOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.3",
+        "question": "O SISTEMA DE VENTILA\u00c7\u00c3O EST\u00c1 LIMPO E FUNCIONANDO?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.4",
+        "question": "OS SANIT\u00c1RIOS EST\u00c3O LIMPOS, CONSERVADOS (COM PAP\u00c9IS E ACESS\u00d3RIOS APROPRIADOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.5",
+        "question": "AS PESSOAS EST\u00c3O CONSCIENTIZADAS DAS BOAS PR\u00c1TICAS DE LIMPEZA DO AMBIENTE?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.1",
+        "question": "A \u00c1REA EST\u00c1 PADRONIZADA COM ETIQUETAS DE IDENTIFICA\u00c7\u00c3O OU PLACAS PADR\u00c3O?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.2",
+        "question": "O AMBIENTE F\u00cdSICO DE TRABALHO \u00c9 FAVOR\u00c1VEL \u00c0 HIGIENE/SA\u00daDE, SEM CONTAMINA\u00c7\u00c3O DE P\u00d3?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.3",
+        "question": "OS PROCEDIMENTOS, FORMUL\u00c1RIOS E REGISTROS EST\u00c3O PADRONIZADOS?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.4",
+        "question": "A ILUMINA\u00c7\u00c3O DO AMBIENTE \u00c9 APROPRIADA E SUFICIENTE?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.5",
+        "question": "AS PESSOAS DAS \u00c1REAS EST\u00c3O CONSCIENTIZADAS (CONHECEM) DOS PADR\u00d5ES EXISTENTES?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.6",
+        "question": "O EXTINTOR E OUTRAS FERRAMENTAS S\u00c3O LOCALIZ\u00c1VEIS?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.1",
+        "question": "OS FUNCION\u00c1RIOS DEMONSTRAM INTERESSE NAS ATIVIDADES 5S?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.2",
+        "question": "CARTAZES E LEMBRETES EST\u00c3O EXIBIDOS NO AMBIENTE DE TRABALHO?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.3",
+        "question": "OS TREINAMENTOS E OUTRAS PROGRAMA\u00c7\u00d5ES S\u00c3O IMPLEMENTADOS PARA SUSTENTAR A ORGANIZA\u00c7\u00c3O DO TRABALHO?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.4",
+        "question": "OS PROCEDIMENTOS DE SEGURAN\u00c7A S\u00c3O SEGUIDOS?"
+      }
+    ]
+  },
+  "PCP": {
+    "items": [
+      {
+        "categoryCode": "1S",
+        "number": "1.1",
+        "question": "EXISTEM ITENS A SEREM DESCARTADOS (OBSOLETOS OU INSERV\u00cdVEIS: PASTAS, PAP\u00c9IS, QUADROS, ETC.)?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.2",
+        "question": "EXISTE MATERIAL N\u00c3O PERTINENTE (QUE N\u00c3O PERTENCE) NO AMBIENTE?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.3",
+        "question": "EXISTE LOCAL APROPRIADO PARA DESCARTE DE LIXO, MATERIAL OBSOLETO OU PARA RECICLAR?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.4",
+        "question": "EXISTEM OBJETOS PESSOAIS NO SETOR, SOBRE ARM\u00c1RIOS OU SOBRE EQUIPAMENTOS?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.1",
+        "question": "LOCALIZA\u00c7\u00c3O DA \u00c1REA EST\u00c1 IDENTIFICADA CLARAMENTE (NOME COM PLACAS E/OU SETAS INDICATIVAS)?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.2",
+        "question": "A DISPOSI\u00c7\u00c3O ATUAL DO MOBILI\u00c1RIO PROPICIA ACIDENTES?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.3",
+        "question": "ARM\u00c1RIOS, PRATELEIRAS, ARQUIVOS, PORTAS E GAVETAS EST\u00c3O IDENTIFICADOS (E DENTRO DOS MESMOS)?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.4",
+        "question": "OS DOCUMENTOS DIGITAIS EST\u00c3O ORGANIZADOS EM PASTAS E SUBPASTAS, DE MODO L\u00d3GICO E CLARO?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.5",
+        "question": "EXISTE C\u00d3PIA DIGITAL (BACKUP) DOS ARQUIVOS (VER A EVID\u00caNCIA)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.1",
+        "question": "O PISO, AS PAREDES, AS JANELAS E O TETO EST\u00c3O LIMPOS E BEM APRESENT\u00c1VEIS (SEM PAP\u00c9IS COLADOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.2",
+        "question": "AS L\u00c2MPADAS E TOMADAS EST\u00c3O CONSERVADAS (FIOS EXPOSTOS, PENDURADOS OU SOLTOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.3",
+        "question": "\u00c9 REALIZADA A MANUTEN\u00c7\u00c3O PERI\u00d3DICA DO AR-CONDICIONADO E SEUS FILTROS?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.4",
+        "question": "OS SANIT\u00c1RIOS EST\u00c3O LIMPOS, CONSERVADOS (COM PAP\u00c9IS E ACESS\u00d3RIOS APROPRIADOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.5",
+        "question": "AS PESSOAS EST\u00c3O CONSCIENTIZADAS DAS BOAS PR\u00c1TICAS DE LIMPEZA DO AMBIENTE?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.1",
+        "question": "O AMBIENTE (SALA/\u00c1REA) EST\u00c1 PADRONIZADO COM ETIQUETAS E PLACAS-PADR\u00c3O?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.2",
+        "question": "O AMBIENTE F\u00cdSICO DE TRABALHO \u00c9 FAVOR\u00c1VEL \u00c0 HIGIENE/SA\u00daDE, SEM CONTAMINA\u00c7\u00c3O DE P\u00d3?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.3",
+        "question": "OS PROCEDIMENTOS E FORMUL\u00c1RIOS/REGISTROS EST\u00c3O PADRONIZADOS?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.4",
+        "question": "AS PESSOAS DAS \u00c1REAS EST\u00c3O CONSCIENTIZADAS (CONHECEM) DOS PADR\u00d5ES EXISTENTES?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.1",
+        "question": "OS FUNCION\u00c1RIOS DEMONSTRAM INTERESSE NAS ATIVIDADES 5S?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.2",
+        "question": "CARTAZES E LEMBRETES EST\u00c3O EXIBIDOS NO AMBIENTE DE TRABALHO?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.3",
+        "question": "OS TREINAMENTOS E OUTRAS PROGRAMA\u00c7\u00d5ES S\u00c3O IMPLEMENTADOS PARA SUSTENTAR A ORGANIZA\u00c7\u00c3O DO TRABALHO?"
+      }
+    ]
+  },
+  "Pintura": {
+    "items": [
+      {
+        "categoryCode": "1S",
+        "number": "1.1",
+        "question": "EXISTEM MATERIAIS A SEREM DESCARTADOS (OBSOLETOS OU INUTILIZ\u00c1VEIS)?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.2",
+        "question": "EXISTEM OBJETOS PESSOAIS NO SETOR, SOBRE ARM\u00c1RIOS OU SOBRE EQUIPAMENTOS?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.3",
+        "question": "EXISTE MATERIAL QUE N\u00c3O PERTENCE AO AMBIENTE?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.4",
+        "question": "EXISTE LOCAL APROPRIADO PARA DESCARTE DE LIXO, MATERIAL OBSOLETO OU PARA RECICLAR?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.5",
+        "question": "M\u00c1QUINAS, FERRAMENTAS E INSTALA\u00c7\u00d5ES EST\u00c3O SENDO UTILIZADAS CORRETAMENTE?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.6",
+        "question": "H\u00c1 SEPARA\u00c7\u00c3O CORRETA DE RES\u00cdDUOS?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.1",
+        "question": "LOCALIZA\u00c7\u00c3O DA \u00c1REA EST\u00c1 IDENTIFICADA CLARAMENTE (NOME COM PLACAS E/OU SETAS INDICATIVAS)?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.2",
+        "question": "A DISPOSI\u00c7\u00c3O ATUAL DO PR\u00c9DIO, M\u00c1QUINA OU EQUIPAMENTO PROPICIA ACIDENTES?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.3",
+        "question": "ARM\u00c1RIOS, PRATELEIRAS, ARQUIVOS, PORTAS E GAVETAS EST\u00c3O IDENTIFICADOS?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.4",
+        "question": "H\u00c1 LOCAL PR\u00d3PRIO PARA FERRAMENTAS E EQUIPAMENTOS?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.1",
+        "question": "O PISO, AS PAREDES, AS JANELAS E O TETO EST\u00c3O LIMPOS E BEM APRESENT\u00c1VEIS?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.2",
+        "question": "AS L\u00c2MPADAS E TOMADAS EST\u00c3O CONSERVADAS (EXISTEM FIOS EXPOSTOS, PENDURADOS OU SOLTOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.3",
+        "question": "O SISTEMA DE VENTILA\u00c7\u00c3O EST\u00c1 LIMPO E FUNCIONANDO?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.4",
+        "question": "OS SANIT\u00c1RIOS EST\u00c3O LIMPOS, CONSERVADOS (COM PAP\u00c9IS E ACESS\u00d3RIOS APROPRIADOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.5",
+        "question": "AS PESSOAS EST\u00c3O CONSCIENTIZADAS DAS BOAS PR\u00c1TICAS DE LIMPEZA DO AMBIENTE?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.1",
+        "question": "A \u00c1REA EST\u00c1 PADRONIZADA COM ETIQUETAS DE IDENTIFICA\u00c7\u00c3O OU PLACAS PADR\u00c3O?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.2",
+        "question": "O AMBIENTE F\u00cdSICO DE TRABALHO \u00c9 FAVOR\u00c1VEL \u00c0 HIGIENE/SA\u00daDE, SEM CONTAMINA\u00c7\u00c3O DE P\u00d3?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.3",
+        "question": "OS PROCEDIMENTOS, FORMUL\u00c1RIOS E REGISTROS EST\u00c3O PADRONIZADOS?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.4",
+        "question": "A ILUMINA\u00c7\u00c3O DO AMBIENTE \u00c9 APROPRIADA E SUFICIENTE?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.5",
+        "question": "AS PESSOAS DAS \u00c1REAS EST\u00c3O CONSCIENTIZADAS (CONHECEM) DOS PADR\u00d5ES EXISTENTES?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.6",
+        "question": "O EXTINTOR E OUTRAS FERRAMENTAS S\u00c3O LOCALIZ\u00c1VEIS?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.1",
+        "question": "OS FUNCION\u00c1RIOS DEMONSTRAM INTERESSE NAS ATIVIDADES 5S?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.2",
+        "question": "CARTAZES E LEMBRETES EST\u00c3O EXIBIDOS NO AMBIENTE DE TRABALHO?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.3",
+        "question": "OS TREINAMENTOS E OUTRAS PROGRAMA\u00c7\u00d5ES S\u00c3O IMPLEMENTADOS PARA SUSTENTAR A ORGANIZA\u00c7\u00c3O DO TRABALHO?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.4",
+        "question": "OS PROCEDIMENTOS DE SEGURAN\u00c7A S\u00c3O SEGUIDOS?"
+      }
+    ]
+  },
+  "QA": {
+    "items": [
+      {
+        "categoryCode": "1S",
+        "number": "1.1",
+        "question": "EXISTEM ITENS A SEREM DESCARTADOS (OBSOLETOS OU INSERV\u00cdVEIS: PASTAS, PAP\u00c9IS, QUADROS, ETC.)?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.2",
+        "question": "EXISTE MATERIAL N\u00c3O PERTINENTE (QUE N\u00c3O PERTENCE) NO AMBIENTE?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.3",
+        "question": "EXISTE LOCAL APROPRIADO PARA DESCARTE DE LIXO, MATERIAL OBSOLETO OU PARA RECICLAR?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.4",
+        "question": "EXISTEM OBJETOS PESSOAIS NO SETOR, SOBRE ARM\u00c1RIOS OU SOBRE EQUIPAMENTOS?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.1",
+        "question": "LOCALIZA\u00c7\u00c3O DA \u00c1REA EST\u00c1 IDENTIFICADA CLARAMENTE (NOME COM PLACAS E/OU SETAS INDICATIVAS)?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.2",
+        "question": "A DISPOSI\u00c7\u00c3O ATUAL DO MOBILI\u00c1RIO PROPICIA ACIDENTES?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.3",
+        "question": "ARM\u00c1RIOS, PRATELEIRAS, ARQUIVOS, PORTAS E GAVETAS EST\u00c3O IDENTIFICADOS (E DENTRO DOS MESMOS)?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.4",
+        "question": "OS DOCUMENTOS DIGITAIS EST\u00c3O ORGANIZADOS EM PASTAS E SUBPASTAS, DE MODO L\u00d3GICO E CLARO?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.5",
+        "question": "EXISTE C\u00d3PIA DIGITAL (BACKUP) DOS ARQUIVOS (VER A EVID\u00caNCIA)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.1",
+        "question": "O PISO, AS PAREDES, AS JANELAS E O TETO EST\u00c3O LIMPOS E BEM APRESENT\u00c1VEIS (SEM PAP\u00c9IS COLADOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.2",
+        "question": "AS L\u00c2MPADAS E TOMADAS EST\u00c3O CONSERVADAS (FIOS EXPOSTOS, PENDURADOS OU SOLTOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.3",
+        "question": "\u00c9 REALIZADA A MANUTEN\u00c7\u00c3O PERI\u00d3DICA DO AR-CONDICIONADO E SEUS FILTROS?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.4",
+        "question": "OS SANIT\u00c1RIOS EST\u00c3O LIMPOS, CONSERVADOS (COM PAP\u00c9IS E ACESS\u00d3RIOS APROPRIADOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.5",
+        "question": "AS PESSOAS EST\u00c3O CONSCIENTIZADAS DAS BOAS PR\u00c1TICAS DE LIMPEZA DO AMBIENTE?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.1",
+        "question": "O AMBIENTE (SALA/\u00c1REA) EST\u00c1 PADRONIZADO COM ETIQUETAS E PLACAS-PADR\u00c3O?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.2",
+        "question": "O AMBIENTE F\u00cdSICO DE TRABALHO \u00c9 FAVOR\u00c1VEL \u00c0 HIGIENE/SA\u00daDE, SEM CONTAMINA\u00c7\u00c3O DE P\u00d3?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.3",
+        "question": "OS PROCEDIMENTOS E FORMUL\u00c1RIOS/REGISTROS EST\u00c3O PADRONIZADOS?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.4",
+        "question": "AS PESSOAS DAS \u00c1REAS EST\u00c3O CONSCIENTIZADAS (CONHECEM) DOS PADR\u00d5ES EXISTENTES?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.1",
+        "question": "OS FUNCION\u00c1RIOS DEMONSTRAM INTERESSE NAS ATIVIDADES 5S?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.2",
+        "question": "CARTAZES E LEMBRETES EST\u00c3O EXIBIDOS NO AMBIENTE DE TRABALHO?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.3",
+        "question": "OS TREINAMENTOS E OUTRAS PROGRAMA\u00c7\u00d5ES S\u00c3O IMPLEMENTADOS PARA SUSTENTAR A ORGANIZA\u00c7\u00c3O DO TRABALHO?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.4",
+        "question": "EXISTEM INDICADORES? EST\u00c3O ATUALIZADOS?"
+      }
+    ]
+  },
+  "RH": {
+    "items": [
+      {
+        "categoryCode": "1S",
+        "number": "1.1",
+        "question": "EXISTEM ITENS A SEREM DESCARTADOS (OBSOLETOS OU INSERV\u00cdVEIS: PASTAS, PAP\u00c9IS, QUADROS, ETC.)?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.2",
+        "question": "EXISTE MATERIAL N\u00c3O PERTINENTE (QUE N\u00c3O PERTENCE) NO AMBIENTE?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.3",
+        "question": "EXISTE LOCAL APROPRIADO PARA DESCARTE DE LIXO, MATERIAL OBSOLETO OU PARA RECICLAR?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.4",
+        "question": "EXISTEM OBJETOS PESSOAIS NO SETOR, SOBRE ARM\u00c1RIOS OU SOBRE EQUIPAMENTOS?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.1",
+        "question": "LOCALIZA\u00c7\u00c3O DA \u00c1REA EST\u00c1 IDENTIFICADA CLARAMENTE (NOME COM PLACAS E/OU SETAS INDICATIVAS)?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.2",
+        "question": "A DISPOSI\u00c7\u00c3O ATUAL DO MOBILI\u00c1RIO PROPICIA ACIDENTES?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.3",
+        "question": "ARM\u00c1RIOS, PRATELEIRAS, ARQUIVOS, PORTAS E GAVETAS EST\u00c3O IDENTIFICADOS (E DENTRO DOS MESMOS)?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.4",
+        "question": "OS DOCUMENTOS DIGITAIS EST\u00c3O ORGANIZADOS EM PASTAS E SUBPASTAS, DE MODO L\u00d3GICO E CLARO?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.5",
+        "question": "EXISTE C\u00d3PIA DIGITAL (BACKUP) DOS ARQUIVOS (VER A EVID\u00caNCIA)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.1",
+        "question": "O PISO, AS PAREDES, AS JANELAS E O TETO EST\u00c3O LIMPOS E BEM APRESENT\u00c1VEIS (SEM PAP\u00c9IS COLADOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.2",
+        "question": "AS L\u00c2MPADAS E TOMADAS EST\u00c3O CONSERVADAS (FIOS EXPOSTOS, PENDURADOS OU SOLTOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.3",
+        "question": "\u00c9 REALIZADA A MANUTEN\u00c7\u00c3O PERI\u00d3DICA DO AR-CONDICIONADO E SEUS FILTROS?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.4",
+        "question": "OS SANIT\u00c1RIOS EST\u00c3O LIMPOS, CONSERVADOS (COM PAP\u00c9IS E ACESS\u00d3RIOS APROPRIADOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.5",
+        "question": "AS PESSOAS EST\u00c3O CONSCIENTIZADAS DAS BOAS PR\u00c1TICAS DE LIMPEZA DO AMBIENTE?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.1",
+        "question": "O AMBIENTE (SALA/\u00c1REA) EST\u00c1 PADRONIZADO COM ETIQUETAS E PLACAS-PADR\u00c3O?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.2",
+        "question": "O AMBIENTE F\u00cdSICO DE TRABALHO \u00c9 FAVOR\u00c1VEL \u00c0 HIGIENE/SA\u00daDE, SEM CONTAMINA\u00c7\u00c3O DE P\u00d3?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.3",
+        "question": "OS PROCEDIMENTOS E FORMUL\u00c1RIOS/REGISTROS EST\u00c3O PADRONIZADOS?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.4",
+        "question": "AS PESSOAS DAS \u00c1REAS EST\u00c3O CONSCIENTIZADAS (CONHECEM) DOS PADR\u00d5ES EXISTENTES?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.1",
+        "question": "OS FUNCION\u00c1RIOS DEMONSTRAM INTERESSE NAS ATIVIDADES 5S?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.2",
+        "question": "CARTAZES E LEMBRETES EST\u00c3O EXIBIDOS NO AMBIENTE DE TRABALHO?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.3",
+        "question": "OS TREINAMENTOS E OUTRAS PROGRAMA\u00c7\u00d5ES S\u00c3O IMPLEMENTADOS PARA SUSTENTAR A ORGANIZA\u00c7\u00c3O DO TRABALHO?"
+      }
+    ]
+  },
+  "Recebimento": {
+    "items": [
+      {
+        "categoryCode": "1S",
+        "number": "1.1",
+        "question": "EXISTEM MATERIAIS A SEREM DESCARTADOS (OBSOLETOS OU INUTILIZ\u00c1VEIS)?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.2",
+        "question": "EXISTEM OBJETOS PESSOAIS NO SETOR, SOBRE ARM\u00c1RIOS OU SOBRE EQUIPAMENTOS?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.3",
+        "question": "EXISTE MATERIAL QUE N\u00c3O PERTENCE AO AMBIENTE?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.4",
+        "question": "EXISTE LOCAL APROPRIADO PARA DESCARTE DE LIXO, MATERIAL OBSOLETO OU PARA RECICLAR?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.5",
+        "question": "M\u00c1QUINAS, FERRAMENTAS E INSTALA\u00c7\u00d5ES EST\u00c3O SENDO UTILIZADAS CORRETAMENTE?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.6",
+        "question": "H\u00c1 SEPARA\u00c7\u00c3O CORRETA DE RES\u00cdDUOS?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.1",
+        "question": "LOCALIZA\u00c7\u00c3O DA \u00c1REA EST\u00c1 IDENTIFICADA CLARAMENTE (NOME COM PLACAS E/OU SETAS INDICATIVAS)?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.2",
+        "question": "A DISPOSI\u00c7\u00c3O ATUAL DO PR\u00c9DIO, M\u00c1QUINA OU EQUIPAMENTO PROPICIA ACIDENTES?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.3",
+        "question": "ARM\u00c1RIOS, PRATELEIRAS, ARQUIVOS, PORTAS E GAVETAS EST\u00c3O IDENTIFICADOS?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.4",
+        "question": "OS DOCUMENTOS DIGITAIS EST\u00c3O ORGANIZADOS EM PASTAS E SUBPASTAS, DE MODO L\u00d3GICO E CLARO?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.5",
+        "question": "EXISTE C\u00d3PIA DIGITAL (BACKUP) DOS ARQUIVOS (VER A EVID\u00caNCIA)?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.6",
+        "question": "H\u00c1 LOCAL PR\u00d3PRIO PARA FERRAMENTAS E EQUIPAMENTOS?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.1",
+        "question": "O PISO, AS PAREDES, AS JANELAS E O TETO EST\u00c3O LIMPOS E BEM APRESENT\u00c1VEIS?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.2",
+        "question": "AS L\u00c2MPADAS E TOMADAS EST\u00c3O CONSERVADAS (EXISTEM FIOS EXPOSTOS, PENDURADOS OU SOLTOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.3",
+        "question": "O SISTEMA DE VENTILA\u00c7\u00c3O EST\u00c1 LIMPO E FUNCIONANDO?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.4",
+        "question": "OS SANIT\u00c1RIOS EST\u00c3O LIMPOS, CONSERVADOS (COM PAP\u00c9IS E ACESS\u00d3RIOS APROPRIADOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.5",
+        "question": "AS PESSOAS EST\u00c3O CONSCIENTIZADAS DAS BOAS PR\u00c1TICAS DE LIMPEZA DO AMBIENTE?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.1",
+        "question": "A \u00c1REA EST\u00c1 PADRONIZADA COM ETIQUETAS DE IDENTIFICA\u00c7\u00c3O OU PLACAS PADR\u00c3O?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.2",
+        "question": "O AMBIENTE F\u00cdSICO DE TRABALHO \u00c9 FAVOR\u00c1VEL \u00c0 HIGIENE/SA\u00daDE, SEM CONTAMINA\u00c7\u00c3O DE P\u00d3?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.3",
+        "question": "OS PROCEDIMENTOS, FORMUL\u00c1RIOS E REGISTROS EST\u00c3O PADRONIZADOS?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.4",
+        "question": "A ILUMINA\u00c7\u00c3O DO AMBIENTE \u00c9 APROPRIADA E SUFICIENTE?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.5",
+        "question": "AS PESSOAS DAS \u00c1REAS EST\u00c3O CONSCIENTIZADAS (CONHECEM) DOS PADR\u00d5ES EXISTENTES?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.6",
+        "question": "O EXTINTOR E OUTRAS FERRAMENTAS S\u00c3O LOCALIZ\u00c1VEIS?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.1",
+        "question": "OS FUNCION\u00c1RIOS DEMONSTRAM INTERESSE NAS ATIVIDADES 5S?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.2",
+        "question": "CARTAZES E LEMBRETES EST\u00c3O EXIBIDOS NO AMBIENTE DE TRABALHO?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.3",
+        "question": "OS TREINAMENTOS E OUTRAS PROGRAMA\u00c7\u00d5ES S\u00c3O IMPLEMENTADOS PARA SUSTENTAR A ORGANIZA\u00c7\u00c3O DO TRABALHO?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.4",
+        "question": "OS PROCEDIMENTOS DE SEGURAN\u00c7A S\u00c3O SEGUIDOS?"
+      }
+    ]
+  },
+  "Repuxo": {
+    "items": [
+      {
+        "categoryCode": "1S",
+        "number": "1.1",
+        "question": "EXISTEM MATERIAIS A SEREM DESCARTADOS (OBSOLETOS OU INUTILIZ\u00c1VEIS)?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.2",
+        "question": "EXISTEM OBJETOS PESSOAIS NO SETOR, SOBRE ARM\u00c1RIOS OU SOBRE EQUIPAMENTOS?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.3",
+        "question": "EXISTE MATERIAL QUE N\u00c3O PERTENCE AO AMBIENTE?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.4",
+        "question": "EXISTE LOCAL APROPRIADO PARA DESCARTE DE LIXO, MATERIAL OBSOLETO OU PARA RECICLAR?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.5",
+        "question": "M\u00c1QUINAS, FERRAMENTAS E INSTALA\u00c7\u00d5ES EST\u00c3O SENDO UTILIZADAS CORRETAMENTE?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.6",
+        "question": "H\u00c1 SEPARA\u00c7\u00c3O CORRETA DE RES\u00cdDUOS?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.1",
+        "question": "LOCALIZA\u00c7\u00c3O DA \u00c1REA EST\u00c1 IDENTIFICADA CLARAMENTE (NOME COM PLACAS E/OU SETAS INDICATIVAS)?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.2",
+        "question": "A DISPOSI\u00c7\u00c3O ATUAL DO PR\u00c9DIO, M\u00c1QUINA OU EQUIPAMENTO PROPICIA ACIDENTES?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.3",
+        "question": "ARM\u00c1RIOS, PRATELEIRAS, ARQUIVOS, PORTAS E GAVETAS EST\u00c3O IDENTIFICADOS?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.4",
+        "question": "H\u00c1 LOCAL PR\u00d3PRIO PARA FERRAMENTAS E EQUIPAMENTOS?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.1",
+        "question": "O PISO, AS PAREDES, AS JANELAS E O TETO EST\u00c3O LIMPOS E BEM APRESENT\u00c1VEIS?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.2",
+        "question": "AS L\u00c2MPADAS E TOMADAS EST\u00c3O CONSERVADAS (EXISTEM FIOS EXPOSTOS, PENDURADOS OU SOLTOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.3",
+        "question": "O SISTEMA DE VENTILA\u00c7\u00c3O EST\u00c1 LIMPO E FUNCIONANDO?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.4",
+        "question": "OS SANIT\u00c1RIOS EST\u00c3O LIMPOS, CONSERVADOS (COM PAP\u00c9IS E ACESS\u00d3RIOS APROPRIADOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.5",
+        "question": "AS PESSOAS EST\u00c3O CONSCIENTIZADAS DAS BOAS PR\u00c1TICAS DE LIMPEZA DO AMBIENTE?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.1",
+        "question": "A \u00c1REA EST\u00c1 PADRONIZADA COM ETIQUETAS DE IDENTIFICA\u00c7\u00c3O OU PLACAS PADR\u00c3O?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.2",
+        "question": "O AMBIENTE F\u00cdSICO DE TRABALHO \u00c9 FAVOR\u00c1VEL \u00c0 HIGIENE/SA\u00daDE, SEM CONTAMINA\u00c7\u00c3O DE P\u00d3?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.3",
+        "question": "OS PROCEDIMENTOS, FORMUL\u00c1RIOS E REGISTROS EST\u00c3O PADRONIZADOS?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.4",
+        "question": "A ILUMINA\u00c7\u00c3O DO AMBIENTE \u00c9 APROPRIADA E SUFICIENTE?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.5",
+        "question": "AS PESSOAS DAS \u00c1REAS EST\u00c3O CONSCIENTIZADAS (CONHECEM) DOS PADR\u00d5ES EXISTENTES?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.6",
+        "question": "O EXTINTOR E OUTRAS FERRAMENTAS S\u00c3O LOCALIZ\u00c1VEIS?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.1",
+        "question": "OS FUNCION\u00c1RIOS DEMONSTRAM INTERESSE NAS ATIVIDADES 5S?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.2",
+        "question": "CARTAZES E LEMBRETES EST\u00c3O EXIBIDOS NO AMBIENTE DE TRABALHO?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.3",
+        "question": "OS TREINAMENTOS E OUTRAS PROGRAMA\u00c7\u00d5ES S\u00c3O IMPLEMENTADOS PARA SUSTENTAR A ORGANIZA\u00c7\u00c3O DO TRABALHO?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.4",
+        "question": "OS PROCEDIMENTOS DE SEGURAN\u00c7A S\u00c3O SEGUIDOS?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.5",
+        "question": "EXISTEM INDICADORES? EST\u00c3O ATUALIZADOS?"
+      }
+    ]
+  },
+  "Res\u00edduos": {
+    "items": [
+      {
+        "categoryCode": "1S",
+        "number": "1.1",
+        "question": "EXISTEM MATERIAIS A SEREM DESCARTADOS (OBSOLETOS OU INUTILIZ\u00c1VEIS)?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.2",
+        "question": "EXISTEM OBJETOS PESSOAIS NO SETOR, SOBRE ARM\u00c1RIOS OU SOBRE EQUIPAMENTOS?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.3",
+        "question": "EXISTE MATERIAL QUE N\u00c3O PERTENCE AO AMBIENTE?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.4",
+        "question": "EXISTE LOCAL APROPRIADO PARA DESCARTE DE LIXO, MATERIAL OBSOLETO OU PARA RECICLAR?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.5",
+        "question": "M\u00c1QUINAS, FERRAMENTAS E INSTALA\u00c7\u00d5ES EST\u00c3O SENDO UTILIZADAS CORRETAMENTE?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.6",
+        "question": "H\u00c1 SEPARA\u00c7\u00c3O CORRETA DE RES\u00cdDUOS?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.1",
+        "question": "LOCALIZA\u00c7\u00c3O DA \u00c1REA EST\u00c1 IDENTIFICADA CLARAMENTE (NOME COM PLACAS E/OU SETAS INDICATIVAS)?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.2",
+        "question": "A DISPOSI\u00c7\u00c3O ATUAL DO PR\u00c9DIO, M\u00c1QUINA OU EQUIPAMENTO PROPICIA ACIDENTES?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.3",
+        "question": "ARM\u00c1RIOS, PRATELEIRAS, ARQUIVOS, PORTAS E GAVETAS EST\u00c3O IDENTIFICADOS?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.4",
+        "question": "H\u00c1 LOCAL PR\u00d3PRIO PARA FERRAMENTAS E EQUIPAMENTOS?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.1",
+        "question": "O PISO, AS PAREDES, AS JANELAS E O TETO EST\u00c3O LIMPOS E BEM APRESENT\u00c1VEIS?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.2",
+        "question": "AS L\u00c2MPADAS E TOMADAS EST\u00c3O CONSERVADAS (EXISTEM FIOS EXPOSTOS, PENDURADOS OU SOLTOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.3",
+        "question": "OS SANIT\u00c1RIOS EST\u00c3O LIMPOS, CONSERVADOS (COM PAP\u00c9IS E ACESS\u00d3RIOS APROPRIADOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.4",
+        "question": "AS PESSOAS EST\u00c3O CONSCIENTIZADAS DAS BOAS PR\u00c1TICAS DE LIMPEZA DO AMBIENTE?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.1",
+        "question": "A \u00c1REA EST\u00c1 PADRONIZADA COM ETIQUETAS DE IDENTIFICA\u00c7\u00c3O OU PLACAS PADR\u00c3O?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.2",
+        "question": "O AMBIENTE F\u00cdSICO DE TRABALHO \u00c9 FAVOR\u00c1VEL \u00c0 HIGIENE/SA\u00daDE, SEM CONTAMINA\u00c7\u00c3O DE P\u00d3?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.3",
+        "question": "OS PROCEDIMENTOS, FORMUL\u00c1RIOS E REGISTROS EST\u00c3O PADRONIZADOS?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.4",
+        "question": "A ILUMINA\u00c7\u00c3O DO AMBIENTE \u00c9 APROPRIADA E SUFICIENTE?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.5",
+        "question": "AS PESSOAS DAS \u00c1REAS EST\u00c3O CONSCIENTIZADAS (CONHECEM) DOS PADR\u00d5ES EXISTENTES?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.6",
+        "question": "O EXTINTOR E OUTRAS FERRAMENTAS S\u00c3O LOCALIZ\u00c1VEIS?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.1",
+        "question": "OS FUNCION\u00c1RIOS DEMONSTRAM INTERESSE NAS ATIVIDADES 5S?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.2",
+        "question": "CARTAZES E LEMBRETES EST\u00c3O EXIBIDOS NO AMBIENTE DE TRABALHO?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.3",
+        "question": "OS TREINAMENTOS E OUTRAS PROGRAMA\u00c7\u00d5ES S\u00c3O IMPLEMENTADOS PARA SUSTENTAR A ORGANIZA\u00c7\u00c3O DO TRABALHO?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.4",
+        "question": "OS PROCEDIMENTOS DE SEGURAN\u00c7A S\u00c3O SEGUIDOS?"
+      }
+    ]
+  },
+  "SST": {
+    "items": [
+      {
+        "categoryCode": "1S",
+        "number": "1.1",
+        "question": "EXISTEM ITENS A SEREM DESCARTADOS (OBSOLETOS OU INSERV\u00cdVEIS: PASTAS, PAP\u00c9IS, QUADROS, ETC.)?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.2",
+        "question": "EXISTE MATERIAL N\u00c3O PERTINENTE (QUE N\u00c3O PERTENCE) NO AMBIENTE?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.3",
+        "question": "EXISTE LOCAL APROPRIADO PARA DESCARTE DE LIXO, MATERIAL OBSOLETO OU PARA RECICLAR?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.4",
+        "question": "EXISTEM OBJETOS PESSOAIS NO SETOR, SOBRE ARM\u00c1RIOS OU SOBRE EQUIPAMENTOS?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.1",
+        "question": "LOCALIZA\u00c7\u00c3O DA \u00c1REA EST\u00c1 IDENTIFICADA CLARAMENTE (NOME COM PLACAS E/OU SETAS INDICATIVAS)?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.2",
+        "question": "A DISPOSI\u00c7\u00c3O ATUAL DO MOBILI\u00c1RIO PROPICIA ACIDENTES?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.3",
+        "question": "ARM\u00c1RIOS, PRATELEIRAS, ARQUIVOS, PORTAS E GAVETAS EST\u00c3O IDENTIFICADOS (E DENTRO DOS MESMOS)?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.4",
+        "question": "OS DOCUMENTOS DIGITAIS EST\u00c3O ORGANIZADOS EM PASTAS E SUBPASTAS, DE MODO L\u00d3GICO E CLARO?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.5",
+        "question": "EXISTE C\u00d3PIA DIGITAL (BACKUP) DOS ARQUIVOS (VER A EVID\u00caNCIA)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.1",
+        "question": "O PISO, AS PAREDES, AS JANELAS E O TETO EST\u00c3O LIMPOS E BEM APRESENT\u00c1VEIS (SEM PAP\u00c9IS COLADOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.2",
+        "question": "AS L\u00c2MPADAS E TOMADAS EST\u00c3O CONSERVADAS (FIOS EXPOSTOS, PENDURADOS OU SOLTOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.3",
+        "question": "\u00c9 REALIZADA A MANUTEN\u00c7\u00c3O PERI\u00d3DICA DO AR-CONDICIONADO E SEUS FILTROS?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.4",
+        "question": "OS SANIT\u00c1RIOS EST\u00c3O LIMPOS, CONSERVADOS (COM PAP\u00c9IS E ACESS\u00d3RIOS APROPRIADOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.5",
+        "question": "AS PESSOAS EST\u00c3O CONSCIENTIZADAS DAS BOAS PR\u00c1TICAS DE LIMPEZA DO AMBIENTE?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.1",
+        "question": "O AMBIENTE (SALA/\u00c1REA) EST\u00c1 PADRONIZADO COM ETIQUETAS E PLACAS-PADR\u00c3O?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.2",
+        "question": "O AMBIENTE F\u00cdSICO DE TRABALHO \u00c9 FAVOR\u00c1VEL \u00c0 HIGIENE/SA\u00daDE, SEM CONTAMINA\u00c7\u00c3O DE P\u00d3?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.3",
+        "question": "OS PROCEDIMENTOS E FORMUL\u00c1RIOS/REGISTROS EST\u00c3O PADRONIZADOS?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.4",
+        "question": "AS PESSOAS DAS \u00c1REAS EST\u00c3O CONSCIENTIZADAS (CONHECEM) DOS PADR\u00d5ES EXISTENTES?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.1",
+        "question": "OS FUNCION\u00c1RIOS DEMONSTRAM INTERESSE NAS ATIVIDADES 5S?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.2",
+        "question": "CARTAZES E LEMBRETES EST\u00c3O EXIBIDOS NO AMBIENTE DE TRABALHO?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.3",
+        "question": "OS TREINAMENTOS E OUTRAS PROGRAMA\u00c7\u00d5ES S\u00c3O IMPLEMENTADOS PARA SUSTENTAR A ORGANIZA\u00c7\u00c3O DO TRABALHO?"
+      }
+    ]
+  },
+  "Serralheria": {
+    "items": [
+      {
+        "categoryCode": "1S",
+        "number": "1.1",
+        "question": "EXISTEM MATERIAIS A SEREM DESCARTADOS (OBSOLETOS OU INUTILIZ\u00c1VEIS)?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.2",
+        "question": "EXISTEM OBJETOS PESSOAIS NO SETOR, SOBRE ARM\u00c1RIOS OU SOBRE EQUIPAMENTOS?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.3",
+        "question": "EXISTE MATERIAL QUE N\u00c3O PERTENCE AO AMBIENTE?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.4",
+        "question": "EXISTE LOCAL APROPRIADO PARA DESCARTE DE LIXO, MATERIAL OBSOLETO OU PARA RECICLAR?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.5",
+        "question": "M\u00c1QUINAS, FERRAMENTAS E INSTALA\u00c7\u00d5ES EST\u00c3O SENDO UTILIZADAS CORRETAMENTE?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.6",
+        "question": "H\u00c1 SEPARA\u00c7\u00c3O CORRETA DE RES\u00cdDUOS?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.1",
+        "question": "LOCALIZA\u00c7\u00c3O DA \u00c1REA EST\u00c1 IDENTIFICADA CLARAMENTE (NOME COM PLACAS E/OU SETAS INDICATIVAS)?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.2",
+        "question": "A DISPOSI\u00c7\u00c3O ATUAL DO PR\u00c9DIO, M\u00c1QUINA OU EQUIPAMENTO PROPICIA ACIDENTES?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.3",
+        "question": "ARM\u00c1RIOS, PRATELEIRAS, ARQUIVOS, PORTAS E GAVETAS EST\u00c3O IDENTIFICADOS?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.4",
+        "question": "H\u00c1 LOCAL PR\u00d3PRIO PARA FERRAMENTAS E EQUIPAMENTOS?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.1",
+        "question": "O PISO, AS PAREDES, AS JANELAS E O TETO EST\u00c3O LIMPOS E BEM APRESENT\u00c1VEIS?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.2",
+        "question": "AS L\u00c2MPADAS E TOMADAS EST\u00c3O CONSERVADAS (EXISTEM FIOS EXPOSTOS, PENDURADOS OU SOLTOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.3",
+        "question": "O SISTEMA DE VENTILA\u00c7\u00c3O EST\u00c1 LIMPO E FUNCIONANDO?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.4",
+        "question": "OS SANIT\u00c1RIOS EST\u00c3O LIMPOS, CONSERVADOS (COM PAP\u00c9IS E ACESS\u00d3RIOS APROPRIADOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.5",
+        "question": "AS PESSOAS EST\u00c3O CONSCIENTIZADAS DAS BOAS PR\u00c1TICAS DE LIMPEZA DO AMBIENTE?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.1",
+        "question": "A \u00c1REA EST\u00c1 PADRONIZADA COM ETIQUETAS DE IDENTIFICA\u00c7\u00c3O OU PLACAS PADR\u00c3O?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.2",
+        "question": "O AMBIENTE F\u00cdSICO DE TRABALHO \u00c9 FAVOR\u00c1VEL \u00c0 HIGIENE/SA\u00daDE, SEM CONTAMINA\u00c7\u00c3O DE P\u00d3?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.3",
+        "question": "OS PROCEDIMENTOS, FORMUL\u00c1RIOS E REGISTROS EST\u00c3O PADRONIZADOS?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.4",
+        "question": "A ILUMINA\u00c7\u00c3O DO AMBIENTE \u00c9 APROPRIADA E SUFICIENTE?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.5",
+        "question": "AS PESSOAS DAS \u00c1REAS EST\u00c3O CONSCIENTIZADAS (CONHECEM) DOS PADR\u00d5ES EXISTENTES?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.6",
+        "question": "O EXTINTOR E OUTRAS FERRAMENTAS S\u00c3O LOCALIZ\u00c1VEIS?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.1",
+        "question": "OS FUNCION\u00c1RIOS DEMONSTRAM INTERESSE NAS ATIVIDADES 5S?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.2",
+        "question": "CARTAZES E LEMBRETES EST\u00c3O EXIBIDOS NO AMBIENTE DE TRABALHO?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.3",
+        "question": "OS TREINAMENTOS E OUTRAS PROGRAMA\u00c7\u00d5ES S\u00c3O IMPLEMENTADOS PARA SUSTENTAR A ORGANIZA\u00c7\u00c3O DO TRABALHO?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.4",
+        "question": "OS PROCEDIMENTOS DE SEGURAN\u00c7A S\u00c3O SEGUIDOS?"
+      }
+    ]
+  },
+  "Solda": {
+    "items": [
+      {
+        "categoryCode": "1S",
+        "number": "1.1",
+        "question": "EXISTEM MATERIAIS A SEREM DESCARTADOS (OBSOLETOS OU INUTILIZ\u00c1VEIS)?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.2",
+        "question": "EXISTEM OBJETOS PESSOAIS NO SETOR, SOBRE ARM\u00c1RIOS OU SOBRE EQUIPAMENTOS?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.3",
+        "question": "EXISTE MATERIAL QUE N\u00c3O PERTENCE AO AMBIENTE?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.4",
+        "question": "EXISTE LOCAL APROPRIADO PARA DESCARTE DE LIXO, MATERIAL OBSOLETO OU PARA RECICLAR?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.5",
+        "question": "M\u00c1QUINAS, FERRAMENTAS E INSTALA\u00c7\u00d5ES EST\u00c3O SENDO UTILIZADAS CORRETAMENTE?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.6",
+        "question": "H\u00c1 SEPARA\u00c7\u00c3O CORRETA DE RES\u00cdDUOS?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.1",
+        "question": "LOCALIZA\u00c7\u00c3O DA \u00c1REA EST\u00c1 IDENTIFICADA CLARAMENTE (NOME COM PLACAS E/OU SETAS INDICATIVAS)?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.2",
+        "question": "A DISPOSI\u00c7\u00c3O ATUAL DO PR\u00c9DIO, M\u00c1QUINA OU EQUIPAMENTO PROPICIA ACIDENTES?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.3",
+        "question": "ARM\u00c1RIOS, PRATELEIRAS, ARQUIVOS, PORTAS E GAVETAS EST\u00c3O IDENTIFICADOS?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.4",
+        "question": "H\u00c1 LOCAL PR\u00d3PRIO PARA FERRAMENTAS E EQUIPAMENTOS?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.1",
+        "question": "O PISO, AS PAREDES, AS JANELAS E O TETO EST\u00c3O LIMPOS E BEM APRESENT\u00c1VEIS?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.2",
+        "question": "AS L\u00c2MPADAS E TOMADAS EST\u00c3O CONSERVADAS (EXISTEM FIOS EXPOSTOS, PENDURADOS OU SOLTOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.3",
+        "question": "O SISTEMA DE VENTILA\u00c7\u00c3O EST\u00c1 LIMPO E FUNCIONANDO?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.4",
+        "question": "OS SANIT\u00c1RIOS EST\u00c3O LIMPOS, CONSERVADOS (COM PAP\u00c9IS E ACESS\u00d3RIOS APROPRIADOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.5",
+        "question": "AS PESSOAS EST\u00c3O CONSCIENTIZADAS DAS BOAS PR\u00c1TICAS DE LIMPEZA DO AMBIENTE?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.1",
+        "question": "A \u00c1REA EST\u00c1 PADRONIZADA COM ETIQUETAS DE IDENTIFICA\u00c7\u00c3O OU PLACAS PADR\u00c3O?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.2",
+        "question": "O AMBIENTE F\u00cdSICO DE TRABALHO \u00c9 FAVOR\u00c1VEL \u00c0 HIGIENE/SA\u00daDE, SEM CONTAMINA\u00c7\u00c3O DE P\u00d3?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.3",
+        "question": "OS PROCEDIMENTOS, FORMUL\u00c1RIOS E REGISTROS EST\u00c3O PADRONIZADOS?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.4",
+        "question": "A ILUMINA\u00c7\u00c3O DO AMBIENTE \u00c9 APROPRIADA E SUFICIENTE?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.5",
+        "question": "AS PESSOAS DAS \u00c1REAS EST\u00c3O CONSCIENTIZADAS (CONHECEM) DOS PADR\u00d5ES EXISTENTES?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.6",
+        "question": "O EXTINTOR E OUTRAS FERRAMENTAS S\u00c3O LOCALIZ\u00c1VEIS?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.1",
+        "question": "OS FUNCION\u00c1RIOS DEMONSTRAM INTERESSE NAS ATIVIDADES 5S?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.2",
+        "question": "CARTAZES E LEMBRETES EST\u00c3O EXIBIDOS NO AMBIENTE DE TRABALHO?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.3",
+        "question": "OS TREINAMENTOS E OUTRAS PROGRAMA\u00c7\u00d5ES S\u00c3O IMPLEMENTADOS PARA SUSTENTAR A ORGANIZA\u00c7\u00c3O DO TRABALHO?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.4",
+        "question": "OS PROCEDIMENTOS DE SEGURAN\u00c7A S\u00c3O SEGUIDOS?"
+      }
+    ]
+  },
+  "Teste Titan": {
+    "items": [
+      {
+        "categoryCode": "1S",
+        "number": "1.1",
+        "question": "EXISTEM MATERIAIS A SEREM DESCARTADOS (OBSOLETOS OU INUTILIZ\u00c1VEIS)?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.2",
+        "question": "EXISTEM OBJETOS PESSOAIS NO SETOR, SOBRE ARM\u00c1RIOS OU SOBRE EQUIPAMENTOS?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.3",
+        "question": "EXISTE MATERIAL QUE N\u00c3O PERTENCE AO AMBIENTE?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.4",
+        "question": "EXISTE LOCAL APROPRIADO PARA DESCARTE DE LIXO, MATERIAL OBSOLETO OU PARA RECICLAR?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.5",
+        "question": "M\u00c1QUINAS, FERRAMENTAS E INSTALA\u00c7\u00d5ES EST\u00c3O SENDO UTILIZADAS CORRETAMENTE?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.6",
+        "question": "H\u00c1 SEPARA\u00c7\u00c3O CORRETA DE RES\u00cdDUOS?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.1",
+        "question": "LOCALIZA\u00c7\u00c3O DA \u00c1REA EST\u00c1 IDENTIFICADA CLARAMENTE (NOME COM PLACAS E/OU SETAS INDICATIVAS)?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.2",
+        "question": "A DISPOSI\u00c7\u00c3O ATUAL DO PR\u00c9DIO, M\u00c1QUINA OU EQUIPAMENTO PROPICIA ACIDENTES?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.3",
+        "question": "ARM\u00c1RIOS, PRATELEIRAS, ARQUIVOS, PORTAS E GAVETAS EST\u00c3O IDENTIFICADOS?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.4",
+        "question": "OS DOCUMENTOS DIGITAIS EST\u00c3O ORGANIZADOS EM PASTAS E SUBPASTAS, DE MODO L\u00d3GICO E CLARO?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.5",
+        "question": "EXISTE C\u00d3PIA DIGITAL (BACKUP) DOS ARQUIVOS (VER A EVID\u00caNCIA)?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.6",
+        "question": "H\u00c1 LOCAL PR\u00d3PRIO PARA FERRAMENTAS E EQUIPAMENTOS?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.1",
+        "question": "O PISO, AS PAREDES, AS JANELAS E O TETO EST\u00c3O LIMPOS E BEM APRESENT\u00c1VEIS?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.2",
+        "question": "AS L\u00c2MPADAS E TOMADAS EST\u00c3O CONSERVADAS (EXISTEM FIOS EXPOSTOS, PENDURADOS OU SOLTOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.3",
+        "question": "O SISTEMA DE VENTILA\u00c7\u00c3O EST\u00c1 LIMPO E FUNCIONANDO?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.4",
+        "question": "OS SANIT\u00c1RIOS EST\u00c3O LIMPOS, CONSERVADOS (COM PAP\u00c9IS E ACESS\u00d3RIOS APROPRIADOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.5",
+        "question": "AS PESSOAS EST\u00c3O CONSCIENTIZADAS DAS BOAS PR\u00c1TICAS DE LIMPEZA DO AMBIENTE?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.1",
+        "question": "A \u00c1REA EST\u00c1 PADRONIZADA COM ETIQUETAS DE IDENTIFICA\u00c7\u00c3O OU PLACAS PADR\u00c3O?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.2",
+        "question": "O AMBIENTE F\u00cdSICO DE TRABALHO \u00c9 FAVOR\u00c1VEL \u00c0 HIGIENE/SA\u00daDE, SEM CONTAMINA\u00c7\u00c3O DE P\u00d3?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.3",
+        "question": "OS PROCEDIMENTOS, FORMUL\u00c1RIOS E REGISTROS EST\u00c3O PADRONIZADOS?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.4",
+        "question": "A ILUMINA\u00c7\u00c3O DO AMBIENTE \u00c9 APROPRIADA E SUFICIENTE?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.5",
+        "question": "AS PESSOAS DAS \u00c1REAS EST\u00c3O CONSCIENTIZADAS (CONHECEM) DOS PADR\u00d5ES EXISTENTES?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.6",
+        "question": "O EXTINTOR E OUTRAS FERRAMENTAS S\u00c3O LOCALIZ\u00c1VEIS?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.1",
+        "question": "OS FUNCION\u00c1RIOS DEMONSTRAM INTERESSE NAS ATIVIDADES 5S?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.2",
+        "question": "CARTAZES E LEMBRETES EST\u00c3O EXIBIDOS NO AMBIENTE DE TRABALHO?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.3",
+        "question": "OS TREINAMENTOS E OUTRAS PROGRAMA\u00c7\u00d5ES S\u00c3O IMPLEMENTADOS PARA SUSTENTAR A ORGANIZA\u00c7\u00c3O DO TRABALHO?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.4",
+        "question": "OS PROCEDIMENTOS DE SEGURAN\u00c7A S\u00c3O SEGUIDOS?"
+      }
+    ]
+  },
+  "Tubos": {
+    "items": [
+      {
+        "categoryCode": "1S",
+        "number": "1.1",
+        "question": "EXISTEM MATERIAIS A SEREM DESCARTADOS (OBSOLETOS OU INUTILIZ\u00c1VEIS)?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.2",
+        "question": "EXISTEM OBJETOS PESSOAIS NO SETOR, SOBRE ARM\u00c1RIOS OU SOBRE EQUIPAMENTOS?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.3",
+        "question": "EXISTE MATERIAL QUE N\u00c3O PERTENCE AO AMBIENTE?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.4",
+        "question": "EXISTE LOCAL APROPRIADO PARA DESCARTE DE LIXO, MATERIAL OBSOLETO OU PARA RECICLAR?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.5",
+        "question": "M\u00c1QUINAS, FERRAMENTAS E INSTALA\u00c7\u00d5ES EST\u00c3O SENDO UTILIZADAS CORRETAMENTE?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.6",
+        "question": "H\u00c1 SEPARA\u00c7\u00c3O CORRETA DE RES\u00cdDUOS?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.1",
+        "question": "LOCALIZA\u00c7\u00c3O DA \u00c1REA EST\u00c1 IDENTIFICADA CLARAMENTE (NOME COM PLACAS E/OU SETAS INDICATIVAS)?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.2",
+        "question": "A DISPOSI\u00c7\u00c3O ATUAL DO PR\u00c9DIO, M\u00c1QUINA OU EQUIPAMENTO PROPICIA ACIDENTES?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.3",
+        "question": "ARM\u00c1RIOS, PRATELEIRAS, ARQUIVOS, PORTAS E GAVETAS EST\u00c3O IDENTIFICADOS?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.4",
+        "question": "OS DOCUMENTOS DIGITAIS EST\u00c3O ORGANIZADOS EM PASTAS E SUBPASTAS, DE MODO L\u00d3GICO E CLARO?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.5",
+        "question": "EXISTE C\u00d3PIA DIGITAL (BACKUP) DOS ARQUIVOS (VER A EVID\u00caNCIA)?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.6",
+        "question": "H\u00c1 LOCAL PR\u00d3PRIO PARA FERRAMENTAS E EQUIPAMENTOS?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.1",
+        "question": "O PISO, AS PAREDES, AS JANELAS E O TETO EST\u00c3O LIMPOS E BEM APRESENT\u00c1VEIS?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.2",
+        "question": "AS L\u00c2MPADAS E TOMADAS EST\u00c3O CONSERVADAS (EXISTEM FIOS EXPOSTOS, PENDURADOS OU SOLTOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.3",
+        "question": "O SISTEMA DE VENTILA\u00c7\u00c3O EST\u00c1 LIMPO E FUNCIONANDO?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.4",
+        "question": "OS SANIT\u00c1RIOS EST\u00c3O LIMPOS, CONSERVADOS (COM PAP\u00c9IS E ACESS\u00d3RIOS APROPRIADOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.5",
+        "question": "AS PESSOAS EST\u00c3O CONSCIENTIZADAS DAS BOAS PR\u00c1TICAS DE LIMPEZA DO AMBIENTE?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.1",
+        "question": "A \u00c1REA EST\u00c1 PADRONIZADA COM ETIQUETAS DE IDENTIFICA\u00c7\u00c3O OU PLACAS PADR\u00c3O?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.2",
+        "question": "O AMBIENTE F\u00cdSICO DE TRABALHO \u00c9 FAVOR\u00c1VEL \u00c0 HIGIENE/SA\u00daDE, SEM CONTAMINA\u00c7\u00c3O DE P\u00d3?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.3",
+        "question": "OS PROCEDIMENTOS, FORMUL\u00c1RIOS E REGISTROS EST\u00c3O PADRONIZADOS?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.4",
+        "question": "A ILUMINA\u00c7\u00c3O DO AMBIENTE \u00c9 APROPRIADA E SUFICIENTE?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.5",
+        "question": "AS PESSOAS DAS \u00c1REAS EST\u00c3O CONSCIENTIZADAS (CONHECEM) DOS PADR\u00d5ES EXISTENTES?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.6",
+        "question": "O EXTINTOR E OUTRAS FERRAMENTAS S\u00c3O LOCALIZ\u00c1VEIS?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.1",
+        "question": "OS FUNCION\u00c1RIOS DEMONSTRAM INTERESSE NAS ATIVIDADES 5S?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.2",
+        "question": "CARTAZES E LEMBRETES EST\u00c3O EXIBIDOS NO AMBIENTE DE TRABALHO?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.3",
+        "question": "OS TREINAMENTOS E OUTRAS PROGRAMA\u00c7\u00d5ES S\u00c3O IMPLEMENTADOS PARA SUSTENTAR A ORGANIZA\u00c7\u00c3O DO TRABALHO?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.4",
+        "question": "OS PROCEDIMENTOS DE SEGURAN\u00c7A S\u00c3O SEGUIDOS?"
+      }
+    ]
+  },
+  "Showroom": {
+    "items": [
+      {
+        "categoryCode": "1S",
+        "number": "1.1",
+        "question": "EXISTEM ITENS A SEREM DESCARTADOS (OBSOLETOS OU INSERV\u00cdVEIS: PASTAS, PAP\u00c9IS, QUADROS, ETC.)?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.2",
+        "question": "EXISTE MATERIAL N\u00c3O PERTINENTE (QUE N\u00c3O PERTENCE) NO AMBIENTE?"
+      },
+      {
+        "categoryCode": "1S",
+        "number": "1.3",
+        "question": "EXISTE LOCAL APROPRIADO PARA DESCARTE DE LIXO, MATERIAL OBSOLETO OU PARA RECICLAR?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.1",
+        "question": "LOCALIZA\u00c7\u00c3O DA \u00c1REA EST\u00c1 IDENTIFICADA CLARAMENTE (NOME COM PLACAS E/OU SETAS INDICATIVAS)?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.2",
+        "question": "A DISPOSI\u00c7\u00c3O ATUAL DO MOBILI\u00c1RIO PROPICIA ACIDENTES?"
+      },
+      {
+        "categoryCode": "2S",
+        "number": "2.3",
+        "question": "ARM\u00c1RIOS, PRATELEIRAS, ARQUIVOS, PORTAS E GAVETAS EST\u00c3O IDENTIFICADOS (E DENTRO DOS MESMOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.1",
+        "question": "O PISO, AS PAREDES, AS JANELAS E O TETO EST\u00c3O LIMPOS E BEM APRESENT\u00c1VEIS (SEM PAP\u00c9IS COLADOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.2",
+        "question": "AS L\u00c2MPADAS E TOMADAS EST\u00c3O CONSERVADAS (FIOS EXPOSTOS, PENDURADOS OU SOLTOS)?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.3",
+        "question": "\u00c9 REALIZADA A MANUTEN\u00c7\u00c3O PERI\u00d3DICA DO AR-CONDICIONADO E SEUS FILTROS?"
+      },
+      {
+        "categoryCode": "3S",
+        "number": "3.4",
+        "question": "OS SANIT\u00c1RIOS EST\u00c3O LIMPOS, CONSERVADOS (COM PAP\u00c9IS E ACESS\u00d3RIOS APROPRIADOS)?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.1",
+        "question": "O AMBIENTE (SALA/\u00c1REA) EST\u00c1 PADRONIZADO COM ETIQUETAS E PLACAS-PADR\u00c3O?"
+      },
+      {
+        "categoryCode": "4S",
+        "number": "4.2",
+        "question": "O AMBIENTE F\u00cdSICO DE TRABALHO \u00c9 FAVOR\u00c1VEL \u00c0 HIGIENE/SA\u00daDE, SEM CONTAMINA\u00c7\u00c3O DE P\u00d3?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.1",
+        "question": "CARTAZES E LEMBRETES EST\u00c3O EXIBIDOS NO AMBIENTE DE TRABALHO?"
+      },
+      {
+        "categoryCode": "5S",
+        "number": "5.2",
+        "question": "OS TREINAMENTOS E OUTRAS PROGRAMA\u00c7\u00d5ES S\u00c3O IMPLEMENTADOS PARA SUSTENTAR A ORGANIZA\u00c7\u00c3O DO TRABALHO?"
+      }
+    ]
+  }
+}

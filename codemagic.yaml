@@ -1,0 +1,35 @@
+workflows:
+  digitalizer-android:
+    name: Digitalizer Android Offline
+    max_build_duration: 45
+    environment:
+      flutter: stable
+      java: 17
+    scripts:
+      - name: Preparar Android independente
+        script: |
+          set -euo pipefail
+          if [ ! -d android ]; then
+            flutter create --platforms=android --project-name digitalizer --org com.ondexa /tmp/digitalizer-scaffold
+            cp -R /tmp/digitalizer-scaffold/android .
+          fi
+          python3 tools/configure_android.py
+          chmod +x android/gradlew
+          python3 tools/verify_assets.py
+      - name: Instalar dependências
+        script: |
+          set -euo pipefail
+          flutter pub get
+      - name: Conferir código e testes
+        script: |
+          set -euo pipefail
+          flutter analyze --no-fatal-infos
+          flutter test
+      - name: Compilar APK experimental
+        script: |
+          set -euo pipefail
+          flutter build apk --release
+          cp build/app/outputs/flutter-apk/app-release.apk build/app/outputs/flutter-apk/Digitalizer.apk
+    artifacts:
+      - build/app/outputs/flutter-apk/Digitalizer.apk
+      - pubspec.lock
