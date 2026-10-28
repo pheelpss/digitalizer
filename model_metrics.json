@@ -1,0 +1,13 @@
+{
+  "architecture": "784-96-ReLU-10-softmax",
+  "seed": 20261027,
+  "epochs": 20,
+  "dataset": "https://storage.googleapis.com/tensorflow/tf-keras-datasets/mnist.npz",
+  "dataset_sha256": "731c5ac602752760c8e48fbffcf8c3b850d9dc2a2aedcf2cc48468fc17b673d1",
+  "training_samples": 60000,
+  "test_samples": 10000,
+  "test_accuracy_0_to_9": 0.9797,
+  "test_accuracy_0_to_5": 0.9842480517327143,
+  "model_sha256": "351df57c38b5b8ae4352f5c3a542158252e254a8e38924c25e1afebe3335e7ab",
+  "limitation": "MNIST limpo não mede acurácia em fotos de relatórios ou rasuras. A validação no aparelho continua necessária."
+}

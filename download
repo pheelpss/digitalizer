@@ -1,0 +1,10 @@
+.dart_tool/
+.flutter-plugins*
+.pub-cache/
+build/
+android/.gradle/
+android/local.properties
+*.jks
+*.keystore
+*.npz
+__pycache__/

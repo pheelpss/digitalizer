@@ -1,3 +1,13 @@
+# Revisão 0.1.3+4 — recuperação pelo texto
+
+Recupera os padrões OCR `14`, `44`, `54` e `4.60` somente quando o texto da linha corresponde de forma suficientemente próxima e única à pergunta esperada do catálogo. Exige área identificada unicamente no cabeçalho; sem identificação única, mantém a leitura estrita. Não cria linhas ausentes, não muda a posição da célula, não remove duplicatas e não altera o modelo de notas.
+
+O diagnóstico marca números recuperados pelo texto. Se houver nova falha, envie Copiar diagnóstico. Substitua todo o repositório no GitHub e compile pelo mesmo workflow Codemagic.
+
+Incluídos testes com as quatro linhas OCR reais fornecidas por Felipe, texto incompatível, cabeçalho e correspondência ambígua. Scripts Android e integridade executados localmente; análise Dart e testes Flutter NÃO executados localmente, por ausência do SDK. O workflow executará ambos antes de gerar o APK. Leitura de notas e desempenho no celular ainda dependem do teste físico. Não afirmar reconhecimento perfeito a partir desta recuperação.
+
+## Histórico de revisões
+
 # Digitalizer
 
 ## Versão 0.1.2 — conferência das perguntas
