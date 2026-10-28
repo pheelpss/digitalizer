@@ -12,6 +12,14 @@ source, count = re.subn(r'minSdk\s*=\s*[^\n]+', 'minSdk = 24', source)
 if count != 1:
     raise SystemExit('Não foi possível localizar minSdk no scaffold.')
 source = re.sub(r'compileSdk\s*=\s*[^\n]+', 'compileSdk = 36', source)
+# Até validar o leitor no aparelho, não otimizar/ofuscar a camada nativa.
+# A inserção é repetível, inclusive quando o Android é gerado no Codemagic.
+source = re.sub(r'^[ \t]*is(?:MinifyEnabled|ShrinkResources)[ \t]*=[ \t]*(?:true|false)[ \t]*(?:\r?\n|$)', '', source, flags=re.M)
+source, count = re.subn(r'(\brelease\s*\{)',
+    r'\1\n            isMinifyEnabled = false\n            isShrinkResources = false',
+    source, count=1)
+if count != 1:
+    raise SystemExit('Não foi possível configurar o release de diagnóstico.')
 if '"proguard-rules.pro"' not in source:
     source, count = re.subn(
         r'(\brelease\s*\{)',
@@ -54,4 +62,4 @@ for name, remove in [('android.permission.CAMERA', False),
         attrs[f'{{{tools}}}node'] = 'remove'
     element.insert(0, ET.Element('uses-permission', attrs))
 tree.write(manifest, encoding='utf-8', xml_declaration=True)
-print('Digitalizer configurado: Android 7+, OCR Latin offline, regras R8 e rede removida do manifesto.')
+print('Digitalizer 0.1.1: OCR Latin offline, sem minificação/redução de recursos nativos, rede removida.')

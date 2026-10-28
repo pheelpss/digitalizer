@@ -1,4 +1,16 @@
-# Validação do Digitalizer 0.1.0+1
+# Validação do Digitalizer
+
+## Revisão 0.1.1+2 — diagnóstico em 28/10/2026
+
+O APK anterior foi compilado e instalado pelo usuário. O print enviado registra `PlatformException` com `NullPointerException` na camada nativa durante o processamento OCR. Sem o mapa de ofuscação desse APK, a causa exata permanece não confirmada.
+
+Esta revisão altera o release para `isMinifyEnabled = false` e `isShrinkResources = false`, tanto no Android incluído quanto no script que configura o scaffold no Codemagic. É uma intervenção de diagnóstico para verificar a hipótese de otimização nativa; não comprova por si só que o defeito foi eliminado.
+
+Acrescentado tratamento de `PlatformException` no scanner, mensagem curta na tela e botão Copiar diagnóstico. O erro original é preservado se o encerramento do reconhecedor também falhar. O arquivo de imagem de processamento continua sendo excluído. Não houve alteração do modelo de dígitos, catálogo, critérios de rejeição ou permissão de rede.
+
+Verificações locais desta revisão: `configure_android.py` executado duas vezes com configuração idêntica; `verify_android.py` confirmou release sem minificação e redução de recursos; `verify_assets.py` confirmou 32/749 e hash do modelo. Não houve nova execução de Flutter/análise Dart/build Android nesta revisão local; o SDK isolado da preparação anterior já não está disponível. O workflow repetirá análise e testes antes de compilar. O teste do OCR real depende do próximo APK no celular do usuário.
+
+Os resultados Flutter descritos abaixo são históricos da preparação 0.1.0, não uma nova execução sobre 0.1.1.
 
 ## Revisão do build Android — R8
 

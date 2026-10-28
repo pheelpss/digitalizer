@@ -1,8 +1,14 @@
 # Digitalizer
 
+## Versão 0.1.1 de diagnóstico do OCR
+
+Esta revisão responde à exceção nativa `NullPointerException` vista no celular durante o OCR. O print está ofuscado e não permite afirmar a causa exata. O release experimental preserva agora todas as classes e recursos nativos, desativando minificação e redução de recursos, para testar a hipótese de interferência da otimização e obter erros mais legíveis caso a falha persista. Não se trata de uma correção confirmada no aparelho.
+
+Atualize todo o repositório e gere outro APK no mesmo workflow. Instale a versão 0.1.1+2 e tente ler novamente a folha. Se a falha continuar, toque em **Copiar diagnóstico** e envie o texto. A mensagem detalhada não ocupa mais a tela; fica disponível para cópia durante a sessão. O diagnóstico não contém a foto nem as notas.
+
 Revisão de compilação: inclui as regras R8 dos tipos opcionais de alfabetos não latinos do plugin de OCR. Substitua também `tools/configure_android.py`, `tools/verify_android.py`, `codemagic.yaml` e os arquivos de `android/app` ao atualizar o repositório.
 
-Aplicativo Android experimental e independente para fotografar relatórios 5S atuais da Ondexa e conferir a leitura de notas manuscritas de 0 a 5. Versão 0.1.0+1.
+Aplicativo Android experimental e independente para fotografar relatórios 5S atuais da Ondexa e conferir a leitura de notas manuscritas de 0 a 5. Versão 0.1.1+2.
 
 ## GitHub e Codemagic
 

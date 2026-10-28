@@ -19,7 +19,11 @@ assert actual == expected, 'As regras precisam cobrir somente os oito tipos opci
 assert 'proguardFiles(' in gradle and '"proguard-rules.pro"' in gradle
 release = gradle.split('release {', 1)[1].split('}', 1)[0]
 assert '"proguard-rules.pro"' in release, 'As regras precisam ser aplicadas ao release.'
+assert release.count('isMinifyEnabled = false') == 1
+assert release.count('isShrinkResources = false') == 1
+assert 'isMinifyEnabled = true' not in release
+assert 'isShrinkResources = true' not in release
 assert 'TextRecognitionScript.latin' in (root / 'lib/scanner.dart').read_text(encoding='utf-8')
 assert not re.search(r'TextRecognitionScript\.(chinese|devanagiri|devanagari|japanese|korean)',
                      (root / 'lib/scanner.dart').read_text(encoding='utf-8'))
-print('R8 release: oito classes opcionais cobertas, reconhecimento Latin mantido.')
+print('Release de diagnóstico: classes/recursos nativos preservados; OCR Latin mantido.')

@@ -34,3 +34,4 @@ workflows:
     artifacts:
       - build/app/outputs/flutter-apk/Digitalizer.apk
       - pubspec.lock
+      - build/app/outputs/mapping/release/*.txt

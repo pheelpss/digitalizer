@@ -39,7 +39,7 @@ class _CapturePageState extends State<CapturePage> {
   final _scanner = Scanner();
   Catalog? _catalog;
   Uint8List? _model, _photo, _rectified;
-  String? _area, _message;
+  String? _area, _message, _diagnostic;
   final List<Offset> _corners = [];
   bool _busy = false;
   List<Map<String, dynamic>>? _readings;
@@ -193,6 +193,7 @@ class _CapturePageState extends State<CapturePage> {
 
   Future<void> _analyze() async {
     if (_photo == null || _corners.length != 4 || _busy) return;
+    _diagnostic = null;
     final cross = List<double>.generate(4, (i) {
       final a = _corners[i],
           b = _corners[(i + 1) % 4],
@@ -252,7 +253,13 @@ class _CapturePageState extends State<CapturePage> {
     } catch (error) {
       if (mounted) {
         setState(() {
-          _message = 'A leitura não foi concluída: $error. Refaça a captura.';
+          if (error is OfflineOcrException) {
+            _message = 'O leitor offline do Android apresentou uma falha. '
+                'Nenhuma nota foi preenchida. Use Copiar diagnóstico para informar o erro.';
+            _diagnostic = error.diagnostic;
+          } else {
+            _message = 'A leitura não foi concluída: $error. Refaça a captura.';
+          }
         });
       }
     } finally {
@@ -271,6 +278,7 @@ class _CapturePageState extends State<CapturePage> {
     _corners.clear();
     _corrections.clear();
     _message = null;
+    _diagnostic = null;
   });
 
   Future<void> _showPhoto() async {
@@ -472,9 +480,21 @@ class _CapturePageState extends State<CapturePage> {
             style: const TextStyle(fontWeight: FontWeight.w600),
           ),
         ),
-      const SizedBox(height: 16),
-      const Text(
-        'Boa captura: folha inteira, apoiada e iluminada; evite sombras e reflexos. '
+        if (_diagnostic != null)
+          TextButton.icon(
+            icon: const Icon(Icons.copy),
+            label: const Text('Copiar diagnóstico'),
+            onPressed: () async {
+              await Clipboard.setData(ClipboardData(text: _diagnostic!));
+              if (!mounted) return;
+              ScaffoldMessenger.of(context).showSnackBar(
+                const SnackBar(content: Text('Diagnóstico copiado.')),
+              );
+            },
+          ),
+        const SizedBox(height: 16),
+        const Text(
+          'Boa captura: folha inteira, apoiada e iluminada; evite sombras e reflexos. '
         'A foto antiga enviada como exemplo pode ser bloqueada por ter outro questionário.',
       ),
     ],

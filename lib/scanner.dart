@@ -1,11 +1,19 @@
 import 'dart:io';
 
 import 'package:flutter/foundation.dart';
+import 'package:flutter/services.dart';
 import 'package:google_mlkit_text_recognition/google_mlkit_text_recognition.dart';
 import 'package:path_provider/path_provider.dart';
 
 import 'domain.dart';
 import 'vision.dart';
+
+class OfflineOcrException implements Exception {
+  const OfflineOcrException(this.diagnostic);
+  final String diagnostic;
+  @override
+  String toString() => 'Falha no leitor offline do Android.';
+}
 
 class ScanLayout {
   ScanLayout(this.detectedAreas, this.anchors, this.headerX);
@@ -44,9 +52,22 @@ class Scanner {
         }
       }
       return ScanLayout(catalog.detectAreas(header), anchors, headerX);
+    } on PlatformException catch (error, stack) {
+      throw OfflineOcrException(
+        'Digitalizer 0.1.1+2\n'
+        'Etapa: OCR de texto impresso / ML Kit Latin\n'
+        'Imagem normalizada: PNG 1600x2263, ${bytes.length} bytes\n'
+        'Build: minificação e redução de recursos nativos desativadas\n'
+        '$error\n$stack',
+      );
     } finally {
-      await recognizer.close();
-      if (await file.exists()) await file.delete();
+      try {
+        await recognizer.close();
+      } on PlatformException {
+        // Uma falha ao encerrar não deve substituir o erro original do leitor.
+      } finally {
+        if (await file.exists()) await file.delete();
+      }
     }
   }
 
