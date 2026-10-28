@@ -1,6 +1,14 @@
 # Digitalizer
 
-## Versão 0.1.1 de diagnóstico do OCR
+## Versão 0.1.2 — conferência das perguntas
+
+O bloqueio agora mostra perguntas esperadas, leituras realizadas, números distintos, ausentes, duplicados, inesperados e sequência reconhecida. Copiar diagnóstico inclui também as linhas OCR candidatas da margem esquerda para identificar números não interpretados. O texto do diagnóstico fica apenas na sessão e só vai para a área de transferência ao tocar no botão. Não inclui a imagem; as linhas OCR podem conter texto impresso e números que apareçam juntos na leitura.
+
+O parser aceita número junto de letra, como `1.1EXISTEM`, preservando a exigência de ponto ou vírgula e sem aceitar prefixos de números com três dígitos. Nenhuma pergunta ausente é inventada; duplicatas continuam bloqueando. Essa melhoria não garante a leitura completa de toda foto.
+
+Envie todo o conteúdo ao GitHub e gere o APK no workflow existente. Em caso de bloqueio, envie o conteúdo de Copiar diagnóstico.
+
+## Histórico: versão 0.1.1 de diagnóstico do OCR
 
 Esta revisão responde à exceção nativa `NullPointerException` vista no celular durante o OCR. O print está ofuscado e não permite afirmar a causa exata. O release experimental preserva agora todas as classes e recursos nativos, desativando minificação e redução de recursos, para testar a hipótese de interferência da otimização e obter erros mais legíveis caso a falha persista. Não se trata de uma correção confirmada no aparelho.
 
@@ -8,7 +16,7 @@ Atualize todo o repositório e gere outro APK no mesmo workflow. Instale a vers�
 
 Revisão de compilação: inclui as regras R8 dos tipos opcionais de alfabetos não latinos do plugin de OCR. Substitua também `tools/configure_android.py`, `tools/verify_android.py`, `codemagic.yaml` e os arquivos de `android/app` ao atualizar o repositório.
 
-Aplicativo Android experimental e independente para fotografar relatórios 5S atuais da Ondexa e conferir a leitura de notas manuscritas de 0 a 5. Versão 0.1.1+2.
+Aplicativo Android experimental e independente para fotografar relatórios 5S atuais da Ondexa e conferir a leitura de notas manuscritas de 0 a 5. Versão 0.1.2+3.
 
 ## GitHub e Codemagic
 

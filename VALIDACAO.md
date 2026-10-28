@@ -1,5 +1,11 @@
 # Validação do Digitalizer
 
+## Revisão 0.1.2+3 — conferência de perguntas
+
+Adicionados relatório de comparação, captura temporária das linhas OCR da margem esquerda e aceitação de número colado ao texto. Dois testes Flutter novos cobrem todas as 25 perguntas de Dobra sem espaço, rejeição de número inválido e detalhamento de ausente/duplicado/inesperado. Não há inferência automática de números ausentes nem liberação de correspondência parcial.
+
+Verificações locais: scripts de integridade do modelo/catálogo e Android aprovados. Flutter/Dart não estão disponíveis nesta máquina; os novos testes e a análise serão executados pelo workflow do Codemagic antes do build. Não houve teste desta revisão no celular, nem reprodução do resultado OCR exato da fotografia, cujas linhas não tinham sido registradas.
+
 ## Revisão 0.1.1+2 — diagnóstico em 28/10/2026
 
 O APK anterior foi compilado e instalado pelo usuário. O print enviado registra `PlatformException` com `NullPointerException` na camada nativa durante o processamento OCR. Sem o mapa de ofuscação desse APK, a causa exata permanece não confirmada.

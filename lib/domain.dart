@@ -48,6 +48,24 @@ class Catalog {
         actual.toSet().length == actual.length &&
         expected.containsAll(actual);
   }
+
+  String comparison(String area, Iterable<String> codes) {
+    final expected = areas[area]?.map((q) => q.number).toList() ?? <String>[];
+    final actual = codes.toList();
+    final counts = <String, int>{};
+    for (final code in actual) {
+      counts[code] = (counts[code] ?? 0) + 1;
+    }
+    String listing(Iterable<String> values) =>
+        values.isEmpty ? 'nenhum' : values.join(', ');
+    return 'Área: $area\n'
+        'Esperadas: ${expected.length}; leituras: ${actual.length}; '
+        'números distintos: ${counts.length}.\n'
+        'Ausentes: ${listing(expected.where((n) => !counts.containsKey(n)))}\n'
+        'Duplicados: ${listing(counts.entries.where((e) => e.value > 1).map((e) => '${e.key} (${e.value} vezes)'))}\n'
+        'Inesperados: ${listing(counts.keys.where((n) => !expected.contains(n)))}\n'
+        'Números reconhecidos: ${listing(actual)}';
+  }
 }
 
 String normalize(String text) {
@@ -62,7 +80,7 @@ String normalize(String text) {
 
 String? questionNumber(String text) {
   final match = RegExp(
-    r'^\s*([1-5])\s*[.,]\s*(\d{1,2})(?:\s|$|[.)])',
+    r'^\s*([1-5])\s*[.,]\s*(\d{1,2})(?=\s|$|[.)]|[A-Za-zÀ-ÖØ-öø-ÿ])',
   ).firstMatch(text);
   return match == null ? null : '${match[1]}.${int.parse(match[2]!)}';
 }

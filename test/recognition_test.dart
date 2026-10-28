@@ -51,6 +51,28 @@ void main() {
     expect(const DigitPrediction(4, .90, .85).accepted, isNull);
     expect(const DigitPrediction(3, .98, .50).accepted, isNull);
   });
+  test('OCR sem espaço após número mantém todas as perguntas de Dobra', () {
+    final questions = catalog.areas['Dobra']!;
+    final numbers = questions
+        .map((q) => questionNumber('${q.number}${q.text}'))
+        .whereType<String>();
+    expect(catalog.matches('Dobra', numbers), isTrue);
+    expect(questionNumber('1.123 TEXTO'), isNull);
+    expect(questionNumber('RESULTADO 1.1'), isNull);
+    expect(questionNumber('11 EXISTEM'), isNull);
+  });
+  test('diagnóstico distingue faltantes, duplicados e números inesperados', () {
+    final numbers = catalog.areas['Dobra']!.map((q) => q.number).toList()
+      ..remove('3.2')
+      ..add('1.1')
+      ..add('5.9');
+    expect(catalog.matches('Dobra', numbers), isFalse);
+    final report = catalog.comparison('Dobra', numbers);
+    expect(report, contains('Esperadas: 25; leituras: 26;'));
+    expect(report, contains('Ausentes: 3.2'));
+    expect(report, contains('Duplicados: 1.1 (2 vezes)'));
+    expect(report, contains('Inesperados: 5.9'));
+  });
   test('modelo embarcado executa inferência, rejeita arquivo truncado', () {
     final model = DigitModel(bytes);
     expect(model.inputs, 784);

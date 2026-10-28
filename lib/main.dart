@@ -223,13 +223,22 @@ class _CapturePageState extends State<CapturePage> {
       if (!mounted) return;
       final area = await _confirmArea(layout.detectedAreas);
       if (area == null || !mounted) return;
+      final numbers = layout.anchors.map((a) => a['number'] as String).toList();
+      final comparison = _catalog!.comparison(area, numbers);
       if (!_catalog!.matches(
         area,
-        layout.anchors.map((a) => a['number'] as String),
+        numbers,
       )) {
         setState(() {
           _message =
-              'Aplicação bloqueada: a numeração ou a quantidade de perguntas não coincide com $area. Pode ser modelo antigo ou leitura incompleta. Refaça a foto usando o questionário atual.';
+              'Leitura incompleta ou incompatível. Nenhuma nota foi aplicada. '
+              'Isso não comprova que o relatório esteja desatualizado.\n\n'
+              '$comparison\n\n'
+              'Confira a folha e os quatro cantos. Se o questionário estiver correto, '
+              'use Copiar diagnóstico para investigar a leitura.';
+          _diagnostic = 'Digitalizer 0.1.2+3\nConferência das perguntas\n'
+              '$comparison\n\nLinhas OCR da margem esquerda:\n'
+              '${layout.observations.join("\n")}';
         });
         return;
       }
@@ -495,7 +504,7 @@ class _CapturePageState extends State<CapturePage> {
         const SizedBox(height: 16),
         const Text(
           'Boa captura: folha inteira, apoiada e iluminada; evite sombras e reflexos. '
-        'A foto antiga enviada como exemplo pode ser bloqueada por ter outro questionário.',
+          'Marque os quatro cantos da folha inteira, incluindo o cabeçalho.',
       ),
     ],
   );

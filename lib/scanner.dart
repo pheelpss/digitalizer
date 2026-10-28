@@ -16,10 +16,12 @@ class OfflineOcrException implements Exception {
 }
 
 class ScanLayout {
-  ScanLayout(this.detectedAreas, this.anchors, this.headerX);
+  ScanLayout(this.detectedAreas, this.anchors, this.headerX,
+      [this.observations = const []]);
   final List<String> detectedAreas;
   final List<Map<String, dynamic>> anchors;
   final double? headerX;
+  final List<String> observations;
 }
 
 class Scanner {
@@ -40,9 +42,17 @@ class Scanner {
           .map((line) => line.text)
           .join(' ');
       final anchors = <Map<String, dynamic>>[];
+      final observations = <String>[];
       double? headerX;
       for (final line in lines) {
         final number = questionNumber(line.text);
+        if (line.boundingBox.left < 1600 * .22 &&
+            RegExp(r'^\s*[1-5]').hasMatch(line.text)) {
+          observations.add(
+            'y=${line.boundingBox.center.dy.toStringAsFixed(1)}: '
+            '${line.text} -> ${number ?? "não interpretado"}',
+          );
+        }
         if (number != null && line.boundingBox.left < 1600 * .22) {
           anchors.add({'number': number, 'y': line.boundingBox.center.dy});
         }
@@ -51,10 +61,10 @@ class Scanner {
           headerX ??= line.boundingBox.center.dx;
         }
       }
-      return ScanLayout(catalog.detectAreas(header), anchors, headerX);
+      return ScanLayout(catalog.detectAreas(header), anchors, headerX, observations);
     } on PlatformException catch (error, stack) {
       throw OfflineOcrException(
-        'Digitalizer 0.1.1+2\n'
+        'Digitalizer 0.1.2+3\n'
         'Etapa: OCR de texto impresso / ML Kit Latin\n'
         'Imagem normalizada: PNG 1600x2263, ${bytes.length} bytes\n'
         'Build: minificação e redução de recursos nativos desativadas\n'
