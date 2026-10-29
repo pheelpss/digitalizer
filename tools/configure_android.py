@@ -62,4 +62,4 @@ for name, remove in [('android.permission.CAMERA', False),
         attrs[f'{{{tools}}}node'] = 'remove'
     element.insert(0, ET.Element('uses-permission', attrs))
 tree.write(manifest, encoding='utf-8', xml_declaration=True)
-print('Digitalizer 0.1.4: OCR Latin offline, sem minificação/redução de recursos nativos, rede removida.')
+print('Digitalizer 0.1.5: OCR Latin offline, sem minificação/redução de recursos nativos, rede removida.')

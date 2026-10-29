@@ -1,11 +1,13 @@
 {
-  "pubspec.yaml": "8d29d808d647374534dfc253fe3319482c1e6a737a8fa55253ad40548589933a",
+  "pubspec.yaml": "9c8e0ab92dfe4997492a2b86209d68028a6aa54a8172aba9e5222bb0c64f19b0",
   "codemagic.yaml": "3217911af9f6515bfefa03d848760d1ca9ced38f1d2313421a58ad0c7ce2d5cb",
   "lib/digit_model.dart": "6d081e47aaa9b1c88471e19f9c33f7d1942053929a93975d8cadf39ff84ffa06",
   "lib/domain.dart": "d52f37f7c352dd74e92a3445fd8c546793ef8884f376d3c3d87f692cc52bb5ca",
-  "lib/main.dart": "9800009be3c65cfb72e8e6e6bb53a21b3d069ed92f5b180e7e49bbdae09aa31b",
-  "lib/scanner.dart": "3b120012176545a80efb26a520ead37f262977e3189a23840cd4e4630f862109",
+  "lib/main.dart": "de363a20dbfa46c6cd9558597a7d9cba1e09bf557fa4b3e9ebda967a01cd34af",
+  "lib/month_header.dart": "a7227074e3e2809111a1dc7aa9d05609eb514cab25f98cddcf1b6c0c5342da88",
+  "lib/scanner.dart": "c444894fde7d148dc70c89181d075b7dab8fcab9549d79445d8f54be87eb2466",
   "lib/vision.dart": "b16bae341ed1094eff7fd67cab9a0dcebecb8ee371c78258418888164331cd08",
   "test/app_test.dart": "61b2605209fe9df768f1346432000527a5381f8d5ca1f04c31fdbb749307c330",
+  "test/month_header_test.dart": "5b3bedf3614cf6ecc2733c0eaeb55c1e0b754b3f3fa4b8a123f8f7afc45bd446",
   "test/recognition_test.dart": "fe04804fc5b6102e4ee878812b8d81a74c9d139e280d87456f0c38fbb9fad1c1"
 }

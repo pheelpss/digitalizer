@@ -6,6 +6,7 @@ import 'package:google_mlkit_text_recognition/google_mlkit_text_recognition.dart
 import 'package:path_provider/path_provider.dart';
 
 import 'domain.dart';
+import 'month_header.dart';
 import 'vision.dart';
 
 class OfflineOcrException implements Exception {
@@ -61,15 +62,15 @@ class Scanner {
         if (number != null && line.boundingBox.left < 1600 * .22) {
           anchors.add({'number': number, 'y': line.boundingBox.center.dy});
         }
-        final text = normalize(line.text).replaceAll(RegExp(r'[^a-z]'), '');
-        if (text.contains('mesatual') && !text.contains('mesant')) {
-          headerX ??= line.boundingBox.center.dx;
-        }
+        headerX ??= currentMonthCenter(line.elements.map((element) {
+          final box = element.boundingBox;
+          return HeaderWord(element.text, box.left, box.top, box.right, box.bottom);
+        }).toList());
       }
       return ScanLayout(detectedAreas, anchors, headerX, observations);
     } on PlatformException catch (error, stack) {
       throw OfflineOcrException(
-        'Digitalizer 0.1.4+5\n'
+        'Digitalizer 0.1.5+6\n'
         'Etapa: OCR de texto impresso / ML Kit Latin\n'
         'Imagem normalizada: PNG 1600x2263, ${bytes.length} bytes\n'
         'Build: minificação e redução de recursos nativos desativadas\n'

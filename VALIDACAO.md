@@ -1,3 +1,13 @@
+# Revisão 0.1.5+6 — palavras do cabeçalho atual
+
+Única mudança de reconhecimento: localizar MÊS ATUAL pelas caixas dos elementos/palavras OCR, sem utilizar o centro da linha inteira. Aceita o par de palavras vizinhas na mesma linha e etiqueta em um elemento único; ignora MÊS ANT., ATUAL isolado, palavras distantes e elemento que agregue ambos os cabeçalhos. Mantém a primeira localização válida, a conferência existente de coluna, o detector de bordas, a seleção retangular, o catálogo e o reconhecimento das perguntas/notas. A ocorrência isolada da 4.3 não foi alterada por falta do diagnóstico.
+
+Adicionado month_header_test.dart para linha com cabeçalhos anterior/atual juntos, rótulo em um elemento e rejeições. Não executado Flutter localmente por ausência de SDK; Codemagic executará análise e testes antes do build. Scripts de integridade, manifesto e Android conferidos localmente. Teste com a mesma foto no aparelho continua necessário; não há garantia de que esta mudança resolva todas as divergências da coluna.
+
+Atualize todo o repositório com o conteúdo interno de Digitalizer e execute o workflow no novo commit.
+
+## Histórico
+
 # Atualização 0.1.4+5 — seleção retangular por arraste
 
 Única mudança funcional: substituir quatro toques independentes por arrastar uma caixa retangular na foto, em qualquer direção. Os quatro vértices são calculados automaticamente em ordem fixa, limitados à imagem. Novo arraste redefine a caixa e Limpar caixa apaga a seleção. A leitura só é habilitada após soltar o gesto.
