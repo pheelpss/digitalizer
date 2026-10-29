@@ -1,682 +1,136 @@
-import 'dart:io';
-import 'dart:ui' as ui;
+import 'dart:async';
 
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:image_picker/image_picker.dart';
-import 'package:path_provider/path_provider.dart';
+import 'package:provider/provider.dart';
+import 'package:receive_sharing_intent/receive_sharing_intent.dart';
 
-import 'domain.dart';
-import 'scanner.dart';
-import 'vision.dart';
+import 'core/theme/app_theme.dart';
+import 'data/repositories/audit_repository_impl.dart';
+import 'presentation/providers/audit_provider.dart';
+import 'presentation/screens/history_screen.dart';
+import 'presentation/screens/opening_screen.dart';
+import 'presentation/widgets/android_navigation_policy.dart';
 
-void main() => runApp(const Digitalizer());
-
-class Digitalizer extends StatelessWidget {
-  const Digitalizer({super.key});
-  @override
-  Widget build(BuildContext context) => MaterialApp(
-    title: 'Digitalizer',
-    debugShowCheckedModeBanner: false,
-    theme: ThemeData(
-      useMaterial3: true,
-      colorSchemeSeed: const Color(0xff164d8d),
-      scaffoldBackgroundColor: const Color(0xfff4f6fa),
-    ),
-    home: const CapturePage(),
-  );
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
+  runApp(const AndroidNavigationPolicy(child: Auditoria5SApp()));
 }
 
-class CapturePage extends StatefulWidget {
-  const CapturePage({super.key});
+class Auditoria5SApp extends StatefulWidget {
+  const Auditoria5SApp({super.key});
+
   @override
-  State<CapturePage> createState() => _CapturePageState();
+  State<Auditoria5SApp> createState() => _Auditoria5SAppState();
 }
 
-class _CapturePageState extends State<CapturePage> {
-  final _picker = ImagePicker();
-  final _scanner = Scanner();
-  Catalog? _catalog;
-  Uint8List? _model, _photo, _rectified;
-  String? _area, _message, _diagnostic;
-  final List<Offset> _corners = [];
-  Offset? _dragStart;
-  bool _busy = false;
-  List<Map<String, dynamic>>? _readings;
-  final Map<String, int?> _corrections = {};
+class _Auditoria5SAppState extends State<Auditoria5SApp> {
+  final _navigatorKey = GlobalKey<NavigatorState>();
+  StreamSubscription<List<SharedMediaFile>>? _intentSub;
+  bool _openingComplete = false;
+  bool _importing = false;
+  final List<String> _pendingImports = [];
+
+  void _finishOpening() {
+    if (!mounted || _openingComplete) return;
+    setState(() => _openingComplete = true);
+    // Only the opening requests portrait. Restore the original app policy.
+    unawaited(SystemChrome.setPreferredOrientations([]));
+    WidgetsBinding.instance.addPostFrameCallback((_) => _drainImports());
+  }
+
+  Future<void> _drainImports() async {
+    if (!mounted || !_openingComplete || _importing) return;
+    final context = _navigatorKey.currentContext;
+    if (context == null) return;
+    _importing = true;
+    try {
+      while (mounted && context.mounted && _pendingImports.isNotEmpty) {
+        await _confirmImport(context, _pendingImports.removeAt(0));
+      }
+    } finally {
+      _importing = false;
+    }
+  }
 
   @override
   void initState() {
     super.initState();
-    _load();
-  }
 
-  Future<void> _load() async {
-    try {
-      final catalog = Catalog.parse(
-        await rootBundle.loadString('assets/catalog.json'),
-      );
-      final model = await rootBundle.load('assets/digits.bin');
-      final cache = await getTemporaryDirectory();
-      final previous = File('${cache.path}/digitalizer-session/page.png');
-      if (await previous.exists()) await previous.delete();
-      if (!mounted) return;
-      setState(() {
-        _catalog = catalog;
-        _model = model.buffer.asUint8List(
-          model.offsetInBytes,
-          model.lengthInBytes,
-        );
-      });
-      final lost = await _picker.retrieveLostData();
-      if (!mounted || lost.isEmpty) return;
-      if (lost.files?.isNotEmpty ?? false) {
-        final bytes = await lost.files!.first.readAsBytes();
-        if (mounted) {
-          setState(() {
-            _photo = bytes;
-            _message = 'Foto recuperada. Marque os quatro cantos da folha.';
-          });
-        }
-      }
-    } catch (error) {
-      if (mounted) {
-        setState(() {
-          _message = 'Não foi possível preparar o Digitalizer: $error';
-        });
-      }
-    }
-  }
-
-  Future<void> _capture(ImageSource source) async {
-    if (_busy) return;
-    setState(() {
-      _busy = true;
-      _message = null;
-    });
-    try {
-      final image = await _picker.pickImage(
-        source: source,
-        maxWidth: 3000,
-        maxHeight: 4000,
-        imageQuality: 100,
-        requestFullMetadata: false,
-      );
-      if (image == null) return;
-      final bytes = await image.readAsBytes();
-      // O arquivo da galeria nunca é excluído. Captura do app é temporária.
-      if (source == ImageSource.camera) {
-        final cache = await getTemporaryDirectory();
-        if (image.path.startsWith('${cache.path}/')) {
-          final file = File(image.path);
-          if (await file.exists()) await file.delete();
-        }
-      }
-      if (mounted) {
-        setState(() {
-          _photo = bytes;
-          _rectified = null;
-          _readings = null;
-          _corners.clear();
-          _corrections.clear();
-        });
-      }
-    } catch (error) {
-      if (mounted) {
-        setState(() {
-          _message = 'Não foi possível obter a foto: $error';
-        });
-      }
-    } finally {
-      if (mounted) {
-        setState(() {
-          _busy = false;
-        });
-      }
-    }
-  }
-
-  Future<String?> _confirmArea(List<String> detected) async {
-    final recognized = detected.length == 1 ? detected.single : null;
-    if (recognized != null && (_area == null || _area == recognized)) {
-      return recognized;
-    }
-    String? choice = recognized ?? _area;
-    return showDialog<String>(
-      context: context,
-      barrierDismissible: false,
-      builder: (dialogContext) => StatefulBuilder(
-        builder: (context, update) => AlertDialog(
-          title: Text(
-            recognized == null
-                ? 'Confirme a área da folha'
-                : 'A área da foto é diferente',
-          ),
-          content: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              Text(
-                recognized == null
-                    ? 'Não identificamos uma única área com segurança. Selecione a área impressa. A numeração ainda será conferida.'
-                    : 'Selecionada: $_area. Identificada na folha: $recognized. Confirme para continuar.',
-              ),
-              const SizedBox(height: 12),
-              DropdownButton<String>(
-                isExpanded: true,
-                value: choice,
-                hint: const Text('Escolha a área'),
-                items: _catalog!.names
-                    .map((a) => DropdownMenuItem(value: a, child: Text(a)))
-                    .toList(),
-                onChanged: (value) => update(() {
-                  choice = value;
-                }),
-              ),
-            ],
-          ),
-          actions: [
-            TextButton(
-              onPressed: () => Navigator.pop(dialogContext),
-              child: const Text('Cancelar'),
-            ),
-            FilledButton(
-              onPressed: choice == null
-                  ? null
-                  : () => Navigator.pop(dialogContext, choice),
-              child: const Text('Confirmar área'),
-            ),
-          ],
-        ),
-      ),
+    // Arquivo .5s recebido enquanto o app já está aberto (em segundo plano).
+    _intentSub = ReceiveSharingIntent.instance.getMediaStream().listen(
+      _handleSharedFiles,
+      onError: (_) {},
     );
+
+    // Arquivo .5s que abriu o app agora mesmo (app estava fechado e o
+    // usuário tocou no arquivo recebido pelo WhatsApp/e-mail/etc.).
+    ReceiveSharingIntent.instance.getInitialMedia().then((files) {
+      _handleSharedFiles(files);
+      ReceiveSharingIntent.instance.reset();
+    });
   }
 
-  Future<void> _analyze() async {
-    if (_photo == null || _corners.length != 4 || _busy) return;
-    _diagnostic = null;
-    final cross = List<double>.generate(4, (i) {
-      final a = _corners[i],
-          b = _corners[(i + 1) % 4],
-          c = _corners[(i + 2) % 4];
-      return (b.dx - a.dx) * (c.dy - b.dy) - (b.dy - a.dy) * (c.dx - b.dx);
-    });
-    if (!cross.every((c) => c > .002)) {
-      setState(() {
-        _message = 'A caixa ficou pequena demais. Arraste para selecionar a folha inteira.';
-      });
-      return;
-    }
-    setState(() {
-      _busy = true;
-      _message = 'Endireitando a folha e identificando as perguntas…';
-    });
-    try {
-      final corrected = await compute(rectifyPhoto, {
-        'bytes': _photo!,
-        'points': _corners.map((p) => [p.dx, p.dy]).toList(),
-      });
-      if (!mounted) return;
-      setState(() {
-        _rectified = corrected;
-      });
-      final layout = await _scanner.inspect(corrected, _catalog!);
-      if (!mounted) return;
-      final area = await _confirmArea(layout.detectedAreas);
-      if (area == null || !mounted) return;
-      final numbers = layout.anchors.map((a) => a['number'] as String).toList();
-      final comparison = _catalog!.comparison(area, numbers);
-      if (!_catalog!.matches(
-        area,
-        numbers,
-      )) {
-        setState(() {
-          _message =
-              'Leitura incompleta ou incompatível. Nenhuma nota foi aplicada. '
-              'Isso não comprova que o relatório esteja desatualizado.\n\n'
-              '$comparison\n\n'
-              'Confira a folha e a caixa selecionada. Se o questionário estiver correto, '
-              'use Copiar diagnóstico para investigar a leitura.';
-          _diagnostic = 'Digitalizer 0.1.5+6\nConferência das perguntas\n'
-              '$comparison\n\nLinhas OCR da margem esquerda:\n'
-              '${layout.observations.join("\n")}';
-        });
-        return;
-      }
-      setState(() {
-        _area = area;
-        _message = 'Lendo apenas a coluna de notas atuais…';
-      });
-      final result = await _scanner.recognize(corrected, _model!, layout);
-      if (!mounted) return;
-      if (result['error'] != null) {
-        setState(() {
-          _message = result['error'] as String;
-        });
-        return;
-      }
-      setState(() {
-        _readings = result['readings'] as List<Map<String, dynamic>>;
-        _corrections.clear();
-        _message = null;
-      });
-    } catch (error) {
-      if (mounted) {
-        setState(() {
-          if (error is OfflineOcrException) {
-            _message = 'O leitor offline do Android apresentou uma falha. '
-                'Nenhuma nota foi preenchida. Use Copiar diagnóstico para informar o erro.';
-            _diagnostic = error.diagnostic;
-          } else {
-            _message = 'A leitura não foi concluída: $error. Refaça a captura.';
-          }
-        });
-      }
-    } finally {
-      if (mounted) {
-        setState(() {
-          _busy = false;
-        });
-      }
+  void _handleSharedFiles(List<SharedMediaFile> files) {
+    if (!mounted || files.isEmpty) return;
+    _pendingImports.add(files.first.path);
+    if (_openingComplete) {
+      WidgetsBinding.instance.addPostFrameCallback((_) => _drainImports());
+      WidgetsBinding.instance.ensureVisualUpdate();
     }
   }
 
-  void _discard() => setState(() {
-    _photo = null;
-    _rectified = null;
-    _readings = null;
-    _corners.clear();
-    _corrections.clear();
-    _message = null;
-    _diagnostic = null;
-  });
-
-  Future<void> _showPhoto() async {
-    if (_rectified == null) return;
-    await showDialog<void>(
+  Future<void> _confirmImport(BuildContext context, String path) async {
+    final confirmar = await showDialog<bool>(
       context: context,
-      builder: (context) => Dialog.fullscreen(
-        child: Scaffold(
-          appBar: AppBar(
-            title: const Text('Conferir folha'),
-            leading: CloseButton(onPressed: () => Navigator.pop(context)),
-          ),
-          body: InteractiveViewer(
-            minScale: .5,
-            maxScale: 8,
-            child: Center(child: Image.memory(_rectified!)),
-          ),
+      builder: (ctx) => AlertDialog(
+        title: const Text('Importar auditorias?'),
+        content: const Text(
+          'Foi recebido um arquivo de backup de auditorias 5S. Deseja importar agora? '
+          'As auditorias contidas nele serão adicionadas (ou substituídas, se já existirem) no seu aplicativo.',
         ),
-      ),
-    );
-  }
-
-  Future<void> _finish() async {
-    final lines = _readings!;
-    final untouched = lines
-        .where((r) => !_corrections.containsKey(r['number']))
-        .length;
-    final changed = lines
-        .where(
-          (r) =>
-              _corrections.containsKey(r['number']) &&
-              _corrections[r['number']] != r['score'],
-        )
-        .length;
-    final remaining = lines
-        .where(
-          (r) =>
-              (_corrections.containsKey(r['number'])
-                  ? _corrections[r['number']]
-                  : r['score']) ==
-              null,
-        )
-        .length;
-    final summary =
-        'Área: $_area\nPerguntas: ${lines.length}\n'
-        'Correções manuais: $changed\nSem nota ao concluir: $remaining\n'
-        'Sem alteração manual: $untouched\n\n'
-        'Este resultado é somente do teste. Nada foi enviado à Ondexa.';
-    await showDialog<void>(
-      context: context,
-      builder: (context) => AlertDialog(
-        title: const Text('Conferência do teste'),
-        content: Text(summary),
         actions: [
           TextButton(
-            onPressed: () => Clipboard.setData(ClipboardData(text: summary)),
-            child: const Text('Copiar resumo'),
+            onPressed: () => Navigator.pop(ctx, false),
+            child: const Text('Cancelar'),
           ),
           FilledButton(
-            onPressed: () => Navigator.pop(context),
-            child: const Text('Concluir'),
+            onPressed: () => Navigator.pop(ctx, true),
+            child: const Text('Importar'),
           ),
         ],
       ),
     );
-    if (mounted) _discard();
+    if (confirmar == true && context.mounted) {
+      await context.read<AuditProvider>().importDataFromPath(path, context);
+    }
+  }
+
+  @override
+  void dispose() {
+    _intentSub?.cancel();
+    super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
-    final ready = _catalog != null && _model != null;
-    return PopScope(
-      canPop: _photo == null && !_busy,
-      onPopInvokedWithResult: (didPop, result) {
-        if (!didPop && !_busy) _discard();
-      },
-      child: Scaffold(
-        appBar: AppBar(
-          title: const Text('Digitalizer'),
-          actions: [
-            if (_photo != null)
-              IconButton(
-                onPressed: _busy ? null : _discard,
-                tooltip: 'Descartar digitalização',
-                icon: const Icon(Icons.close),
-              ),
+    return ChangeNotifierProvider(
+      create: (_) => AuditProvider(AuditRepositoryImpl()),
+      child: MaterialApp(
+        navigatorKey: _navigatorKey,
+        title: 'Ondexa',
+        debugShowCheckedModeBanner: false,
+        theme: AppTheme.light,
+        home: Stack(
+          fit: StackFit.expand,
+          children: [
+            // Mount the history immediately so its database loads during intro.
+            Offstage(offstage: !_openingComplete, child: const HistoryScreen()),
+            if (!_openingComplete) OpeningScreen(onFinished: _finishOpening),
           ],
         ),
-        body: SafeArea(
-          child: _readings == null ? _captureView(ready) : _reviewView(),
-        ),
       ),
     );
   }
-
-  Widget _captureView(bool ready) => ListView(
-    padding: const EdgeInsets.all(20),
-    children: [
-      const Text(
-        'Do papel para as notas',
-        style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
-      ),
-      const SizedBox(height: 8),
-      const Text(
-        'Teste offline dos relatórios atuais da Ondexa. Leia uma folha por vez. '
-        'Não há conexão com suas auditorias nem salvamento da foto.',
-      ),
-      const SizedBox(height: 18),
-      if (ready)
-        DropdownButtonFormField<String>(
-          initialValue: _area,
-          decoration: const InputDecoration(
-            labelText: 'Área esperada (opcional)',
-            border: OutlineInputBorder(),
-          ),
-          items: _catalog!.names
-              .map((a) => DropdownMenuItem(value: a, child: Text(a)))
-              .toList(),
-          onChanged: _busy
-              ? null
-              : (value) => setState(() {
-                  _area = value;
-                }),
-        ),
-      const SizedBox(height: 14),
-      FilledButton.icon(
-        onPressed: ready && !_busy ? () => _capture(ImageSource.camera) : null,
-        icon: const Icon(Icons.document_scanner_outlined),
-        label: const Text('Fotografar relatório'),
-      ),
-      TextButton.icon(
-        onPressed: ready && !_busy ? () => _capture(ImageSource.gallery) : null,
-        icon: const Icon(Icons.photo_library_outlined),
-        label: const Text('Testar foto da galeria'),
-      ),
-      if (_photo != null) ...[
-        const SizedBox(height: 10),
-        Text(
-          _corners.length < 4
-              ? 'Toque e arraste sobre a foto para formar uma caixa ao redor da folha inteira.'
-              : 'Confira a caixa. Para ajustá-la, arraste novamente sobre a foto.',
-        ),
-        const SizedBox(height: 10),
-        // A área de toque e a foto usam o mesmo retângulo, sem letterboxing.
-        FutureBuilder<Size>(
-          future: _imageSize(_photo!),
-          builder: (context, snapshot) {
-            if (!snapshot.hasData) return const LinearProgressIndicator();
-            final size = snapshot.data!;
-            return AspectRatio(
-              aspectRatio: size.width / size.height,
-              child: LayoutBuilder(
-                builder: (context, constraints) => GestureDetector(
-                  behavior: HitTestBehavior.opaque,
-                  onPanStart: _busy ? null : (details) => setState(() {
-                    _dragStart = Offset(
-                      (details.localPosition.dx / constraints.maxWidth).clamp(0.0, 1.0).toDouble(),
-                      (details.localPosition.dy / constraints.maxHeight).clamp(0.0, 1.0).toDouble(),
-                    );
-                    _corners.clear();
-                    _rectified = null;
-                    _message = null;
-                    _diagnostic = null;
-                  }),
-                  onPanUpdate: _busy ? null : (details) {
-                    final start = _dragStart;
-                    if (start == null) return;
-                    final end = Offset(
-                      (details.localPosition.dx / constraints.maxWidth).clamp(0.0, 1.0).toDouble(),
-                      (details.localPosition.dy / constraints.maxHeight).clamp(0.0, 1.0).toDouble(),
-                    );
-                    final box = Rect.fromPoints(start, end);
-                    setState(() {
-                      _corners
-                        ..clear()
-                        ..addAll([box.topLeft, box.topRight, box.bottomRight, box.bottomLeft]);
-                    });
-                  },
-                  onPanEnd: _busy ? null : (_) => setState(() {
-                    _dragStart = null;
-                  }),
-                  onPanCancel: _busy ? null : () => setState(() {
-                    _dragStart = null;
-                    _corners.clear();
-                  }),
-                  child: Stack(
-                    fit: StackFit.expand,
-                    children: [
-                      Image.memory(_photo!, fit: BoxFit.fill),
-                      CustomPaint(painter: CornerPainter(List.of(_corners))),
-                    ],
-                  ),
-                ),
-              ),
-            );
-          },
-        ),
-        TextButton(
-          onPressed: _busy
-              ? null
-              : () => setState(() {
-                  _corners.clear();
-                  _dragStart = null;
-                }),
-          child: const Text('Limpar caixa'),
-        ),
-        FilledButton(
-          onPressed: _corners.length == 4 && _dragStart == null && !_busy ? _analyze : null,
-          child: const Text('Ler área e notas'),
-        ),
-      ],
-      if (_busy)
-        const Padding(
-          padding: EdgeInsets.all(12),
-          child: LinearProgressIndicator(),
-        ),
-      if (_message != null)
-        Padding(
-          padding: const EdgeInsets.only(top: 12),
-          child: Text(
-            _message!,
-            style: const TextStyle(fontWeight: FontWeight.w600),
-          ),
-        ),
-        if (_diagnostic != null)
-          TextButton.icon(
-            icon: const Icon(Icons.copy),
-            label: const Text('Copiar diagnóstico'),
-            onPressed: () async {
-              await Clipboard.setData(ClipboardData(text: _diagnostic!));
-              if (!mounted) return;
-              ScaffoldMessenger.of(context).showSnackBar(
-                const SnackBar(content: Text('Diagnóstico copiado.')),
-              );
-            },
-          ),
-        const SizedBox(height: 16),
-        const Text(
-          'Boa captura: folha inteira, apoiada e iluminada; evite sombras e reflexos. '
-          'Arraste uma caixa ao redor da folha inteira, incluindo o cabeçalho.',
-      ),
-    ],
-  );
-
-  Widget _reviewView() {
-    final questions = _catalog!.areas[_area]!;
-    final byNumber = {
-      for (final reading in _readings!) reading['number'] as String: reading,
-    };
-    final recognized = _readings!.where((r) => r['score'] != null).length;
-    return Column(
-      children: [
-        Padding(
-          padding: const EdgeInsets.all(16),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                'Conferir $_area',
-                style: const TextStyle(
-                  fontSize: 23,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-              Text(
-                '$recognized sugestões · ${questions.length - recognized} sem leitura. '
-                'Confira também as notas sugeridas: o modelo pode errar.',
-              ),
-              TextButton.icon(
-                onPressed: _showPhoto,
-                icon: const Icon(Icons.zoom_in),
-                label: const Text('Ampliar folha temporária'),
-              ),
-            ],
-          ),
-        ),
-        Expanded(
-          child: ListView.builder(
-            itemCount: questions.length,
-            itemBuilder: (context, index) {
-              final q = questions[index], reading = byNumber[q.number]!;
-              final original = reading['score'] as int?;
-              final value = _corrections.containsKey(q.number)
-                  ? _corrections[q.number]
-                  : original;
-              final manual = _corrections.containsKey(q.number);
-              return Card(
-                margin: const EdgeInsets.fromLTRB(12, 0, 12, 10),
-                child: Padding(
-                  padding: const EdgeInsets.all(14),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        '${q.number}  ${q.text}',
-                        style: const TextStyle(fontWeight: FontWeight.w600),
-                      ),
-                      const SizedBox(height: 8),
-                      Text(
-                        manual
-                            ? 'Conferência manual · leitura original: ${original ?? "sem leitura"}'
-                            : '${reading['reason']}',
-                        style: TextStyle(
-                          color: original == null
-                              ? Colors.brown
-                              : Colors.blueGrey,
-                        ),
-                      ),
-                      DropdownButton<int>(
-                        isExpanded: true,
-                        value: value ?? -1,
-                        items: [
-                          const DropdownMenuItem(
-                            value: -1,
-                            child: Text('Sem nota'),
-                          ),
-                          for (var n = 0; n <= 5; n++)
-                            DropdownMenuItem(value: n, child: Text('Nota $n')),
-                        ],
-                        onChanged: (n) => setState(() {
-                          _corrections[q.number] = n == -1 ? null : n;
-                        }),
-                      ),
-                    ],
-                  ),
-                ),
-              );
-            },
-          ),
-        ),
-        Padding(
-          padding: const EdgeInsets.all(12),
-          child: Row(
-            children: [
-              Expanded(
-                child: OutlinedButton(
-                  onPressed: _discard,
-                  child: const Text('Descartar'),
-                ),
-              ),
-              const SizedBox(width: 10),
-              Expanded(
-                child: FilledButton(
-                  onPressed: _finish,
-                  child: const Text('Concluir teste'),
-                ),
-              ),
-            ],
-          ),
-        ),
-      ],
-    );
-  }
-
-  Future<Size> _imageSize(Uint8List bytes) async {
-    final codec = await ui.instantiateImageCodec(bytes);
-    try {
-      final frame = await codec.getNextFrame();
-      final size = Size(
-        frame.image.width.toDouble(),
-        frame.image.height.toDouble(),
-      );
-      frame.image.dispose();
-      return size;
-    } finally {
-      codec.dispose();
-    }
-  }
-}
-
-class CornerPainter extends CustomPainter {
-  CornerPainter(this.points);
-  final List<Offset> points;
-  @override
-  void paint(Canvas canvas, Size size) {
-    final paint = Paint()
-      ..color = Colors.lightBlueAccent
-      ..strokeWidth = 3;
-    final scaled = points
-        .map((p) => Offset(p.dx * size.width, p.dy * size.height))
-        .toList();
-    for (var i = 0; i < scaled.length; i++) {
-      canvas.drawCircle(scaled[i], 7, paint);
-      if (i > 0) canvas.drawLine(scaled[i - 1], scaled[i], paint);
-    }
-    if (scaled.length == 4) canvas.drawLine(scaled.last, scaled.first, paint);
-  }
-
-  @override
-  bool shouldRepaint(CornerPainter old) => !listEquals(old.points, points);
 }

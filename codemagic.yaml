@@ -1,38 +1,57 @@
 workflows:
-  digitalizer-android:
-    name: Digitalizer Android Offline
-    max_build_duration: 45
+  android-workflow:
+    name: Ondexa Android Build
+    max_build_duration: 30
     environment:
       flutter: stable
-      java: 17
     scripts:
-      - name: Preparar Android independente
+      - name: Gerar pasta Android (sem sobrescrever o código)
         script: |
-          set -euo pipefail
-          if [ ! -d android ]; then
-            flutter create --platforms=android --project-name digitalizer --org com.ondexa /tmp/digitalizer-scaffold
-            cp -R /tmp/digitalizer-scaffold/android .
+          if [ ! -d "android" ]; then
+            flutter create --platforms=android --project-name auditoria_5s --org com.suaempresa temp_scaffold
+            cp -R temp_scaffold/android .
+            rm -rf temp_scaffold
           fi
-          python3 tools/configure_android.py
-          python3 tools/verify_android.py
-          chmod +x android/gradlew
-          python3 tools/verify_assets.py
-      - name: Instalar dependências
+      - name: Configurar navegação inferior por gesto
         script: |
-          set -euo pipefail
+          python3 -m unittest discover -s scripts/tests -p 'test_*.py'
+          python3 scripts/install_android_navigation.py
+      - name: Adicionar permissões (câmera, fotos, arquivos)
+        script: |
+          perl -0777 -pi -e 's#<application#<uses-permission android:name="android.permission.CAMERA"/>\n    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>\n    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>\n    <application#' android/app/src/main/AndroidManifest.xml
+      - name: Ajustar compileSdk para 36
+        script: |
+          perl -pi -e 's/compileSdk = flutter.compileSdkVersion/compileSdk = 36/' android/app/build.gradle.kts
+      - name: Registrar app para abrir arquivos .5s
+        script: |
+          perl -0777 -pi -e 's#</activity>#<intent-filter>\n          <action android:name="android.intent.action.VIEW" />\n          <category android:name="android.intent.category.DEFAULT" />\n          <data android:mimeType="*/*" android:scheme="content" />\n        </intent-filter>\n        <intent-filter>\n          <action android:name="android.intent.action.SEND" />\n          <category android:name="android.intent.category.DEFAULT" />\n          <data android:mimeType="*/*" />\n        </intent-filter>\n      </activity>#' android/app/src/main/AndroidManifest.xml
+          perl -pi -e 's/android:launchMode="singleTop"/android:launchMode="singleTask"/' android/app/src/main/AndroidManifest.xml
+      - name: Corrigir JVM target entre módulos (plugins antigos)
+        script: |
+          echo "kotlin.jvm.target.validation.mode=warning" >> android/gradle.properties
+      - name: Verificar imagem e vídeo da abertura
+        script: |
+          python3 scripts/restore_opening_asset.py
+      - name: Instalar dependencias
+        script: |
           flutter pub get
-      - name: Conferir código e testes
+      - name: Gerar ícone e abertura nativa
         script: |
-          set -euo pipefail
-          python3 tools/verify_source.py
-          flutter analyze --no-fatal-infos
+          dart run flutter_launcher_icons
+          dart run flutter_native_splash:create
+      - name: Verificar questionários, relatórios e histórico
+        script: |
+          flutter analyze --no-fatal-infos lib/core/constants lib/domain/entities lib/utils/docx_generator.dart lib/utils/report_photo.dart lib/utils/photo_optimizer.dart lib/utils/evidence_photo_store.dart lib/presentation/widgets/evidence_picker.dart lib/presentation/widgets/android_navigation_policy.dart lib/presentation/widgets/score_dropdown.dart lib/presentation/screens/opening_screen.dart lib/presentation/screens/history_screen.dart lib/presentation/screens/indicators_screen.dart lib/presentation/widgets/header_form.dart lib/presentation/screens/audit_form_screen.dart lib/presentation/providers/audit_provider.dart lib/utils/batch_docx_exporter.dart lib/main.dart test
           flutter test
-      - name: Compilar APK experimental
+      - name: Ajustar compileSdk do plugin de abertura para 36
         script: |
-          set -euo pipefail
+          python3 scripts/fix_splash_compile_sdk.py
+      - name: Definir nome Ondexa no Android
+        script: |
+          python3 scripts/set_app_name.py
+      - name: Compilar APK
+        script: |
           flutter build apk --release
-          cp build/app/outputs/flutter-apk/app-release.apk build/app/outputs/flutter-apk/Digitalizer.apk
     artifacts:
-      - build/app/outputs/flutter-apk/Digitalizer.apk
-      - pubspec.lock
-      - build/app/outputs/mapping/release/*.txt
+      - build/**/outputs/**/*.apk
+
