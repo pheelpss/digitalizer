@@ -41,6 +41,7 @@ class _CapturePageState extends State<CapturePage> {
   Uint8List? _model, _photo, _rectified;
   String? _area, _message, _diagnostic;
   final List<Offset> _corners = [];
+  Offset? _dragStart;
   bool _busy = false;
   List<Map<String, dynamic>>? _readings;
   final Map<String, int?> _corrections = {};
@@ -202,7 +203,7 @@ class _CapturePageState extends State<CapturePage> {
     });
     if (!cross.every((c) => c > .002)) {
       setState(() {
-        _message = 'Marque os cantos na ordem indicada, sem cruzar as linhas.';
+        _message = 'A caixa ficou pequena demais. Arraste para selecionar a folha inteira.';
       });
       return;
     }
@@ -234,9 +235,9 @@ class _CapturePageState extends State<CapturePage> {
               'Leitura incompleta ou incompatível. Nenhuma nota foi aplicada. '
               'Isso não comprova que o relatório esteja desatualizado.\n\n'
               '$comparison\n\n'
-              'Confira a folha e os quatro cantos. Se o questionário estiver correto, '
+              'Confira a folha e a caixa selecionada. Se o questionário estiver correto, '
               'use Copiar diagnóstico para investigar a leitura.';
-          _diagnostic = 'Digitalizer 0.1.3+4\nConferência das perguntas\n'
+          _diagnostic = 'Digitalizer 0.1.4+5\nConferência das perguntas\n'
               '$comparison\n\nLinhas OCR da margem esquerda:\n'
               '${layout.observations.join("\n")}';
         });
@@ -427,8 +428,8 @@ class _CapturePageState extends State<CapturePage> {
         const SizedBox(height: 10),
         Text(
           _corners.length < 4
-              ? 'Toque no canto ${_corners.length + 1}: ${['superior esquerdo', 'superior direito', 'inferior direito', 'inferior esquerdo'][_corners.length]} da folha.'
-              : 'Quatro cantos marcados. Confira o contorno antes de ler.',
+              ? 'Toque e arraste sobre a foto para formar uma caixa ao redor da folha inteira.'
+              : 'Confira a caixa. Para ajustá-la, arraste novamente sobre a foto.',
         ),
         const SizedBox(height: 10),
         // A área de toque e a foto usam o mesmo retângulo, sem letterboxing.
@@ -441,16 +442,38 @@ class _CapturePageState extends State<CapturePage> {
               aspectRatio: size.width / size.height,
               child: LayoutBuilder(
                 builder: (context, constraints) => GestureDetector(
-                  onTapDown: _busy || _corners.length == 4
-                      ? null
-                      : (details) => setState(() {
-                          _corners.add(
-                            Offset(
-                              details.localPosition.dx / constraints.maxWidth,
-                              details.localPosition.dy / constraints.maxHeight,
-                            ),
-                          );
-                        }),
+                  behavior: HitTestBehavior.opaque,
+                  onPanStart: _busy ? null : (details) => setState(() {
+                    _dragStart = Offset(
+                      (details.localPosition.dx / constraints.maxWidth).clamp(0.0, 1.0).toDouble(),
+                      (details.localPosition.dy / constraints.maxHeight).clamp(0.0, 1.0).toDouble(),
+                    );
+                    _corners.clear();
+                    _rectified = null;
+                    _message = null;
+                    _diagnostic = null;
+                  }),
+                  onPanUpdate: _busy ? null : (details) {
+                    final start = _dragStart;
+                    if (start == null) return;
+                    final end = Offset(
+                      (details.localPosition.dx / constraints.maxWidth).clamp(0.0, 1.0).toDouble(),
+                      (details.localPosition.dy / constraints.maxHeight).clamp(0.0, 1.0).toDouble(),
+                    );
+                    final box = Rect.fromPoints(start, end);
+                    setState(() {
+                      _corners
+                        ..clear()
+                        ..addAll([box.topLeft, box.topRight, box.bottomRight, box.bottomLeft]);
+                    });
+                  },
+                  onPanEnd: _busy ? null : (_) => setState(() {
+                    _dragStart = null;
+                  }),
+                  onPanCancel: _busy ? null : () => setState(() {
+                    _dragStart = null;
+                    _corners.clear();
+                  }),
                   child: Stack(
                     fit: StackFit.expand,
                     children: [
@@ -468,11 +491,12 @@ class _CapturePageState extends State<CapturePage> {
               ? null
               : () => setState(() {
                   _corners.clear();
+                  _dragStart = null;
                 }),
-          child: const Text('Marcar os cantos novamente'),
+          child: const Text('Limpar caixa'),
         ),
         FilledButton(
-          onPressed: _corners.length == 4 && !_busy ? _analyze : null,
+          onPressed: _corners.length == 4 && _dragStart == null && !_busy ? _analyze : null,
           child: const Text('Ler área e notas'),
         ),
       ],
@@ -504,7 +528,7 @@ class _CapturePageState extends State<CapturePage> {
         const SizedBox(height: 16),
         const Text(
           'Boa captura: folha inteira, apoiada e iluminada; evite sombras e reflexos. '
-          'Marque os quatro cantos da folha inteira, incluindo o cabeçalho.',
+          'Arraste uma caixa ao redor da folha inteira, incluindo o cabeçalho.',
       ),
     ],
   );

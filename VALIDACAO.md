@@ -1,3 +1,13 @@
+# Atualização 0.1.4+5 — seleção retangular por arraste
+
+Única mudança funcional: substituir quatro toques independentes por arrastar uma caixa retangular na foto, em qualquer direção. Os quatro vértices são calculados automaticamente em ordem fixa, limitados à imagem. Novo arraste redefine a caixa e Limpar caixa apaga a seleção. A leitura só é habilitada após soltar o gesto.
+
+Algoritmos de OCR, recuperação de numeração, catálogo, modelo de notas e transformação da imagem permanecem iguais à 0.1.3. O retângulo não corrige por si só uma folha fotografada inclinada.
+
+Verificados scripts de integridade/Android e manifesto dos fontes. Sem SDK Flutter local: análise, testes Flutter e build pelo Codemagic; gesto no celular ainda pendente.
+
+## Histórico
+
 # Revisão 0.1.3+4 — recuperação pelo texto
 
 Recupera os padrões OCR `14`, `44`, `54` e `4.60` somente quando o texto da linha corresponde de forma suficientemente próxima e única à pergunta esperada do catálogo. Exige área identificada unicamente no cabeçalho; sem identificação única, mantém a leitura estrita. Não cria linhas ausentes, não muda a posição da célula, não remove duplicatas e não altera o modelo de notas.

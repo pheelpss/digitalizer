@@ -69,7 +69,7 @@ class Scanner {
       return ScanLayout(detectedAreas, anchors, headerX, observations);
     } on PlatformException catch (error, stack) {
       throw OfflineOcrException(
-        'Digitalizer 0.1.3+4\n'
+        'Digitalizer 0.1.4+5\n'
         'Etapa: OCR de texto impresso / ML Kit Latin\n'
         'Imagem normalizada: PNG 1600x2263, ${bytes.length} bytes\n'
         'Build: minificação e redução de recursos nativos desativadas\n'

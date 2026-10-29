@@ -14,4 +14,4 @@ if failures:
     raise SystemExit("Projeto incompleto ou com arquivos de versões diferentes. "
                      "Substitua o conteúdo completo do ZIP no GitHub. Arquivos: "
                      + ", ".join(failures))
-print("Fontes Digitalizer 0.1.3+4 conferidos: catálogo, scanner e testes da mesma entrega.")
+print("Fontes Digitalizer 0.1.4+5 conferidos: catálogo, scanner e testes da mesma entrega.")
